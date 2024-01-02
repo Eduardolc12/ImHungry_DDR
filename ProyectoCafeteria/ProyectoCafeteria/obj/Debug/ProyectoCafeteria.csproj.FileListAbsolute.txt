@@ -1,0 +1,383 @@
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.csproj.AssemblyReference.cache
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.csproj.SuggestedBindingRedirects.cache
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU03-IniciarSesion.g.cs
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU04-RegistrarCliente.g.cs
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU05-PagarOrden.g.cs
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU09-RegistrarVendedor.g.cs
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU11-ConsultarProducto.g.cs
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU17-ConsultarMenu.g.cs
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU18-RecargarTarjeta.g.cs
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU19-GestionarPuntosFidelidad.g.cs
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU20-GestionarPublicidad.g.cs
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU20-ModificarPublicidad.g.cs
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU20-NuevaPublicidad.g.cs
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\MainWindow.g.cs
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\App.g.cs
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria_MarkupCompile.cache
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria_MarkupCompile.lref
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU04-RegistrarCliente.baml
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU05-PagarOrden.baml
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU09-RegistrarVendedor.baml
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU11-ConsultarProducto.baml
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU17-ConsultarMenu.baml
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU18-RecargarTarjeta.baml
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU19-GestionarPuntosFidelidad.baml
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU20-GestionarPublicidad.baml
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU20-ModificarPublicidad.baml
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU20-NuevaPublicidad.baml
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\MainWindow.baml
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.exe
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.pdb
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\ProyectoCafeteria.exe.config
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\ProyectoCafeteria.exe
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\ProyectoCafeteria.pdb
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU03-IniciarSesion.baml
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.g.resources
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.Properties.Langs.Lang.resources
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.Properties.Resources.resources
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.csproj.GenerateResource.cache
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.csproj.CoreCompileInputs.cache
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU15-GenerarReporteVenta.g.cs
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU15-GenerarReporteVenta.baml
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU06-CancelarOrden.g.cs
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU15-GenerarReporteVentaMes.g.cs
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU06-CancelarOrden.baml
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU15-GenerarReporteVentaMes.baml
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU07-MarcaOrdenComoEntregada.g.cs
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU07-MarcaOrdenComoEntregada.baml
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU07-MarcarOrden.g.cs
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU13-RealizarVotacionProducto.g.cs
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU08-VisualizarOrden.g.cs
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU07-MarcarOrden.baml
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU13-RealizarVotacionProducto.baml
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU08-VisualizarOrden.baml
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\MenuCliente.g.cs
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\MenuEmpleado.g.cs
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\MenuCliente.baml
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\MenuEmpleado.baml
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\ja-JP\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\nl-BE\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.csproj.CopyComplete
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Newtonsoft.Json.dll
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\RestSharp.dll
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Buffers.dll
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Memory.dll
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Text.Json.dll
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.ValueTuple.dll
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Newtonsoft.Json.xml
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\RestSharp.xml
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Buffers.xml
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Memory.xml
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Text.Json.xml
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.ValueTuple.xml
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU01-RegistrarProducto.g.cs
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU02-ModificarProducto.g.cs
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU01-RegistrarProducto.baml
+C:\Users\YC-ADM\source\repos\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU02-ModificarProducto.baml
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\ProyectoCafeteria.exe.config
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\ProyectoCafeteria.exe
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\ProyectoCafeteria.pdb
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Newtonsoft.Json.dll
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\RestSharp.dll
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Buffers.dll
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Memory.dll
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Text.Json.dll
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.ValueTuple.dll
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Newtonsoft.Json.xml
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\RestSharp.xml
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Buffers.xml
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Memory.xml
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Text.Json.xml
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.ValueTuple.xml
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\ja-JP\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\nl-BE\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.csproj.AssemblyReference.cache
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.csproj.SuggestedBindingRedirects.cache
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU01-RegistrarProducto.g.cs
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU02-ModificarProducto.g.cs
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU03-IniciarSesion.g.cs
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU04-RegistrarCliente.g.cs
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU05-PagarOrden.g.cs
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU06-CancelarOrden.g.cs
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU07-MarcaOrdenComoEntregada.g.cs
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU07-MarcarOrden.g.cs
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU08-VisualizarOrden.g.cs
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU09-RegistrarVendedor.g.cs
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU11-ConsultarProducto.g.cs
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU13-RealizarVotacionProducto.g.cs
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU15-GenerarReporteVenta.g.cs
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU15-GenerarReporteVentaMes.g.cs
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU17-ConsultarMenu.g.cs
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU18-RecargarTarjeta.g.cs
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU19-GestionarPuntosFidelidad.g.cs
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU20-GestionarPublicidad.g.cs
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU20-ModificarPublicidad.g.cs
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU20-NuevaPublicidad.g.cs
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\MenuCliente.g.cs
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\MenuEmpleado.g.cs
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\MainWindow.g.cs
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\App.g.cs
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria_MarkupCompile.cache
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria_MarkupCompile.lref
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU01-RegistrarProducto.baml
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU02-ModificarProducto.baml
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU03-IniciarSesion.baml
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU04-RegistrarCliente.baml
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU05-PagarOrden.baml
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU06-CancelarOrden.baml
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU07-MarcaOrdenComoEntregada.baml
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU07-MarcarOrden.baml
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU08-VisualizarOrden.baml
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU09-RegistrarVendedor.baml
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU11-ConsultarProducto.baml
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU13-RealizarVotacionProducto.baml
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU15-GenerarReporteVenta.baml
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU15-GenerarReporteVentaMes.baml
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU17-ConsultarMenu.baml
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU18-RecargarTarjeta.baml
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU19-GestionarPuntosFidelidad.baml
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU20-GestionarPublicidad.baml
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU20-ModificarPublicidad.baml
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU20-NuevaPublicidad.baml
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\MenuCliente.baml
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\MenuEmpleado.baml
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\MainWindow.baml
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.g.resources
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.Properties.Langs.Lang.resources
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.Properties.Resources.resources
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.csproj.GenerateResource.cache
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.csproj.CoreCompileInputs.cache
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.csproj.CopyComplete
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.exe
+C:\Users\endol\OneDrive\Escritorio\PROYECTO\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.pdb
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\ProyectoCafeteria.exe.config
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\ProyectoCafeteria.exe
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\ProyectoCafeteria.pdb
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Newtonsoft.Json.dll
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\RestSharp.dll
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Buffers.dll
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Memory.dll
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Text.Json.dll
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.ValueTuple.dll
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Newtonsoft.Json.xml
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\RestSharp.xml
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Buffers.xml
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Memory.xml
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Text.Json.xml
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.ValueTuple.xml
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\ja-JP\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\nl-BE\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.csproj.AssemblyReference.cache
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.csproj.SuggestedBindingRedirects.cache
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU01-RegistrarProducto.g.cs
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU02-ModificarProducto.g.cs
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU03-IniciarSesion.g.cs
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU04-RegistrarCliente.g.cs
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU05-PagarOrden.g.cs
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU06-CancelarOrden.g.cs
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU07-MarcaOrdenComoEntregada.g.cs
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU07-MarcarOrden.g.cs
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU08-VisualizarOrden.g.cs
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU09-RegistrarVendedor.g.cs
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU11-ConsultarProducto.g.cs
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU13-RealizarVotacionProducto.g.cs
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU15-GenerarReporteVenta.g.cs
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU15-GenerarReporteVentaMes.g.cs
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU17-ConsultarMenu.g.cs
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU18-RecargarTarjeta.g.cs
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU19-GestionarPuntosFidelidad.g.cs
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU20-GestionarPublicidad.g.cs
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU20-ModificarPublicidad.g.cs
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU20-NuevaPublicidad.g.cs
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\MenuCliente.g.cs
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\MenuEmpleado.g.cs
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\MainWindow.g.cs
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\App.g.cs
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria_MarkupCompile.cache
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria_MarkupCompile.lref
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU01-RegistrarProducto.baml
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU02-ModificarProducto.baml
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU03-IniciarSesion.baml
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU04-RegistrarCliente.baml
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU05-PagarOrden.baml
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU06-CancelarOrden.baml
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU07-MarcaOrdenComoEntregada.baml
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU07-MarcarOrden.baml
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU08-VisualizarOrden.baml
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU09-RegistrarVendedor.baml
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU11-ConsultarProducto.baml
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU13-RealizarVotacionProducto.baml
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU15-GenerarReporteVenta.baml
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU15-GenerarReporteVentaMes.baml
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU17-ConsultarMenu.baml
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU18-RecargarTarjeta.baml
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU19-GestionarPuntosFidelidad.baml
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU20-GestionarPublicidad.baml
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU20-ModificarPublicidad.baml
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU20-NuevaPublicidad.baml
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\MenuCliente.baml
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\MenuEmpleado.baml
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\MainWindow.baml
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.g.resources
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.Properties.Langs.Lang.resources
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.Properties.Resources.resources
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.csproj.GenerateResource.cache
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.csproj.CoreCompileInputs.cache
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.csproj.CopyComplete
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.exe
+C:\Users\endol\3D Objects\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.pdb
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\ProyectoCafeteria.exe.config
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\ProyectoCafeteria.exe
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\ProyectoCafeteria.pdb
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\RestSharp.dll
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Buffers.dll
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Memory.dll
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Text.Json.dll
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.ValueTuple.dll
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\RestSharp.xml
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Buffers.xml
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Memory.xml
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Text.Json.xml
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\System.ValueTuple.xml
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\ja-JP\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\nl-BE\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.csproj.AssemblyReference.cache
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU01-RegistrarProducto.g.cs
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU02-ModificarProducto.g.cs
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU03-IniciarSesion.g.cs
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU04-RegistrarCliente.g.cs
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU09-RegistrarVendedor.g.cs
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU11-ConsultarProducto.g.cs
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\MenuCliente.g.cs
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\MenuEmpleado.g.cs
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\MainWindow.g.cs
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\App.g.cs
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria_MarkupCompile.cache
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria_MarkupCompile.lref
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU01-RegistrarProducto.baml
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU02-ModificarProducto.baml
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU03-IniciarSesion.baml
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU04-RegistrarCliente.baml
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU09-RegistrarVendedor.baml
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU11-ConsultarProducto.baml
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\MenuCliente.baml
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\MenuEmpleado.baml
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\MainWindow.baml
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.g.resources
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.Properties.Langs.Lang.resources
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.Properties.Resources.resources
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.csproj.GenerateResource.cache
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.csproj.CoreCompileInputs.cache
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.csproj.CopyComplete
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.exe
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.pdb
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU02_ConsultarPedido.g.cs
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU02_ConsultarPedido.baml
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU03-ConsultarEstadisticas.g.cs
+C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU03-ConsultarEstadisticas.baml

@@ -1,0 +1,54 @@
+﻿<Page x:Class="ProyectoCafeteria.GUI.GUI_CU03_IniciarSesion"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:language="clr-namespace:ProyectoCafeteria.Properties.Langs"
+      xmlns:local="clr-namespace:ProyectoCafeteria.GUI"
+      mc:Ignorable="d" 
+      d:DesignHeight="538"
+      Title="GUI_CU03_IniciarSesion" Width="822">
+
+    <Grid>
+       
+        <StackPanel Orientation="Vertical" Margin="10,186,10,22">
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF212020"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <Label Content="ACCEDER" FontSize="25" FontFamily="Segoe UI Black" Width="716" HorizontalContentAlignment="Center" Height="39" Foreground="#FF949494"/>
+            <StackPanel Orientation="Horizontal" Height="50" Width="306" Margin="20,20,20,2">
+                <TextBox x:Name="ClaveTrabajadorTextBox" Height="35" Width="308" TextWrapping="Wrap" TextChanged="ClaveTrabajadorTextBox_TextChanged" FontSize="15" HorizontalContentAlignment="Center" Background="#FF6B6B6B" Foreground="#FF949494" FontFamily="Arial Black" Text="Usuario" TextAlignment="Center" VerticalContentAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="50" Width="312" RenderTransformOrigin="0.5,0.5">
+                <StackPanel.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleY="-0.145"/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="-0.497"/>
+                    </TransformGroup>
+                </StackPanel.RenderTransform>
+                <PasswordBox x:Name="ContrasenaPasswordBox" Height="40" Width="311" FontSize="15" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#FF6B6B6B" Foreground="#FF949494" FontFamily="Arial Black" Password="password"/>
+            </StackPanel>
+            <Button x:Name="IniciarSesionButton" Content="ACCEDER" FontSize="20" Height="40" Width="264" Click="IniciarSesionButton_Click" Background="#FF6B6B6B" FontFamily="Arial Black" Foreground="#FF949494"/>
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Vertical" Width="800" Margin="20,20,20,20">
+                <Label  Content="{x:Static language:Lang.NoTieneCuenta_etiqueta}" Height="40" FontSize="20" FontWeight="Bold" FontStyle="Normal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Foreground="#FF949494"/>
+                <TextBlock VerticalAlignment="Center" TextAlignment="Center" FontWeight="SemiBold" Height="40" FontSize="20" FontStyle="Italic" RenderTransformOrigin="0.612,0.152" Margin="62,0"><Hyperlink Click="RegistrarseTextBlockHyperlink_Click" Cursor="Hand" Foreground="#0f7dd6" FontSize="20"><Run Text="{x:Static language:Lang.Registrarse_etiqueta}"/></Hyperlink></TextBlock>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Height="168" VerticalAlignment="Top" Margin="0,10,0,0" >
+            <Label Content="I´M HUNGRY " FontSize="26" FontFamily="Segoe UI Black" Width="716" HorizontalContentAlignment="Center"/>
+            <Image Height="74" Width="77" Source="/GUI/64572.png">
+                <Image.OpacityMask>
+                    <ImageBrush ImageSource="/GUI/64572.png"/>
+                </Image.OpacityMask>
+            </Image>
+        </StackPanel>
+
+
+    </Grid>
+    
+</Page>

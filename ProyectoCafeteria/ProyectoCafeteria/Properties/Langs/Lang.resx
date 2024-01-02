@@ -1,0 +1,528 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Aceptar_boton" xml:space="preserve">
+    <value>Aceptar</value>
+    <comment>GUI-CU04</comment>
+  </data>
+  <data name="Cancerlar_boton" xml:space="preserve">
+    <value>Cancelar</value>
+    <comment>GUI-CU04</comment>
+  </data>
+  <data name="CodigoEstadoHTTP100" xml:space="preserve">
+    <value>La primer parte de la peticion se recibio correctamente</value>
+    <comment>Codigo de estado http 100 : Continue</comment>
+  </data>
+  <data name="CodigoEstadoHTTP101" xml:space="preserve">
+    <value>El servidor acepto el cambio propuesto por el navegador</value>
+    <comment>Codigo de estado http 101 : Switching Protocols</comment>
+  </data>
+  <data name="CodigoEstadoHTTP102" xml:space="preserve">
+    <value>El servidor está procesando la petición del navegador pero todavía no ha terminado</value>
+    <comment>Codigo de estado http 102 : Processing(WebDav)</comment>
+  </data>
+  <data name="CodigoEstadoHTTP103" xml:space="preserve">
+    <value>Se va a reanudar una petición POST o PUT que fue abortada previamente.</value>
+    <comment>Codigo de estado http 103 : CheckPoint</comment>
+  </data>
+  <data name="CodigoEstadoHTTP200" xml:space="preserve">
+    <value>La operacion se realizo correctamente</value>
+    <comment>Codigo de estado http 200 : OK</comment>
+  </data>
+  <data name="CodigoEstadoHTTP201" xml:space="preserve">
+    <value>La petición ha sido completada y ha resultado en la creación de un nuevo recurso.</value>
+    <comment>Codigo de estado http 201 : Created</comment>
+  </data>
+  <data name="CodigoEstadoHTTP202" xml:space="preserve">
+    <value>La petición ha sido aceptada para procesamiento, pero este no ha sido completado.</value>
+    <comment>Codigo de estado http 202 : Accepted</comment>
+  </data>
+  <data name="CodigoEstadoHTTP203" xml:space="preserve">
+    <value>La petición se ha completado con éxito, pero su contenido no se ha obtenido de la fuente originalmente solicitada sino de otro servidor.</value>
+    <comment>Codigo de estado http 203 : Non-Authoritative Information (desde HTTP/1.1)</comment>
+  </data>
+  <data name="CodigoEstadoHTTP204" xml:space="preserve">
+    <value>La petición se ha completado con éxito pero su respuesta no tiene ningún contenido</value>
+    <comment>Codigo de estado http 204 : No Content</comment>
+  </data>
+  <data name="CodigoEstadoHTTP205" xml:space="preserve">
+    <value>La petición se ha completado con éxito, pero su respuesta no tiene contenidos y además, el navegador tiene que inicializar la página desde la que se realizó la petición.</value>
+    <comment>Codigo de estado http 205 : Reset Content</comment>
+  </data>
+  <data name="CodigoEstadoHTTP206" xml:space="preserve">
+    <value>La petición servirá parcialmente el contenido solicitado.</value>
+    <comment>Codigo de estado http 205 : Partial Content</comment>
+  </data>
+  <data name="CodigoEstadoHTTP207" xml:space="preserve">
+    <value>El cuerpo del mensaje que sigue es un mensaje XML y puede contener algún número de códigos de respuesta separados, dependiendo de cuántas sub-peticiones sean hechas.</value>
+    <comment>Codigo de estado http 207 : Multi-Status (Multi-Status, WebDAV)</comment>
+  </data>
+  <data name="CodigoEstadoHTTP208" xml:space="preserve">
+    <value>El listado de elementos DAV ya se notificó previamente, por lo que no se van a volver a listar.</value>
+    <comment>Codigo de estado http 208 : Already Reported (WebDAV)</comment>
+  </data>
+  <data name="CodigoEstadoHTTP226" xml:space="preserve">
+    <value>El servidor ha cumplido una petición GET para el recurso y la respuesta es una representación del resultado de una o más manipulaciones de instancia aplicadas a la instancia actual.</value>
+    <comment>Codigo de estado http 226 : IM Used (en-US) (HTTP Delta encoding</comment>
+  </data>
+  <data name="CodigoEstadoHTTP300" xml:space="preserve">
+    <value>ndica opciones múltiples para el URI que el cliente podría seguir.</value>
+    <comment>Codigo de estado http 300 : Multiple Choices</comment>
+  </data>
+  <data name="CodigoEstadoHTTP301" xml:space="preserve">
+    <value>Esta y todas las peticiones futuras deberían ser dirigidas a la URL dada.</value>
+    <comment>Codigo de estado http 301 : Moved Permanently</comment>
+  </data>
+  <data name="CodigoEstadoHTTP302" xml:space="preserve">
+    <value>el recurso de la URI solicitada ha sido cambiado temporalmente. Nuevos cambios en la URI serán agregados en el futuro.</value>
+    <comment>Codigo de estado http 302 : Found</comment>
+  </data>
+  <data name="CodigoEstadoHTTP303" xml:space="preserve">
+    <value>La respuesta a la petición puede ser encontrada bajo otra URI utilizando el método GET.</value>
+    <comment>Codigo de estado http 303 : See Other (desde HTTP/1.1)</comment>
+  </data>
+  <data name="CodigoEstadoHTTP304" xml:space="preserve">
+    <value>la respuesta no ha sido modificada se puede continuar usando la misma versión almacenada en caché.</value>
+    <comment>Codigo de estado http 304 : Not Modified</comment>
+  </data>
+  <data name="CodigoEstadoHTTP305" xml:space="preserve">
+    <value>La respuesta solicitada debe ser accedida desde un proxy.</value>
+    <comment>Codigo de estado http 305 : Use Proxy (desde HTTP/1.1)</comment>
+  </data>
+  <data name="CodigoEstadoHTTP306" xml:space="preserve">
+    <value>Este codigo esta reservado.</value>
+    <comment>Codigo de estado http 306 : Reservado</comment>
+  </data>
+  <data name="CodigoEstadoHTTP307" xml:space="preserve">
+    <value>La redirección que debería haber sido hecha con otra URI, sin embargo aún puede ser procesada con la URI proporcionada.</value>
+    <comment>Codigo de estado http 307 : Temporary Redirect (desde HTTP/1.1)</comment>
+  </data>
+  <data name="CodigoEstadoHTTP308" xml:space="preserve">
+    <value>El recurso solicitado por el navegador se encuentra en otro lugar y este cambio es permanente.</value>
+    <comment>Codigo de estado http 308 : Permanent Redirect</comment>
+  </data>
+  <data name="CodigoEstadoHTTP400" xml:space="preserve">
+    <value>El servidor no pudo interpretar la solicitud dada una sintaxis inválida.</value>
+    <comment>Codigo de estado http 400 : Bad Request</comment>
+  </data>
+  <data name="CodigoEstadoHTTP401" xml:space="preserve">
+    <value>Es necesario autenticar para obtener la respuesta solicitada.</value>
+    <comment>Codigo de estado http 401 : Authorization Required</comment>
+  </data>
+  <data name="CodigoEstadoHTTP402" xml:space="preserve">
+    <value>Este código de respuesta está reservado para futuros usos.</value>
+    <comment>Codigo de estado http 402 : Payment Required</comment>
+  </data>
+  <data name="CodigoEstadoHTTP403" xml:space="preserve">
+    <value>El cliente no posee los permisos necesarios para cierto contenido, por lo que el servidor está rechazando otorgar una respuesta apropiada.</value>
+    <comment>Codigo de estado http 403 : Forbidden</comment>
+  </data>
+  <data name="CodigoEstadoHTTP404" xml:space="preserve">
+    <value>El servidor no pudo encontrar el contenido solicitado.</value>
+    <comment>Codigo de estado http 404 : Not Found</comment>
+  </data>
+  <data name="CodigoEstadoHTTP405" xml:space="preserve">
+    <value>El método solicitado es conocido por el servidor pero ha sido deshabilitado y no puede ser utilizado.</value>
+    <comment>Codigo de estado http 405 : Method Not Allowed</comment>
+  </data>
+  <data name="CodigoEstadoHTTP406" xml:space="preserve">
+    <value>El servidor no es capaz de devolver los datos en ninguno de los formatos aceptados por el cliente.</value>
+    <comment>Codigo de estado http 406 : Not Acceptable</comment>
+  </data>
+  <data name="CodigoEstadoHTTP407" xml:space="preserve">
+    <value>El servidor acepta la solicitud pero se requiere la autenticación del Proxy para que el servidor pueda procesarla.</value>
+    <comment>Codigo de estado http 407 : Proxy Authentication Required</comment>
+  </data>
+  <data name="CodigoEstadoHTTP408" xml:space="preserve">
+    <value>El servidor quiere desconectar esta conexión sin usar.</value>
+    <comment>Codigo de estado http 408 : Request Timeout</comment>
+  </data>
+  <data name="CodigoEstadoHTTP409" xml:space="preserve">
+    <value>La solicitud no pudo ser procesada debido a un conflicto con el estado actual del recurso que esta identifica.</value>
+    <comment>Codigo de estado http 409 : Conflict</comment>
+  </data>
+  <data name="CodigoEstadoHTTP410" xml:space="preserve">
+    <value>El recurso solicitado ya no está disponible y no lo estará de nuevo.</value>
+    <comment>Codigo de estado http 410 : Gone</comment>
+  </data>
+  <data name="CodigoEstadoHTTP411" xml:space="preserve">
+    <value>El servidor rechazo la petición del navegador porque no incluye la cabecera Content-Length adecuada.</value>
+    <comment>Codigo de estado http 411 : Length Required</comment>
+  </data>
+  <data name="CodigoEstadoHTTP412" xml:space="preserve">
+    <value>El servidor no es capaz de cumplir con algunas de las condiciones impuestas por el navegador en su petición.</value>
+    <comment>Codigo de estado http 412 : Precondition Failed</comment>
+  </data>
+  <data name="CodigoEstadoHTTP413" xml:space="preserve">
+    <value>La petición del navegador es demasiado grande y por ese motivo el servidor no la procesa.</value>
+    <comment>Codigo de estado http 413 : Request Entity Too Large</comment>
+  </data>
+  <data name="CodigoEstadoHTTP414" xml:space="preserve">
+    <value>La URI de la petición del navegador es demasiado grande y por ese motivo el servidor no la procesa.</value>
+    <comment>Codigo de estado http 414 : URI Too Long (anteriormente Request-URI Too Long)</comment>
+  </data>
+  <data name="CodigoEstadoHTTP415" xml:space="preserve">
+    <value>La petición del navegador tiene un formato que no entiende el servidor y por eso no se procesa.</value>
+    <comment>Codigo de estado http 415 : Unsupported Media Type</comment>
+  </data>
+  <data name="CodigoEstadoHTTP416" xml:space="preserve">
+    <value>El cliente ha preguntado por una parte de un archivo, pero el servidor no puede proporcionar esa parte.</value>
+    <comment>Codigo de estado http 416 : Requested Range Not Satisfiable</comment>
+  </data>
+  <data name="CodigoEstadoHTTP417" xml:space="preserve">
+    <value>La petición del navegador no se procesa porque el servidor no es capaz de cumplir con los requerimientos de la cabecera Expect de la petición.</value>
+    <comment>Codigo de estado http 417 : Expectation Failed</comment>
+  </data>
+  <data name="CodigoEstadoHTTP418" xml:space="preserve">
+    <value>El servidor se rehúsa a intentar hacer café con una tetera.</value>
+    <comment>Codigo de estado http 418 : I'm a teapot</comment>
+  </data>
+  <data name="CodigoEstadoHTTP421" xml:space="preserve">
+    <value>La petición fue dirigida a un servidor que no es capaz de producir una respuesta.</value>
+    <comment>Codigo de estado http : 421 Misdirected Request</comment>
+  </data>
+  <data name="CodigoEstadoHTTP422" xml:space="preserve">
+    <value>La solicitud está bien formada pero fue imposible seguirla debido a errores semánticos.</value>
+    <comment>Codigo de estado http 422 : Unprocessable Entity (WebDAV)</comment>
+  </data>
+  <data name="CodigoEstadoHTTP423" xml:space="preserve">
+    <value>El recurso al que se está teniendo acceso está bloqueado.</value>
+    <comment>Codigo de estado http 423 : Locked (WebDAV)</comment>
+  </data>
+  <data name="CodigoEstadoHTTP424" xml:space="preserve">
+    <value>La solicitud falló debido a una falla en la solicitud previa.</value>
+    <comment>Codigo de estado http 424 : Failed Dependency (WebDAV)</comment>
+  </data>
+  <data name="CodigoEstadoHTTP425" xml:space="preserve">
+    <value>Este codigo esta reservado.</value>
+    <comment>Codigo de estado http 425 : Unassigned</comment>
+  </data>
+  <data name="CodigoEstadoHTTP426" xml:space="preserve">
+    <value>El cliente debería cambiarse a TLS/1.0.</value>
+    <comment>Codigo de estado http 426 : Upgrade Required</comment>
+  </data>
+  <data name="CodigoEstadoHTTP428" xml:space="preserve">
+    <value>El servidor requiere que la petición del navegador sea condicional.</value>
+    <comment>Codigo de estado http 428 : Precondition Required</comment>
+  </data>
+  <data name="CodigoEstadoHTTP429" xml:space="preserve">
+    <value>Hay muchas conexiones desde esta dirección de internet.</value>
+    <comment>Codigo de estado http 429 : Too Many Requests</comment>
+  </data>
+  <data name="CodigoEstadoHTTP431" xml:space="preserve">
+    <value>El servidor no puede procesar la petición porque una de las cabeceras de la petición es demasiado grande.</value>
+    <comment>Codigo de estado http 431 : Request Header Fields Too Large</comment>
+  </data>
+  <data name="CodigoEstadoHTTP449" xml:space="preserve">
+    <value>Una extensión de Microsoft: La petición debería ser reintentada después de hacer la acción apropiada.</value>
+    <comment>Codigo de estado http 449 : Microsoft</comment>
+  </data>
+  <data name="CodigoEstadoHTTP451" xml:space="preserve">
+    <value>El contenido ha sido eliminado como consecuencia de una orden judicial o sentencia emitida por un tribunal.</value>
+    <comment>Codigo de estado http 451 : Unavailable for Legal Reasons</comment>
+  </data>
+  <data name="CodigoEstadoHTTP500" xml:space="preserve">
+    <value>El servidor ha encontrado una situación que no sabe cómo manejarla.</value>
+    <comment>Codigo de estado http 500 : Internal Server Error</comment>
+  </data>
+  <data name="CodigoEstadoHTTP501" xml:space="preserve">
+    <value>El método solicitado no está soportado por el servidor y no puede ser manejado.</value>
+    <comment>Codigo de estado http 501 : Not Implemented</comment>
+  </data>
+  <data name="CodigoEstadoHTTP502" xml:space="preserve">
+    <value>El servidor está actuando de proxy o gateway y ha recibido una respuesta inválida del otro servidor, por lo que no puede responder adecuadamente a la petición del navegador.</value>
+    <comment>Codigo de estado http 502 : Bad Gateway</comment>
+  </data>
+  <data name="CodigoEstadoHTTP503" xml:space="preserve">
+    <value>El servidor no puede responder a la petición del navegador porque está congestionado o está realizando tareas de mantenimiento.</value>
+    <comment>Codigo de estado http 503 : Service Temporarily Unavailable</comment>
+  </data>
+  <data name="CodigoEstadoHTTP504" xml:space="preserve">
+    <value>El servidor está actuando de proxy o gateway y no ha recibido a tiempo una respuesta del otro servidor, por lo que no puede responder adecuadamente a la petición del navegador.</value>
+    <comment>Codigo de estado http 504 : Gateway Timeout</comment>
+  </data>
+  <data name="CodigoEstadoHTTP505" xml:space="preserve">
+    <value>El servidor no soporta o no quiere soportar la versión del protocolo HTTP utilizada en la petición del navegador.</value>
+    <comment>Codigo de estado http 505 : HTTP Version Not Supported</comment>
+  </data>
+  <data name="CodigoEstadoHTTP506" xml:space="preserve">
+    <value>El servidor ha detectado una referencia circular al procesar la parte de la negociación del contenido de la petición.</value>
+    <comment>Codigo de estado http 506 : Variant Also Negotiates</comment>
+  </data>
+  <data name="CodigoEstadoHTTP507" xml:space="preserve">
+    <value>El servidor no puede crear o modificar el recurso solicitado porque no hay suficiente espacio de almacenamiento libre.</value>
+    <comment>Codigo de estado http 507 : Insufficient Storage (WebDAV</comment>
+  </data>
+  <data name="CodigoEstadoHTTP508" xml:space="preserve">
+    <value>La petición no se puede procesar porque el servidor ha encontrado un bucle infinito al intentar procesarla.</value>
+    <comment>Codigo de estado http 508 : Loop Detected (WebDAV)</comment>
+  </data>
+  <data name="CodigoEstadoHTTP509" xml:space="preserve">
+    <value>Límite de ancho de banda excedido.</value>
+    <comment>Codigo de estado http 509 : Bandwidth Limit Exceeded</comment>
+  </data>
+  <data name="CodigoEstadoHTTP510" xml:space="preserve">
+    <value>La petición del navegador debe añadir más extensiones para que el servidor pueda procesarla.</value>
+    <comment>Codigo de estado http 510 : Not Extended</comment>
+  </data>
+  <data name="CodigoEstadoHTTP511" xml:space="preserve">
+    <value>El navegador debe autenticarse para poder realizar peticiones</value>
+    <comment>Codigo de estado http 511 : Network Authentication Required</comment>
+  </data>
+  <data name="CodigoEstadoHTTP512" xml:space="preserve">
+    <value>El servidor está en una operación de actualizado y no puede tener conexión.</value>
+    <comment>Codigo de estado http 512 : Not updated</comment>
+  </data>
+  <data name="CodigoEstadoHTTP521" xml:space="preserve">
+    <value>La versión no es compatible con el hardware.</value>
+    <comment>Codigo de estado http 521 : Version Mismatch</comment>
+  </data>
+  <data name="CodigoEstadoHTTP_NO_REGISTRADO" xml:space="preserve">
+    <value>El codigo es inexistente</value>
+    <comment>Codigo http inexistente en estandar oficial de http</comment>
+  </data>
+  <data name="ConfirmarContrasena_etiqueta" xml:space="preserve">
+    <value>Confirme la contraseña</value>
+    <comment>GUI-CU09</comment>
+  </data>
+  <data name="IngreseApellidoMaternoCliente_etiqueta" xml:space="preserve">
+    <value>Ingrese su apellido materno</value>
+    <comment>GUI-CU04</comment>
+  </data>
+  <data name="IngreseApellidoMaterno_etiqueta" xml:space="preserve">
+    <value>Ingrese el apellido materno</value>
+    <comment>GUI-CU09</comment>
+  </data>
+  <data name="IngreseApellidoPaternoCliente_etiqueta" xml:space="preserve">
+    <value>Ingrese su apellido paterno</value>
+    <comment>GUI-CU04</comment>
+  </data>
+  <data name="IngreseApellidoPaterno_etiqueta" xml:space="preserve">
+    <value>Ingrese el apellido paterno</value>
+    <comment>GUI-CU09</comment>
+  </data>
+  <data name="IngreseCantidadExistencia_etiqueta" xml:space="preserve">
+    <value>Ingrese la cantidad en existencia</value>
+    <comment>GUI-CU01-CU02</comment>
+  </data>
+  <data name="IngreseCantidadProducto_etiqueta" xml:space="preserve">
+    <value>Ingrese la cantidad de producto</value>
+    <comment>GUI-CU01-CU02</comment>
+  </data>
+  <data name="IngreseClaveTrabajador_etiqueta" xml:space="preserve">
+    <value>Ingrese la clave de trabajador</value>
+    <comment>GUI-CU09</comment>
+  </data>
+  <data name="IngreseClave_etiqueta" xml:space="preserve">
+    <value>Ingrese matricula o clave de trabajador</value>
+    <comment>GUI-CU03</comment>
+  </data>
+  <data name="IngreseConfirmacionContrasena" xml:space="preserve">
+    <value>Confirme su contraseña</value>
+    <comment>GUI-CU04</comment>
+  </data>
+  <data name="IngreseContrasena_etiqueta" xml:space="preserve">
+    <value>Ingrese su contraseña</value>
+    <comment>GUI-CU04</comment>
+  </data>
+  <data name="IngreseContrasena_etiquetav" xml:space="preserve">
+    <value>Ingrese la contraseña</value>
+    <comment>GUI-CU09</comment>
+  </data>
+  <data name="IngreseContraseñaLogin_etiqueta" xml:space="preserve">
+    <value>Ingrese la contraseña</value>
+    <comment>GUI-CU03</comment>
+  </data>
+  <data name="IngreseDescripcionProducto_etiqueta" xml:space="preserve">
+    <value>Ingrese la descripcion del producto</value>
+    <comment>GUI-CU01-CU02</comment>
+  </data>
+  <data name="IngreseMarcaProducto_etiqueta" xml:space="preserve">
+    <value>Ingrese la marca del producto</value>
+    <comment>GUI-CU01-CU02</comment>
+  </data>
+  <data name="IngreseMatricula_etiqueta" xml:space="preserve">
+    <value>Ingrese su matricula</value>
+    <comment>GUI-CU04</comment>
+  </data>
+  <data name="IngreseNombreCliente_etiqueta" xml:space="preserve">
+    <value>Ingrese su(s) nombre(s)</value>
+    <comment>GUI-CU04</comment>
+  </data>
+  <data name="IngreseNombreProducto_etiqueta" xml:space="preserve">
+    <value>Ingrese nombre del producto</value>
+    <comment>GUI-CU01-CU02</comment>
+  </data>
+  <data name="IngreseNombre_etiqueta" xml:space="preserve">
+    <value>Ingrese el nombre</value>
+    <comment>GUI-CU09</comment>
+  </data>
+  <data name="IngresePrecioProducto_etiqueta" xml:space="preserve">
+    <value>Ingrese el precio del producto</value>
+    <comment>GUI-CU01-CU02</comment>
+  </data>
+  <data name="IngreseTelefonoCliente_etiqueta" xml:space="preserve">
+    <value>Ingrese su numero de telefono</value>
+    <comment>GUI-CU04</comment>
+  </data>
+  <data name="IngreseTelefono_etiqueta" xml:space="preserve">
+    <value>Ingrese numero de telefono</value>
+    <comment>GUI-CU09</comment>
+  </data>
+  <data name="NoTieneCuenta_etiqueta" xml:space="preserve">
+    <value>¿Aun no tiene cuenta de usuario?</value>
+    <comment>GUI-CU03</comment>
+  </data>
+  <data name="Registrarse_etiqueta" xml:space="preserve">
+    <value>Registrarse</value>
+    <comment>GUI-CU03</comment>
+  </data>
+  <data name="RutaImagen_etiqueta" xml:space="preserve">
+    <value>Ruta de la imagen</value>
+    <comment>GUI-CU01-CU02</comment>
+  </data>
+  <data name="SeleccioneCantidadProducto_etiqueta" xml:space="preserve">
+    <value>Seleccione cantidad de producto</value>
+    <comment>GUI-CU11</comment>
+  </data>
+  <data name="SeleccioneCategoriaProducto_etiqueta" xml:space="preserve">
+    <value>Seleccione la categoria del producto</value>
+    <comment>GUI-CU01-CU02, GUI-CU11</comment>
+  </data>
+  <data name="SeleccioneEstadoProducto_etiqueta" xml:space="preserve">
+    <value>Seleccione el estado del producto</value>
+    <comment>GUI-CU11</comment>
+  </data>
+  <data name="SeleccioneMarca_etiqueta" xml:space="preserve">
+    <value>Seleccione la marca</value>
+    <comment>GUI-CU11</comment>
+  </data>
+  <data name="SeleccioneRangoPrecio_etiqueta" xml:space="preserve">
+    <value>Seleccione el rango el de precio</value>
+    <comment>GUI-CU11</comment>
+  </data>
+  <data name="SeleccioneTipoEnvase_etiqueta" xml:space="preserve">
+    <value>Seleccione el tipo de envase</value>
+    <comment>GUI-CU01-CU02</comment>
+  </data>
+  <data name="SeleccioneTipoProducto_etiqueta" xml:space="preserve">
+    <value>Seleccione el tipo de producto</value>
+    <comment>GUI-CU01-CU02, GUI-CU11</comment>
+  </data>
+</root>

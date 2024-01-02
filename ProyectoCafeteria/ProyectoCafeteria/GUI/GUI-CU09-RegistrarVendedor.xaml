@@ -1,0 +1,38 @@
+﻿<Page x:Class="ProyectoCafeteria.GUI.GUI_CU09_RegistrarVendedor"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:language="clr-namespace:ProyectoCafeteria.Properties.Langs"
+      xmlns:local="clr-namespace:ProyectoCafeteria.GUI"
+      mc:Ignorable="d"
+      Title="GUI_CU09_RegistrarVendedor" Height="399" Width="527">
+
+    <Grid Margin="0,0,10,24">
+        <StackPanel Orientation="Vertical" Margin="10,10,70,33">
+            <StackPanel VerticalAlignment="Center" Orientation="Horizontal" Height="40"  Margin="50,45,50,0" HorizontalAlignment="Center" >
+                <TextBox x:Name="matriculaTb" FontSize="16" Height="20" Width="277" TextChanged="NombreTextBox_TextChanged" Text="Matricula" FontFamily="Bahnschrift" Foreground="#FF504D4D" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Center"/>
+            </StackPanel>
+            <StackPanel x:Name="__" Orientation="Horizontal" Height="40" Width="276" >
+                <TextBox x:Name="nombreTb" FontSize="16" Height="18" Width="274" Text="Nombre" FontFamily="Bahnschrift" Foreground="#FF504D4D" HorizontalContentAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="31" Width="276" >
+                <TextBox x:Name="apellidoMaTb" FontSize="16" Height="20" Width="130" Text="Apellido Materno" FontFamily="Bahnschrift" Foreground="#FF504D4D" HorizontalContentAlignment="Center" VerticalContentAlignment="Stretch" VerticalAlignment="Center"/>
+                <TextBox x:Name="apellidoPaTb" FontSize="16" Height="20" Width="141" Margin="10,0,0,0" TextChanged="ApellidoPaternoTextBox_TextChanged" Text="Apellido paterno" Foreground="#FF504D4D" FontFamily="Bahnschrift" VerticalContentAlignment="Stretch" VerticalAlignment="Center" Padding="0,0,-32,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="27"  Margin="50,10,50,0" Width="276" >
+                <TextBox x:Name="correoTb" FontSize="16" Height="20" Width="279" Text="Correo Institucional" FontFamily="Bahnschrift" Foreground="#FF504D4D" HorizontalContentAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="22"  Margin="50,10,50,0" Width="275" >
+                <PasswordBox x:Name="passBox" Width="272" Height="18"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="27"  Margin="50,10,50,0" Width="271" >
+                <PasswordBox x:Name="passCBox" Width="270" Height="22" Password="Confirme la contraseña"/>
+            </StackPanel>
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal" Height="40"  Margin="0,30,0,0" >
+                <Button x:Name="GuardarButton" Content="Guardar" FontSize="16" Height="26" Width="170" Click="GuardarButton_Click"/>
+                <Button x:Name="CancelarButton" Content="Cancelar" Margin="25,0,0,0" FontSize="16" Height="28" Width="168" Click="CancelarButton_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,36 @@
+﻿<Page x:Class="ProyectoCafeteria.GUI.MenuEmpleado"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ProyectoCafeteria.GUI"
+      mc:Ignorable="d"
+      Title="MenuEmpleado" Height="634" Width="1184">
+
+    <Grid Margin="0,0,10,0" Background="#FF292644">
+
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="188" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="68"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+
+
+        <StackPanel Grid.Row="1" Orientation="Vertical" Margin="4,29,0,251" >
+            <Button x:Name="ConsultarProductoButton" Content="Consultar Producto" FontSize="14" Width="180" Height="50" Background="#FF292644" Foreground="#FFF9F9F9" Click="ConsultarProductoButton_Click" FontFamily="Arial Black" BorderBrush="{x:Null}"/>
+            <Button x:Name="registrarProducto" Content="Registrar Producto" FontSize="14" Width="180" Height="44" Background="#FF292644" Foreground="#FFF9F9F9" Click="RegistrarProductoButton_Click" FontFamily="Arial Black" BorderBrush="{x:Null}"/>
+            <Button x:Name="consultarPedido" Content="Consultar Pedido" FontSize="14" Width="180" Height="44" Background="#FF292644" Foreground="#FFF9F9F9" Click="consultarPedidoButton_Click" FontFamily="Arial Black" BorderBrush="{x:Null}"/>
+            <Button x:Name="consultarEstadisticas" Content="Consultar Estadisticas" FontSize="14" Width="180" Height="44" Background="#FF292644" Foreground="#FFF9F9F9" Click="ConsultarEstadisticasButton_Click" FontFamily="Arial Black" BorderBrush="{x:Null}"/>
+        </StackPanel>
+        <Image HorizontalAlignment="Left" Height="50" Margin="84,0,0,0" VerticalAlignment="Center" Width="59" Source="/GUI/cc70e696-6c08-4556-aa25-6e99fa77699c.jpg" OpacityMask="Black"/>
+        <Label Grid.Column="1" Content="I´M HUNGRY" HorizontalAlignment="Left" Margin="113,10,0,0" VerticalAlignment="Top" Height="38" Width="336" FontSize="25" Foreground="White" FontFamily="Arial Black"/>
+        <Frame x:Name="contentFrame" Grid.Row="1" Grid.Column="1" Margin="10,10,10,10" Navigated="contentFrame_Navigated" Background="#FFFFF2E9"/>
+    </Grid>
+
+</Page>
