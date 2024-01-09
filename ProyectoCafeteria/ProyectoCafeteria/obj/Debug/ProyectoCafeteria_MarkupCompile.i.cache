@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\
+C:\Users\jon10\Desktop\eduardo\imHungryEs\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\
 ProyectoCafeteria
 none
 false
 DEBUG;TRACE
-C:\Users\Steban\Downloads\ProyectoCafeteria\ProyectoCafeteria\App.xaml
+C:\Users\jon10\Desktop\eduardo\imHungryEs\ProyectoCafeteria\ProyectoCafeteria\App.xaml
 111853155479
-41933327138
+4-1407298398
 31-1855803161
-412073192271
+41-1997891131
 GUI\GUI-CU01-RegistrarProducto.xaml;GUI\GUI-CU02-ModificarProducto.xaml;GUI\GUI-CU03-ConsultarEstadisticas.xaml;GUI\GUI-CU03-IniciarSesion.xaml;GUI\GUI-CU04-RegistrarCliente.xaml;GUI\GUI-CU09-RegistrarVendedor.xaml;GUI\GUI-CU02_ConsultarPedido.xaml;GUI\GUI-CU11-ConsultarProducto.xaml;GUI\MenuCliente.xaml;GUI\MenuEmpleado.xaml;MainWindow.xaml;
 
-False
+True
 

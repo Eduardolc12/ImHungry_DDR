@@ -1,7 +1,9 @@
-﻿using ProyectoCafeteria.Datos.Modelo;
+﻿using Microsoft.Win32;
+using ProyectoCafeteria.Datos.Modelo;
 using ProyectoCafeteria.Logica.Servicios;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -23,6 +25,11 @@ namespace ProyectoCafeteria.GUI
     /// </summary>
     public partial class GUI_CU04_RegistrarCliente : Page
     {
+        string rutaImagen;
+        string nombreImagen;
+        string nombreImagen1;
+        string fotoPerfil;
+        string fotoCredencial;
         public GUI_CU04_RegistrarCliente()
         {
             InitializeComponent();
@@ -38,13 +45,13 @@ namespace ProyectoCafeteria.GUI
 
         {
 
-         
-           
+
+
 
             if (ValidarFormulario())
             {
-                string tipoVendedor="";
-                string tipoComprador="";
+                string tipoVendedor = "";
+                string tipoComprador = "";
                 if (CompraRB.IsChecked == true && VenRB.IsChecked == true)
                 {
                     tipoVendedor = "si";
@@ -56,11 +63,11 @@ namespace ProyectoCafeteria.GUI
                     tipoVendedor = "no";
                     tipoComprador = "si";
                 }
-                else if ( VenRB.IsChecked == true)
+                else if (VenRB.IsChecked == true)
                 {
                     tipoComprador = "no";
                     tipoVendedor = "si";
-                } 
+                }
                 Estudiante estudiante = new Estudiante();
                 estudiante.matricula = matriculaTb.Text.Trim();
                 estudiante.nombre = nombreTb.Text.Trim();
@@ -70,7 +77,13 @@ namespace ProyectoCafeteria.GUI
                 estudiante.password = passBox.Password;
                 estudiante.tipoVendedor = tipoVendedor;
                 estudiante.tipoComprador = tipoComprador;
+                estudiante.fotoPerfil =fotoPerfil;
+                estudiante.fotoCredencial = fotoCredencial;
+
+                if(ValidarFormulario()==true){
+                   
                 MessageBox.Show(await ServicioEstudiante.RegistrarEstudiante(estudiante));
+
                 matriculaTb.Clear();
                 nombreTb.Clear();
                 apellidoPaTb.Clear();
@@ -80,6 +93,13 @@ namespace ProyectoCafeteria.GUI
                 passCBox.Clear();
                 VenRB.IsChecked = false;
                 CompraRB.IsChecked = false;
+                ImagePerfil.Source = null;
+                ImageCrendencial.Source = null;
+
+                GUI_CU03_IniciarSesion guiIniciarSesion = new GUI_CU03_IniciarSesion();
+            Application.Current.MainWindow.Content = guiIniciarSesion;
+
+            }
             }
         }
         public bool ValidarFormulario()
@@ -88,15 +108,75 @@ namespace ProyectoCafeteria.GUI
             Regex expresionRegularLetras = new Regex(@"[a-zA-z]");
             Regex expresionRegularNumeros = new Regex(@"[0-9]");
             Regex caracteresEspeciales = new Regex("[!\"#\\$%&'()*+,-./:;=?@\\[\\]^_`{|}~]");
+
+            if (string.IsNullOrEmpty(matriculaTb.Text))
+            {
+                MessageBox.Show("no puede quedar vacio ningún campo");
+                return false;
+            }
+            else if (string.IsNullOrEmpty(nombreTb.Text) || nombreTb.Text.Contains(" "))
+            {
+                MessageBox.Show("no puede dejar espacios");
+                return false;
+            }
+            else if (caracteresEspeciales.IsMatch(matriculaTb.Text))
+            {
+                MessageBox.Show("no puede quedar vacio ningún campo");
+                return false;
+            }
+            else if (caracteresEspeciales.IsMatch(nombreTb.Text))
+            {
+                MessageBox.Show("no puede quedar vacio ningún campo");
+                return false;
+            }
+
+            else
+            {
+                esFormularioValido = true;
+                return true;
+            }
+
            
-                        if (string.IsNullOrEmpty(matriculaTb.Text)) MessageBox.Show("no puede quedar vacio ningún campo");
-                        else if (string.IsNullOrEmpty(nombreTb.Text) || nombreTb.Text.Contains(" ")) MessageBox.Show("no puede quedar vacio ningún campo");
-                        else if (caracteresEspeciales.IsMatch(matriculaTb.Text)) MessageBox.Show("no puede quedar vacio ningún campo");
-                        else if (caracteresEspeciales.IsMatch(nombreTb.Text)) MessageBox.Show("no puede quedar vacio ningún campo");
-          
-                        else esFormularioValido = true;
-           
-            return true;
+        }
+
+        private void FotoButton_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog ventanaSelectorArchivo = new OpenFileDialog();
+            ventanaSelectorArchivo.Filter = "Archivos de Imagen PNG | *.png;";
+            ventanaSelectorArchivo.Title = "Cargar Archivo De Imagen";
+            if (ventanaSelectorArchivo.ShowDialog() == true)
+            {
+                this.rutaImagen = ventanaSelectorArchivo.FileName;
+                this.nombreImagen = ventanaSelectorArchivo.SafeFileName;
+                LabelPerfil.Content = nombreImagen;
+                Uri nuevaUriImagen = new Uri(this.rutaImagen, UriKind.Absolute);
+                ImagePerfil.Source = new BitmapImage(nuevaUriImagen);
+                this.fotoCredencial = ConvertImageToBase64(this.rutaImagen);
+            }
+        }
+
+        private void CredencialButton_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog ventanaSelectorArchivo = new OpenFileDialog();
+            ventanaSelectorArchivo.Filter = "Archivos de Imagen PNG | *.png;";
+            ventanaSelectorArchivo.Title = "Cargar Archivo De Imagen";
+            if (ventanaSelectorArchivo.ShowDialog() == true)
+            {
+                this.rutaImagen = ventanaSelectorArchivo.FileName;
+                this.nombreImagen1 = ventanaSelectorArchivo.SafeFileName;
+                LabelCredencial.Content = nombreImagen1;
+
+                Uri nuevaUriImagen = new Uri(this.rutaImagen, UriKind.Absolute);
+                ImageCrendencial.Source = new BitmapImage(nuevaUriImagen);
+                this.fotoPerfil = ConvertImageToBase64(this.rutaImagen);
+            }
+
+        }
+
+        private string ConvertImageToBase64(string imagePath)
+        {
+            byte[] imageArray = File.ReadAllBytes(imagePath);
+            return Convert.ToBase64String(imageArray);
         }
     }
 }

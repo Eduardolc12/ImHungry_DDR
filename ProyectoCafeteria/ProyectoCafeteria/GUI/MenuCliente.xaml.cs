@@ -21,8 +21,8 @@ namespace ProyectoCafeteria.GUI
     /// </summary>
     public partial class MenuCliente : Page
     {
-        Cliente clienteLogueado;
-        public MenuCliente(Cliente clienteLogueado)
+        Estudiante clienteLogueado;
+        public MenuCliente(Estudiante clienteLogueado)
         {
             InitializeComponent();
             this.clienteLogueado = clienteLogueado;

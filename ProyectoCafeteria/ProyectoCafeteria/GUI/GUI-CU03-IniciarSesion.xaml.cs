@@ -34,32 +34,42 @@ namespace ProyectoCafeteria.GUI
         {
             if (ValidarFormulario())
             {
-                if (ClaveTrabajadorTextBox.Text.StartsWith("EM"))
+                if (ClaveTrabajadorTextBox.Text.StartsWith("zS"))
                 {
-                    empleadoLogueado = await ServicioEstudiante.IniciarSesion(ClaveTrabajadorTextBox.Text.ToUpper(), ContrasenaPasswordBox.Password);
-                    if (empleadoLogueado == null)
+                    empleadoLogueado = await ServicioEstudiante.IniciarSesion(ClaveTrabajadorTextBox.Text, ContrasenaPasswordBox.Password);
+                   
+                 
+                    if (empleadoLogueado != null)
+
                     {
-                        MessageBox.Show("Usuario no encontrado o credenciales incorrecatas, intente de nuevo con otras credenciales");
+                        MenuEmpleado guiMenuEmpleado = new MenuEmpleado(estudianteLogueado); 
+                        Application.Current.MainWindow.Content = guiMenuEmpleado;
+
+                     
                     }
                     else
                     {
-                   
+                        MessageBox.Show("Usuario no encontrado o credenciales incorrecatas, intente de nuevo con otras credenciales");
                     }
                 }
                 else if (ClaveTrabajadorTextBox.Text.StartsWith("zS"))
                 {
                     estudianteLogueado = await ServicioEstudiante.IniciarSesion(ClaveTrabajadorTextBox.Text.ToUpper(), ContrasenaPasswordBox.Password);
-                    if (estudianteLogueado == null)
+                    Estudiante estudiante = empleadoLogueado;
+                    if (estudianteLogueado != null)
                     {
-                        MessageBox.Show("Usuario no encontrado o credenciales incorrecatas, intente de nuevo con otras credenciales");
-                    }
+                        MenuCliente guiMenuCliente= new MenuCliente(estudianteLogueado);
+                        Application.Current.MainWindow.Content = guiMenuCliente;
+                         }
                     else
                     {
-                        MenuEmpleado guiMenuEmpleado = new MenuEmpleado(estudianteLogueado);
-                        Application.Current.MainWindow.Content = guiMenuEmpleado;
-                        // MenuCliente guiMenuCliente = new MenuCliente(estudianteLogueado);
-                        // Application.Current.MainWindow.Content = guiMenuCliente;
+                        MessageBox.Show("Usuario no encontrado o credenciales incorrecatas, intente de nuevo con otras credenciales");
+
                     }
+                }
+                else
+                {
+
                 }
             }
         }
