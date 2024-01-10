@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:ProyectoCafeteria.GUI"
       mc:Ignorable="d"
-      Title="MenuEmpleado" Height="634" Width="1184">
+      Title="MenuEmpleado" Height="634" Width="1105">
 
     <Grid Margin="0,0,10,0" Background="#FF292644">
 
@@ -29,8 +29,12 @@
             <Button x:Name="consultarEstadisticas" Content="Consultar Estadisticas" FontSize="14" Width="180" Height="44" Background="#FF292644" Foreground="#FFF9F9F9" Click="ConsultarEstadisticasButton_Click" FontFamily="Arial Black" BorderBrush="{x:Null}"/>
         </StackPanel>
         <Image HorizontalAlignment="Left" Height="50" Margin="84,0,0,0" VerticalAlignment="Center" Width="59" Source="/GUI/cc70e696-6c08-4556-aa25-6e99fa77699c.jpg" OpacityMask="Black"/>
-        <Label Grid.Column="1" Content="I´M HUNGRY" HorizontalAlignment="Left" Margin="113,10,0,0" VerticalAlignment="Top" Height="38" Width="336" FontSize="25" Foreground="White" FontFamily="Arial Black"/>
-        <Frame x:Name="contentFrame" Grid.Row="1" Grid.Column="1" Margin="10,10,10,10" Navigated="contentFrame_Navigated" Background="#FFFFF2E9"/>
+        <Label Grid.Column="1" Content="I´M HUNGRY" HorizontalAlignment="Left" Margin="266,27,0,0" VerticalAlignment="Top" Height="38" Width="188" FontSize="25" Foreground="White" FontFamily="Arial Black"/>
+        <Frame x:Name="contentFrame" Grid.Row="1" Grid.Column="1" Margin="10,10,10,26" Navigated="contentFrame_Navigated" Background="#FFFFF2E9"/>
+        <Button x:Name="cerrarSesion" Content="Cerrar Sesión" FontSize="14" Background="#FFA9404A" Foreground="#FFF9F9F9" Click="cerrarSesionButton_Click" FontFamily="Arial Black" BorderBrush="{x:Null}" Margin="32,488,32,52" Grid.Row="1"/>
+        <StackPanel Orientation="Vertical" Margin="627,23,96,12" Grid.Column="1" >
+            <Button x:Name="consultarPerfil" Content="Perfil " FontSize="14" Background="#FF282735" Foreground="#FFF9F9F9" Click="ConsultarPerfilButton_Click" FontFamily="Arial Black" BorderBrush="{x:Null}" Height="42" Width="154"/>
+        </StackPanel>
     </Grid>
 
 </Page>

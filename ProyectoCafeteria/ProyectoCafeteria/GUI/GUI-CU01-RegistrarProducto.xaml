@@ -7,48 +7,47 @@
         xmlns:local="clr-namespace:ProyectoCafeteria.GUI"
         mc:Ignorable="d"
         Title="GUI_CU01_RegistrarProducto" Height="585" Width="754">
-    <Grid Margin="0,0,124,71">
+    <Grid Margin="0,0,132,10">
         <StackPanel Orientation="Vertical" Margin="0,0,26,25">
             <StackPanel Orientation="Horizontal" Height="40"  Margin="50,10,50,0" Width="523" >
-                <Label Content="{x:Static language:Lang.IngreseNombreProducto_etiqueta}" Foreground="#0f7dd6" Height="30" Width="264" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
-                <TextBox x:Name="nombreTb" FontSize="16" Height="30" Width="244"></TextBox>
+                <Label Content="{x:Static language:Lang.IngreseNombreProducto_etiqueta}" Foreground="#0f7dd6" Height="30" Width="233" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
+                <TextBox x:Name="nombreTb" FontSize="16" Height="30" Width="267"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Height="40"  Margin="50,10,50,0" Width="513" >
-                <Label Content="Ingrese una descripción" Foreground="#0f7dd6" Height="30" Width="201" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
-                <TextBox x:Name="descripcionTb" FontSize="16" Height="30" Width="306"></TextBox>
+                <Label Content="Ingrese una descripción" Foreground="#0f7dd6" Height="30" Width="233" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
+                <TextBox x:Name="descripcionTb" FontSize="16" Height="30" Width="272"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Height="40"  Margin="50,10,50,0" Width="539" >
-                <Label Content="Ingrese cantidad disponible" Foreground="#0f7dd6" Height="30" Width="224" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
+                <Label Content="Ingrese cantidad disponible" Foreground="#0f7dd6" Height="30" Width="232" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
                 <TextBox x:Name="cantidadTb" FontSize="16" Height="30" Width="309"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Height="40"  Margin="50,10,50,0" Width="507" >
-                <Label Content="Ingrese venta Inicial" Foreground="#0f7dd6" Height="30" Width="225" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
-                <TextBox x:Name="ventaITb" FontSize="16" Height="30" Width="261"></TextBox>
+                <Label Content="Ingrese venta Inicial" Foreground="#0f7dd6" Height="30" Width="230" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
+                <TextBox x:Name="ventaITb" FontSize="16" Height="30" Width="270"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Height="40" Width="507" >
-                <Label Content="Ingrese venta final" Foreground="#0f7dd6" Height="30" Width="225" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
-                <TextBox x:Name="ventafTb" FontSize="16" Height="30" Width="261"/>
+                <Label Content="Ingrese venta final" Foreground="#0f7dd6" Height="30" Width="234" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
+                <TextBox x:Name="ventafTb" FontSize="16" Height="30" Width="275"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Height="40"  Margin="50,10,50,0" Width="552" >
-                <Label Content="Ingrese Puntos de encuentro" Foreground="#0f7dd6" Height="30" Width="233" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
+                <Label Content="Ingrese Puntos de encuentro" Foreground="#0f7dd6" Height="30" Width="226" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
                 <TextBox x:Name="puntoETb" FontSize="16" Height="30" Width="311"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Height="40"  Margin="50,10,50,0" Width="506" >
                 <Label Content="Ingrese precio del producto" Foreground="#0f7dd6" Height="30" Width="225" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
-                <TextBox x:Name="precioTb" FontSize="16" Height="30" Width="253"></TextBox>
+                <TextBox x:Name="precioTb" FontSize="16" Height="30" Width="270"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Height="40" Width="551" >
-                <Label Content="Ingrese el estado" Foreground="#0f7dd6" Height="30" Width="230" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
-                <TextBox x:Name="estadoTb" FontSize="16" Height="30" Width="315"/>
+                <Label Content="Ingrese el estado" Foreground="#0f7dd6" Height="30" Width="250" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0" HorizontalContentAlignment="Center"/>
+                <TextBox x:Name="estadoTb" FontSize="16" Height="30" Width="275"/>
             </StackPanel>
-            <StackPanel VerticalAlignment="Center" Orientation="Horizontal" Height="40"  Margin="50,10,50,0" >
-                <Label Content="{x:Static language:Lang.RutaImagen_etiqueta}" Foreground="#0f7dd6" Height="30" Width="300" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,0,0"></Label>
-                <Label x:Name="RutaImagenLabel" FontSize="16" Height="30" Width="400"></Label>
+            <StackPanel Orientation="Horizontal" Height="102"  Margin="50,10,50,0" >
+                <Label Content="imagen" Foreground="#0f7dd6" Height="30" Width="145" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
+                <Image x:Name="imagenProducto" Height="100" Width="161"/>
             </StackPanel>
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal" Height="40"  Margin="0,10,0,0" >
-                <Button x:Name="ImagenButton" Content="Seleccionar Imagen" Margin="0,0,20,0" FontSize="18" Height="40" Width="194" Click="ImagenButton_Click"/>
-                <Button x:Name="GuardarButton" Content="Guardar" Margin="0,0,0,0" FontSize="18" Height="40" Width="185" Click="GuardarButton_Click"/>
-                <Button x:Name="CancelarButton" Content="Cancelar" Margin="20,0,0,0" FontSize="18" Height="40" Width="164" Click="CancelarButton_Click"/>
+                <Button x:Name="ImagenButton" Content="Seleccionar Imagen" Margin="0,0,20,0" FontSize="18" Height="30" Width="194" Click="ImagenButton_Click" Background="#FFE09662"/>
+                <Button x:Name="GuardarButton" Content="Guardar" Margin="0,0,0,0" FontSize="18" Height="28" Width="185" Click="GuardarButton_Click" Background="#FF9AE47A"/>
             </StackPanel>
         </StackPanel>
     </Grid>

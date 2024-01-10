@@ -154,6 +154,9 @@
     <Compile Include="Datos\Modelo\Pedido.cs" />
     <Compile Include="Datos\Modelo\Producto.cs" />
     <Compile Include="Datos\Modelo\Venta.cs" />
+    <Compile Include="GUI\GUI-CU-ConsultarPerfil.xaml.cs">
+      <DependentUpon>GUI-CU-ConsultarPerfil.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GUI\GUI-CU02_ConsultarPedido.xaml.cs">
       <DependentUpon>GUI-CU02_ConsultarPedido.xaml</DependentUpon>
     </Compile>
@@ -173,6 +176,10 @@
     <Compile Include="Logica\Servicios\ServicioProducto.cs" />
     <Compile Include="Logica\Servicios\ServicioVenta.cs" />
     <Compile Include="Utilidades\RespuestaServidor.cs" />
+    <Page Include="GUI\GUI-CU-ConsultarPerfil.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="GUI\GUI-CU01-RegistrarProducto.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

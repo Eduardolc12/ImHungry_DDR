@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\jon10\Desktop\eduardo\imHungryEs\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\
+C:\Users\Steban\IdeaProjects\ImHungry_DDR\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\
 ProyectoCafeteria
 none
 false
 DEBUG;TRACE
-C:\Users\jon10\Desktop\eduardo\imHungryEs\ProyectoCafeteria\ProyectoCafeteria\App.xaml
-111853155479
-4-1407298398
-30226285457
-41-1997891131
-GUI\GUI-CU01-RegistrarProducto.xaml;GUI\GUI-CU02-ModificarProducto.xaml;GUI\GUI-CU03-ConsultarEstadisticas.xaml;GUI\GUI-CU03-IniciarSesion.xaml;GUI\GUI-CU04-RegistrarCliente.xaml;GUI\GUI-CU09-RegistrarVendedor.xaml;GUI\GUI-CU02_ConsultarPedido.xaml;GUI\GUI-CU11-ConsultarProducto.xaml;GUI\MenuCliente.xaml;GUI\MenuEmpleado.xaml;MainWindow.xaml;
+C:\Users\Steban\IdeaProjects\ImHungry_DDR\ProyectoCafeteria\ProyectoCafeteria\App.xaml
+12-1584198110
+41716124798
+31495389242
+412079776151
+GUI\GUI-CU-ConsultarPerfil.xaml;GUI\GUI-CU01-RegistrarProducto.xaml;GUI\GUI-CU02-ModificarProducto.xaml;GUI\GUI-CU03-ConsultarEstadisticas.xaml;GUI\GUI-CU03-IniciarSesion.xaml;GUI\GUI-CU04-RegistrarCliente.xaml;GUI\GUI-CU09-RegistrarVendedor.xaml;GUI\GUI-CU02_ConsultarPedido.xaml;GUI\GUI-CU11-ConsultarProducto.xaml;GUI\MenuCliente.xaml;GUI\MenuEmpleado.xaml;MainWindow.xaml;
 
 False
 

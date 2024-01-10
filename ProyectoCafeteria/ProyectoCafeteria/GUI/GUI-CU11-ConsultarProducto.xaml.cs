@@ -76,46 +76,11 @@ namespace ProyectoCafeteria.GUI
             ConsultarProductos();
         }
 
-        private void ProductosDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            this.productoSeleccionado = this.ProductosDataGrid.SelectedItem as Producto;
-            if(this.productoSeleccionado != null)
-            {
-                try
-                {
-                    BitmapImage bitmap = new BitmapImage();
-                    bitmap.BeginInit();
-               
-                    bitmap.EndInit();
-                    this.ProductoImage.Source = null;
-                    this.ProductoImage.Source = bitmap;
-                }catch(Exception exception)
-                {
-                    Console.WriteLine(exception.Message);
-                    this.ProductoImage.Source = null;
-                }
-            }
-            else
-            {
-                this.ProductoImage.Source = null;
-            }
-        }
-
+        
+                 
         private async void ConsultarProductos()
         {
-            ComboBoxItem categoriaProductoSeleccionada = CategoriaProductoComboBox.SelectedItem as ComboBoxItem;
-            string consultaNombre;
-            string consultaCategoria;
-            string consultaExistencia;
-
-            if (string.IsNullOrEmpty(BusquedaTextBox.Text)) consultaNombre = "";
-            else consultaNombre = BusquedaTextBox.Text.ToUpper().Trim();
-            if (CategoriaProductoComboBox.SelectedIndex < 1) consultaCategoria = "";
-            else consultaCategoria = categoriaProductoSeleccionada.Content.ToString().ToUpper().Trim();
-            if (EstadoProductoComboBox.SelectedIndex < 1) consultaExistencia = "";
-            else if (EstadoProductoComboBox.SelectedIndex == 1) consultaExistencia = "TRUE";
-            else consultaExistencia = "FALSE";
-
+            
             listaProductosEncontrados = await ServicioProducto.ConsultarProductos();
 
             if (listaProductosEncontrados == null) MessageBox.Show("Error al conectarse con el servidor");

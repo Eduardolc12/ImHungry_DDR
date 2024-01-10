@@ -42,7 +42,7 @@ namespace ProyectoCafeteria.GUI
                     if (empleadoLogueado != null)
 
                     {
-                        MenuEmpleado guiMenuEmpleado = new MenuEmpleado(estudianteLogueado); 
+                        MenuEmpleado guiMenuEmpleado = new MenuEmpleado(empleadoLogueado); 
                         Application.Current.MainWindow.Content = guiMenuEmpleado;
 
                      
@@ -54,7 +54,7 @@ namespace ProyectoCafeteria.GUI
                 }
                 else if (ClaveTrabajadorTextBox.Text.StartsWith("zS"))
                 {
-                    estudianteLogueado = await ServicioEstudiante.IniciarSesion(ClaveTrabajadorTextBox.Text.ToUpper(), ContrasenaPasswordBox.Password);
+                    estudianteLogueado = await ServicioEstudiante.IniciarSesion(ClaveTrabajadorTextBox.Text, ContrasenaPasswordBox.Password);
                     Estudiante estudiante = empleadoLogueado;
                     if (estudianteLogueado != null)
                     {

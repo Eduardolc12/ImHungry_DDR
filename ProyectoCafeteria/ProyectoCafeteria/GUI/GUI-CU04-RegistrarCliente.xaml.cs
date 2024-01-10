@@ -151,7 +151,7 @@ namespace ProyectoCafeteria.GUI
                 LabelPerfil.Content = nombreImagen;
                 Uri nuevaUriImagen = new Uri(this.rutaImagen, UriKind.Absolute);
                 ImagePerfil.Source = new BitmapImage(nuevaUriImagen);
-                this.fotoCredencial = ConvertImageToBase64(this.rutaImagen);
+                this.fotoPerfil = ConvertImageToBase64(this.rutaImagen);
             }
         }
 
@@ -168,7 +168,7 @@ namespace ProyectoCafeteria.GUI
 
                 Uri nuevaUriImagen = new Uri(this.rutaImagen, UriKind.Absolute);
                 ImageCrendencial.Source = new BitmapImage(nuevaUriImagen);
-                this.fotoPerfil = ConvertImageToBase64(this.rutaImagen);
+                this.fotoCredencial = ConvertImageToBase64(this.rutaImagen);
             }
 
         }

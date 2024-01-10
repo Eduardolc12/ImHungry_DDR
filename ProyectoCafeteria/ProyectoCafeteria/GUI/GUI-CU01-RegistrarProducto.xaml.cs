@@ -3,6 +3,7 @@ using ProyectoCafeteria.Datos.Modelo;
 using ProyectoCafeteria.Logica.Servicios;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -32,6 +33,7 @@ namespace ProyectoCafeteria.GUI
         List<int> listaPuntosFidelidad;
         string rutaImagen;
         string nombreImagen;
+        string fotoProducto;
         public GUI_CU01_RegistrarProducto()
         {
             InitializeComponent();
@@ -52,7 +54,10 @@ namespace ProyectoCafeteria.GUI
             {
                 this.rutaImagen = ventanaSelectorArchivo.FileName;
                 this.nombreImagen = ventanaSelectorArchivo.SafeFileName;
-                RutaImagenLabel.Content = nombreImagen;
+               
+                Uri nuevaUriImagen = new Uri(this.rutaImagen, UriKind.Absolute);
+                imagenProducto.Source = new BitmapImage(nuevaUriImagen);
+                this.fotoProducto = ConvertImageToBase64(this.rutaImagen);
             }
         }
 
@@ -72,10 +77,19 @@ namespace ProyectoCafeteria.GUI
                 producto.precio = float.Parse(precioTb.Text.Trim());
                 producto.puntoEncuentro = puntoETb.Text.Trim();
                 producto.estado = estadoTb.Text.Trim();
-                producto.foto = "http://192.168.1.6:3000/api/Imagenes/ImagenProducto-" + nombreImagen;
-
+                producto.foto = fotoProducto;
                 MessageBox.Show(await ServicioProducto.RegistrarProduto(producto));
-           
+                nombreTb.Clear();
+                descripcionTb.Clear();
+                cantidadTb.Clear();
+                ventaITb.Clear();
+                ventafTb.Clear();
+                precioTb.Clear();
+                puntoETb.Clear();
+                estadoTb.Clear();
+                imagenProducto = null;
+                
+             
             }
         }
 
@@ -87,13 +101,19 @@ namespace ProyectoCafeteria.GUI
             Regex caracteresEspeciales = new Regex("[!\"#\\$%&'()*+,-./:;=?@\\[\\]^_`{|}~]");
             
                         if (string.IsNullOrEmpty(nombreTb.Text)) MessageBox.Show("El nombre no puede quedar vacio");
-                        else if (string.IsNullOrEmpty(descripcionTb.Text) || descripcionTb.Text.Contains(" ")) MessageBox.Show("no puede quedar vacio o contener espacios");
+                        else if (string.IsNullOrEmpty(descripcionTb.Text)) MessageBox.Show("no puede quedar vacio o contener espacios");
                         else if (expresionRegularNumeros.IsMatch(nombreTb.Text) || caracteresEspeciales.IsMatch(nombreTb.Text)) MessageBox.Show("El nombre solo puede contener letras");
                         else if (expresionRegularLetras.IsMatch(precioTb.Text) || caracteresEspeciales.IsMatch(precioTb.Text)) MessageBox.Show("El precio solo puede tener numeros");
              
                        else esFormularioValido = true;
          
             return true;
+        }
+
+        private string ConvertImageToBase64(string imagePath)
+        {
+            byte[] imageArray = File.ReadAllBytes(imagePath);
+            return Convert.ToBase64String(imageArray);
         }
     }
 }

@@ -22,6 +22,9 @@ namespace ProyectoCafeteria.GUI
     public partial class MenuEmpleado : Page
     {
         Estudiante empleadoLogueado;
+        public BitmapImage ImagenMenu { get; set; }
+
+
         public MenuEmpleado(Estudiante empleadoLogueado)
         {
             InitializeComponent();
@@ -61,5 +64,23 @@ namespace ProyectoCafeteria.GUI
             GUI_CU03_ConsultarEstadisticas guiCU03ConsultarEstadisticas= new GUI_CU03_ConsultarEstadisticas();
             contentFrame.Navigate(guiCU03ConsultarEstadisticas);
         }
+
+        private void cerrarSesionButton_Click(object sender, RoutedEventArgs e)
+        {
+            GUI_CU03_IniciarSesion guiIniciarSesion = new GUI_CU03_IniciarSesion();
+            Application.Current.MainWindow.Content = guiIniciarSesion;
+
+        }
+
+        private void ConsultarPerfilButton_Click(object sender, RoutedEventArgs e)
+        {
+
+
+            GUI_CU_ConsultarPerfil consultarPerfil = new GUI_CU_ConsultarPerfil(empleadoLogueado);
+            consultarPerfil.Owner = Window.GetWindow(this);
+            consultarPerfil.MenuEmpleado = this;  // Agrega esta línea para pasar la referencia
+            consultarPerfil.ShowDialog();
+        }
     }
-}
+    }
+
