@@ -8,9 +8,9 @@ namespace ProyectoCafeteria.Datos.Modelo
 {
     public class Vendedor
     {
-        public string IdVendedor { get; set; }
-        public string Matricula { get; set; }
-        public int IdProducto { get; set; }
+        public string idVendedor { get; set; }
+        public string matricula { get; set; }
+        public int id_producto { get; set; }
 
     }
 }

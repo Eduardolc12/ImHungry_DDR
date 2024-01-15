@@ -29,26 +29,27 @@ namespace ProyectoCafeteria.GUI
         string nombreImagen1;
         string fotoPerfil;
         string fotoCredencial;
-        Estudiante empleadoLogueado;
+        Estudiante usuarioLogueado;
 
         public BitmapImage ImagenPerfilActual { get; private set; }
         public MenuEmpleado MenuEmpleado { get; set; }
-        public GUI_CU_ConsultarPerfil(Estudiante empleadoLogueado)
+        public GUI_CU_ConsultarPerfil(Estudiante usuarioLogueado)
         {
             InitializeComponent();
-            this.empleadoLogueado = empleadoLogueado;
+            this.usuarioLogueado = usuarioLogueado;
 
-            // Llenar los TextBox con la información del empleadoLogueado
-            matriculaTb.Text = empleadoLogueado.matricula;
-            nombreTb.Text = empleadoLogueado.nombre;
-            apellidoPaTb.Text = empleadoLogueado.apellidoPaterno;
-            apellidoMaTb.Text = empleadoLogueado.apellidoMaterno;
-            correoTb.Text = empleadoLogueado.correoInstitucional;
+            // Llenar los TextBox con la información del usuarioLogueado
+            matriculaTb.Text = usuarioLogueado.matricula;
+            nombreTb.Text = usuarioLogueado.nombre;
+            apellidoPaTb.Text = usuarioLogueado.apellidoPaterno;
+            apellidoMaTb.Text = usuarioLogueado.apellidoMaterno;
+            correoTb.Text = usuarioLogueado.correoInstitucional;
+            passBox.Password = usuarioLogueado.password;
 
-           
-            if (!string.IsNullOrEmpty(empleadoLogueado.fotoPerfil))
+
+            if (!string.IsNullOrEmpty(usuarioLogueado.fotoPerfil))
             {
-                byte[] imageBytes = Convert.FromBase64String(empleadoLogueado.fotoPerfil);
+                byte[] imageBytes = Convert.FromBase64String(usuarioLogueado.fotoPerfil);
                 BitmapImage bitmapImage = new BitmapImage();
                 bitmapImage.BeginInit();
                 bitmapImage.StreamSource = new MemoryStream(imageBytes);
@@ -56,9 +57,9 @@ namespace ProyectoCafeteria.GUI
                 ImagePerfil.Source = bitmapImage;
             }
 
-            if (!string.IsNullOrEmpty(empleadoLogueado.fotoCredencial))
+            if (!string.IsNullOrEmpty(usuarioLogueado.fotoCredencial))
             {
-                byte[] imageBytes = Convert.FromBase64String(empleadoLogueado.fotoCredencial);
+                byte[] imageBytes = Convert.FromBase64String(usuarioLogueado.fotoCredencial);
                 BitmapImage bitmapImage = new BitmapImage();
                 bitmapImage.BeginInit();
                 bitmapImage.StreamSource = new MemoryStream(imageBytes);

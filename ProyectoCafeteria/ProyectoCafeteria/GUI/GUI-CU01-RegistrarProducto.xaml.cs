@@ -25,20 +25,18 @@ namespace ProyectoCafeteria.GUI
     /// Lógica de interacción para GUI_CU01_RegistrarProducto.xaml
     /// </summary>
     public partial class GUI_CU01_RegistrarProducto : Page
-
-
     {
-        List<string> listaCategorias;
-        List<string> listaEnvases;
-        List<int> listaPuntosFidelidad;
+
+        Estudiante usuarioLogueado;
         string rutaImagen;
         string nombreImagen;
         string fotoProducto;
-        public GUI_CU01_RegistrarProducto()
+        public GUI_CU01_RegistrarProducto(Estudiante usuarioLogueado)
         {
             InitializeComponent();
-         
-        }
+        this.usuarioLogueado = usuarioLogueado;
+
+    }
 
         private void CancelarButton_Click(object sender, RoutedEventArgs e)
         {
@@ -61,7 +59,7 @@ namespace ProyectoCafeteria.GUI
             }
         }
 
-      
+
 
         private async void GuardarButton_Click(object sender, RoutedEventArgs e)
         {
@@ -72,13 +70,27 @@ namespace ProyectoCafeteria.GUI
                 producto.nombre = nombreTb.Text.Trim();
                 producto.descripcion = descripcionTb.Text.Trim();
                 producto.cantidadDisponible = int.Parse(cantidadTb.Text.Trim());
-                producto.horaVentaInicial = TimeSpan.Parse(ventaITb.Text.Trim());
-                producto.horaVentaFinal = TimeSpan.Parse(ventafTb.Text.Trim());
+                producto.horaVentaInicial = ventaITb.Text.Trim();
+                producto.horaVentaFinal = ventafTb.Text.Trim();
                 producto.precio = float.Parse(precioTb.Text.Trim());
                 producto.puntoEncuentro = puntoETb.Text.Trim();
                 producto.estado = estadoTb.Text.Trim();
                 producto.foto = fotoProducto;
+
+                //utilizar el servicio para registrar producto
                 MessageBox.Show(await ServicioProducto.RegistrarProduto(producto));
+
+
+                //utilizar el servicio para obtener la matricula del producto
+                Producto producto1 = await ServicioProducto.ConsultarProductoPorNombre(producto.nombre);
+              
+              
+               Vendedor vendedor = new Vendedor();
+                vendedor.matricula = usuarioLogueado.matricula;
+                vendedor.id_producto= producto1.id_producto;
+
+               //utilizar elv servicio para guardar los proudctos de vendedor
+               var mensaje = await ServicioVendedor.RegistrarProducto(vendedor);
                 nombreTb.Clear();
                 descripcionTb.Clear();
                 cantidadTb.Clear();
@@ -87,7 +99,7 @@ namespace ProyectoCafeteria.GUI
                 precioTb.Clear();
                 puntoETb.Clear();
                 estadoTb.Clear();
-                imagenProducto = null;
+                imagenProducto.Source = null;
                 
              
             }

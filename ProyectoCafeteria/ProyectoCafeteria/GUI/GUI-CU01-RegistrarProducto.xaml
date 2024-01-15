@@ -6,9 +6,9 @@
         xmlns:language="clr-namespace:ProyectoCafeteria.Properties.Langs"
         xmlns:local="clr-namespace:ProyectoCafeteria.GUI"
         mc:Ignorable="d"
-        Title="GUI_CU01_RegistrarProducto" Height="585" Width="754">
+        Title="GUI_CU01_RegistrarProducto" Height="585" Width="661">
     <Grid Margin="0,0,132,10">
-        <StackPanel Orientation="Vertical" Margin="0,0,26,25">
+        <StackPanel Orientation="Vertical" Margin="0,0,-127,0">
             <StackPanel Orientation="Horizontal" Height="40"  Margin="50,10,50,0" Width="523" >
                 <Label Content="{x:Static language:Lang.IngreseNombreProducto_etiqueta}" Foreground="#0f7dd6" Height="30" Width="233" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
                 <TextBox x:Name="nombreTb" FontSize="16" Height="30" Width="267"></TextBox>
@@ -41,9 +41,9 @@
                 <Label Content="Ingrese el estado" Foreground="#0f7dd6" Height="30" Width="250" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0" HorizontalContentAlignment="Center"/>
                 <TextBox x:Name="estadoTb" FontSize="16" Height="30" Width="275"/>
             </StackPanel>
-            <StackPanel Orientation="Horizontal" Height="102"  Margin="50,10,50,0" >
+            <StackPanel Orientation="Horizontal" Height="66"  Margin="50,10,50,0" >
                 <Label Content="imagen" Foreground="#0f7dd6" Height="30" Width="145" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
-                <Image x:Name="imagenProducto" Height="100" Width="161"/>
+                <Image x:Name="imagenProducto" Height="64" Width="117"/>
             </StackPanel>
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal" Height="40"  Margin="0,10,0,0" >
                 <Button x:Name="ImagenButton" Content="Seleccionar Imagen" Margin="0,0,20,0" FontSize="18" Height="30" Width="194" Click="ImagenButton_Click" Background="#FFE09662"/>

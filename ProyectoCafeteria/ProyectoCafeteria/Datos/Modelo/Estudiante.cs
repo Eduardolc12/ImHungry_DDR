@@ -1,22 +1,43 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace ProyectoCafeteria.Datos.Modelo
 {
-public class Estudiante
-{
-public string matricula { get; set; }
-public string nombre { get; set; }
-public string apellidoPaterno { get; set; }
-public string apellidoMaterno { get; set; }
-public string correoInstitucional { get; set; }
-public string password { get; set; }
-public string tipoVendedor { get; set; }
-public string tipoComprador { get; set; }
-public string fotoPerfil { get; set; }
-public string fotoCredencial { get; set; }
-}
+  
+    public class Estudiante
+    {
+        [JsonProperty("matricula")]
+        public string matricula { get; set; }
+
+        [JsonProperty("nombre")]
+        public string nombre { get; set; }
+
+        [JsonProperty("apellidoPaterno")]
+        public string apellidoPaterno { get; set; }
+
+        [JsonProperty("apellidoMaterno")]
+        public string apellidoMaterno { get; set; }
+
+        [JsonProperty("correoInstitucional")]
+        public string correoInstitucional { get; set; }
+
+        [JsonProperty("password")]
+        public string password { get; set; }
+
+        [JsonProperty("tipoVendedor")]
+        public string tipoVendedor { get; set; }
+
+        [JsonProperty("tipoComprador")]
+        public string tipoComprador { get; set; }
+
+        [JsonProperty("fotoPerfil")]
+        public string fotoPerfil { get; set; }
+
+        [JsonProperty("fotoCredencial")]
+        public string fotoCredencial { get; set; }
+    }
 }

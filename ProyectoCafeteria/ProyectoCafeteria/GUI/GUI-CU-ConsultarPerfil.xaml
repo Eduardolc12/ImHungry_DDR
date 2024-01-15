@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoCafeteria.GUI"
         mc:Ignorable="d"
-        Title="GUI_CU_ConsultarPerfil" Height="391" Width="664">
-    <Grid Margin="0,0,0,-6" Background="#FF3B4A9C">
+        Title="GUI_CU_ConsultarPerfil" Height="431" Width="683">
+    <Grid Margin="0,0,0,5" Background="#FF3B4A9C">
         <StackPanel Orientation="Vertical" Margin="354,37,10,86">
             <StackPanel Orientation="Horizontal" Height="40"  Margin="50,45,50,0" HorizontalAlignment="Center" Width="289" >
                 <TextBox x:Name="matriculaTb" FontSize="16" Height="20" Width="240" FontFamily="Bahnschrift" Foreground="#FF504D4D" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Center"/>
@@ -27,18 +27,27 @@
         </StackPanel>
         <Image x:Name="ImagePerfil" HorizontalAlignment="Left" Height="90" Margin="57,49,0,0" VerticalAlignment="Top" Width="94" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.HorizontalScrollBarVisibility="Visible" Source="/GUI/cc70e696-6c08-4556-aa25-6e99fa77699c.jpg" />
         <StackPanel Orientation="Horizontal" Margin="398,338,104,20" />
-        <Button x:Name="FotoButton" Content="subir foto de perfil " FontSize="16" Click="FotoButton_Click" Margin="274,148,422,224"/>
-        <Button x:Name="CredencialButton" Content="subir foto de credencial" FontSize="16" Click="CredencialButton_Click" Margin="190,294,478,78" RenderTransformOrigin="0.343,-0.846"/>
         <Image x:Name="ImageCrendencial" HorizontalAlignment="Left" Height="102" Margin="47,211,0,0" VerticalAlignment="Top" Width="128" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.HorizontalScrollBarVisibility="Visible" Source="/GUI/cc70e696-6c08-4556-aa25-6e99fa77699c.jpg" />
-        <Button x:Name="FotoButton_Copiar" Content="actualizar foto" Click="FotoButton_Click" Margin="42,167,515,188" FontFamily="Arial Black"/>
-        <Button x:Name="CredencialButton_Copiar" Content="actualizar credencial " Click="CredencialButton_Click" Margin="26,330,489,25" RenderTransformOrigin="0.343,-0.846" FontFamily="Arial Black"/>
         <Label Content="Matricula :" HorizontalAlignment="Left" Margin="258,89,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Arial Black" RenderTransformOrigin="0.265,0.79" Foreground="#FFB5E4E1"/>
         <Label Content="Nombre :" HorizontalAlignment="Left" Margin="258,126,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Arial Black" RenderTransformOrigin="0.265,0.79" Foreground="#FFB5E4E1"/>
         <Label Content="Apellidos:" HorizontalAlignment="Left" Margin="258,166,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Arial Black" RenderTransformOrigin="0.265,0.79" Foreground="#FFB5E4E1"/>
         <Label Content="Correo:" HorizontalAlignment="Left" Margin="258,197,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Arial Black" RenderTransformOrigin="0.265,0.79" Foreground="#FFB5E4E1"/>
         <Label Content="Contraseña:" HorizontalAlignment="Left" Margin="265,228,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Arial Black" RenderTransformOrigin="0.265,0.79" Foreground="#FFB5E4E1"/>
-        <Button x:Name="Modificar_Copiar" Content="Modificar" FontSize="16" Click="ModificarButton_Click" Background="#FFB5E4E1" FontFamily="Arial Black" Margin="274,331,252,24"/>
-        <Button x:Name="cerrar" Content="Cerrar" FontSize="16" Click="CerrarButton_Click" Background="#FFE4BBB5" FontFamily="Arial Black" Margin="435,331,91,24"/>
+
         <Label Content="I´M HUNGRY" HorizontalAlignment="Center" VerticalAlignment="Top" Width="664" Height="32" FontFamily="Arial Black" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#FFB5E4E1" Foreground="#FF1B1B1B" FontSize="18"/>
+        <StackPanel Orientation="Horizontal"  Margin="240,317,104,20">
+            <Button x:Name="Modificar_Copiar" Content="Modificar" FontSize="16" Click="ModificarButton_Click" Background="#FFB5E4E1" FontFamily="Arial Black"  Margin="0,0,30,0" Height="39" Width="138" VerticalAlignment="Center"/>
+            <Button x:Name="cerrar" Content="Cerrar" FontSize="16" Click="CerrarButton_Click" Background="#FFE4BBB5" FontFamily="Arial Black" Height="36" Width="138" VerticalAlignment="Center"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal"  Margin="30,322,450,34">
+            <Button x:Name="CredencialButton" Content="actualizar credencial " Click="CredencialButton_Click" RenderTransformOrigin="0.343,-0.846" FontFamily="Arial Black" Height="48" Width="149"/>
+
+        </StackPanel>
+        <StackPanel Orientation="Horizontal"  Margin="47,148,466,206">
+            <Button x:Name="FotoButton" Content="actualizar foto" Click="FotoButton_Click" FontFamily="Arial Black" Height="48" Width="107"/>
+
+        </StackPanel>
+
     </Grid>
 </Window>

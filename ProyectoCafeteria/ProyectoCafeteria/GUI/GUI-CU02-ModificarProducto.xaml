@@ -7,8 +7,8 @@
         xmlns:local="clr-namespace:ProyectoCafeteria.GUI"
         mc:Ignorable="d"
         Title="GUI_CU02_ModificarProducto" Height="600" Width="800">
-    <Grid Margin="0,0,124,71" Background="#FFAFF4C6">
-        <StackPanel Orientation="Vertical" Margin="0,0,26,25">
+    <Grid Margin="0,0,0,9" Background="#FF292644">
+        <StackPanel Orientation="Vertical" Margin="0,0,10,10">
             <StackPanel Orientation="Horizontal" Height="40"  Margin="50,10,50,0" Width="523" >
                 <Label Content="{x:Static language:Lang.IngreseNombreProducto_etiqueta}" Foreground="#0f7dd6" Height="30" Width="264" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
                 <TextBox x:Name="nombreTb" FontSize="16" Height="30" Width="244"></TextBox>
@@ -41,12 +41,12 @@
                 <Label Content="Ingrese el estado" Foreground="#0f7dd6" Height="30" Width="230" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
                 <TextBox x:Name="estadoTb" FontSize="16" Height="30" Width="315"/>
             </StackPanel>
-            <StackPanel VerticalAlignment="Center" Orientation="Horizontal" Height="40"  Margin="50,10,50,0" >
-                <Label Content="{x:Static language:Lang.RutaImagen_etiqueta}" Foreground="#0f7dd6" Height="30" Width="300" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,0,0"></Label>
-                <Label x:Name="RutaImagenLabel" FontSize="16" Height="30" Width="400"></Label>
+            <StackPanel Orientation="Horizontal" Height="97" Width="496" >
+                <Image x:Name="ImageProducto" Height="90" Width="171" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.HorizontalScrollBarVisibility="Visible" Source="/GUI/sinImagenDefault.jpg" />
+
             </StackPanel>
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal" Height="40"  Margin="0,10,0,0" >
-                <Button x:Name="ImagenButton" Content="Seleccionar Imagen" Margin="0,0,20,0" FontSize="18" Height="40" Width="194" Click="ImagenButton_Click"/>
+                <Button x:Name="ImagenButton" Content="Cambiar imagen" Margin="0,0,20,0" FontSize="18" Height="40" Width="194" Click="ImagenButton_Click"/>
                 <Button x:Name="GuardarButton" Content="Guardar" Margin="0,0,0,0" FontSize="18" Height="40" Width="185" Click="GuardarButton_Click"/>
                 <Button x:Name="CancelarButton" Content="Cancelar" Margin="20,0,0,0" FontSize="18" Height="40" Width="164" Click="CancelarButton_Click"/>
             </StackPanel>

@@ -590,3 +590,5 @@ C:\Users\Steban\IdeaProjects\ImHungry_DDR\ProyectoCafeteria\ProyectoCafeteria\ob
 C:\Users\Steban\IdeaProjects\ImHungry_DDR\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\ProyectoCafeteria.pdb
 C:\Users\Steban\IdeaProjects\ImHungry_DDR\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU-ConsultarPerfil.g.cs
 C:\Users\Steban\IdeaProjects\ImHungry_DDR\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU-ConsultarPerfil.baml
+C:\Users\Steban\IdeaProjects\ImHungry_DDR\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\ventanaEmergente.g.cs
+C:\Users\Steban\IdeaProjects\ImHungry_DDR\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\ventanaEmergente.baml

@@ -1,7 +1,9 @@
-﻿using ProyectoCafeteria.Datos.Modelo;
+﻿using Microsoft.Win32;
+using ProyectoCafeteria.Datos.Modelo;
 using ProyectoCafeteria.Logica.Servicios;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -23,14 +25,15 @@ namespace ProyectoCafeteria.GUI
     public partial class GUI_CU02_ModificarProducto : Window
     {
         Producto productoAModificar;
-        List<string> listaCategorias;
-        List<string> listaEnvases;
-        List<int> listaPuntosFidelidad;
+      
+        string rutaImagen;
+        string nombreImagen;
+        string fotoProducto;
         public GUI_CU02_ModificarProducto(Producto productoAModificar)
         {
             this.productoAModificar = productoAModificar;
             InitializeComponent();
-            LlenarGUIComboBoxes();
+           
             CargarInformacionProducto();
         }
 
@@ -46,30 +49,21 @@ namespace ProyectoCafeteria.GUI
             ventafTb.Text = productoAModificar.horaVentaFinal.ToString();
             precioTb.Text = productoAModificar.precio.ToString();
             puntoETb.Text = productoAModificar.puntoEncuentro;
-      
-            RutaImagenLabel.Content = productoAModificar.foto;
-         
-        }
+            estadoTb.Text = productoAModificar.estado;
+          
 
-        private void LlenarGUIComboBoxes()
-        {
-            listaCategorias = new List<string>();
-            listaCategorias.Add("Bebida");
-            listaCategorias.Add("Postre");
-            listaCategorias.Add("Golosina");
-            listaCategorias.Add("Platillo");
-            listaEnvases = new List<string>();
-            listaEnvases.Add("Bolsa");
-            listaEnvases.Add("BotellaVidrio");
-            listaEnvases.Add("BotellaPlastico");
-            listaEnvases.Add("Lata");
-            listaEnvases.Add("Ninguno");
-            listaPuntosFidelidad = new List<int>();
-            for (int i = 1; i <= 100; i++)
+            if (!string.IsNullOrEmpty(productoAModificar.foto))
             {
-                listaPuntosFidelidad.Add(i);
+                byte[] imageBytes = Convert.FromBase64String(productoAModificar.foto);
+                BitmapImage bitmapImage = new BitmapImage();
+                bitmapImage.BeginInit();
+                bitmapImage.StreamSource = new MemoryStream(imageBytes);
+                bitmapImage.EndInit();
+                ImageProducto.Source = bitmapImage;
             }
-           
+
+            
+
         }
 
         private async void GuardarButton_Click(object sender, RoutedEventArgs e)
@@ -80,14 +74,16 @@ namespace ProyectoCafeteria.GUI
                 productoAModificar.nombre = nombreTb.Text.Trim();
                 productoAModificar.descripcion = descripcionTb.Text.Trim();
                 productoAModificar.cantidadDisponible = int.Parse(cantidadTb.Text.Trim());
-                productoAModificar.horaVentaInicial = TimeSpan.Parse(ventaITb.Text.Trim());
-                productoAModificar.horaVentaFinal = TimeSpan.Parse(ventafTb.Text.Trim());
+                productoAModificar.horaVentaInicial = ventaITb.Text.Trim();
+                productoAModificar.horaVentaFinal = ventafTb.Text.Trim();
                 productoAModificar.precio = float.Parse(precioTb.Text.Trim());
                 productoAModificar.puntoEncuentro = puntoETb.Text.Trim();
-                productoAModificar.foto = "http://192.168.1.6:3000/api/Imagenes/ImagenProducto-";
+                productoAModificar.estado= estadoTb.Text.Trim();
+                productoAModificar.foto = fotoProducto;
               
                 MessageBox.Show(await ServicioProducto.ActualizarProducto(productoAModificar));
-                //                this.Close();
+                CargarInformacionProducto();
+                this.Close();
             }
         }
 
@@ -98,7 +94,7 @@ namespace ProyectoCafeteria.GUI
             Regex expresionRegularNumeros = new Regex(@"[0-9]");
             Regex caracteresEspeciales = new Regex("[!\"#\\$%&'()*+,-./:;=?@\\[\\]^_`{|}~]");
             if (string.IsNullOrEmpty(nombreTb.Text)) MessageBox.Show("El nombre no puede quedar vacio");
-            else if (string.IsNullOrEmpty(descripcionTb.Text) || descripcionTb.Text.Contains(" ")) MessageBox.Show("no puede quedar vacio o contener espacios");
+            else if (string.IsNullOrEmpty(descripcionTb.Text)) MessageBox.Show("no puede quedar vacio o contener espacios");
             else if (expresionRegularNumeros.IsMatch(nombreTb.Text) || caracteresEspeciales.IsMatch(nombreTb.Text)) MessageBox.Show("El nombre solo puede contener letras");
             else if (expresionRegularLetras.IsMatch(precioTb.Text) || caracteresEspeciales.IsMatch(precioTb.Text)) MessageBox.Show("El precio solo puede tener numeros");
             else esFormularioValido = true;
@@ -113,7 +109,26 @@ namespace ProyectoCafeteria.GUI
 
         private void ImagenButton_Click(object sender, RoutedEventArgs e)
         {
+            OpenFileDialog ventanaSelectorArchivo = new OpenFileDialog();
+            ventanaSelectorArchivo.Filter = "Archivos de Imagen PNG | *.png;";
+            ventanaSelectorArchivo.Title = "Cargar Archivo De Imagen";
+            if (ventanaSelectorArchivo.ShowDialog() == true)
+            {
+                this.rutaImagen = ventanaSelectorArchivo.FileName;
+                this.nombreImagen = ventanaSelectorArchivo.SafeFileName;
 
+                Uri nuevaUriImagen = new Uri(this.rutaImagen, UriKind.Absolute);
+                ImageProducto.Source = new BitmapImage(nuevaUriImagen);
+                this.fotoProducto = ConvertImageToBase64(this.rutaImagen);
+
+
+            }
+        }
+
+        private string ConvertImageToBase64(string imagePath)
+        {
+            byte[] imageArray = File.ReadAllBytes(imagePath);
+            return Convert.ToBase64String(imageArray);
         }
     }
 }

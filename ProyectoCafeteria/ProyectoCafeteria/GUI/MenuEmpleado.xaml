@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:ProyectoCafeteria.GUI"
       mc:Ignorable="d"
-      Title="MenuEmpleado" Height="634" Width="1105">
+      Title="MenuEmpleado" Height="634" Width="1050">
 
     <Grid Margin="0,0,10,0" Background="#FF292644">
 
@@ -32,9 +32,10 @@
         <Label Grid.Column="1" Content="I´M HUNGRY" HorizontalAlignment="Left" Margin="266,27,0,0" VerticalAlignment="Top" Height="38" Width="188" FontSize="25" Foreground="White" FontFamily="Arial Black"/>
         <Frame x:Name="contentFrame" Grid.Row="1" Grid.Column="1" Margin="10,10,10,26" Navigated="contentFrame_Navigated" Background="#FFFFF2E9"/>
         <Button x:Name="cerrarSesion" Content="Cerrar Sesión" FontSize="14" Background="#FFA9404A" Foreground="#FFF9F9F9" Click="cerrarSesionButton_Click" FontFamily="Arial Black" BorderBrush="{x:Null}" Margin="32,488,32,52" Grid.Row="1"/>
-        <StackPanel Orientation="Vertical" Margin="627,23,96,12" Grid.Column="1" >
-            <Button x:Name="consultarPerfil" Content="Perfil " FontSize="14" Background="#FF282735" Foreground="#FFF9F9F9" Click="ConsultarPerfilButton_Click" FontFamily="Arial Black" BorderBrush="{x:Null}" Height="42" Width="154"/>
+        <StackPanel Orientation="Vertical" Margin="673,23,66,12" Grid.Column="1" >
+            <Button x:Name="consultarPerfil" Content="Perfil " FontSize="14" Background="#FF282735" Foreground="#FFF9F9F9" Click="ConsultarPerfilButton_Click" FontFamily="Arial Black" BorderBrush="{x:Null}" Height="33" Width="104"/>
         </StackPanel>
+        <TextBox x:Name="perfilLb" Grid.Column="1" HorizontalAlignment="Left" Margin="540,27,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="128" Background="{x:Null}" FontFamily="Arial Black" FontSize="14" Foreground="White" BorderBrush="{x:Null}" Height="25"/>
     </Grid>
 
 </Page>

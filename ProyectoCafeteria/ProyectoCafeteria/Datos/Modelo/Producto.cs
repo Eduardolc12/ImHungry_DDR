@@ -12,8 +12,8 @@ namespace ProyectoCafeteria.Datos.Modelo
         public string nombre { get; set; }
         public string descripcion { get; set; }
         public int cantidadDisponible { get; set; }
-        public TimeSpan horaVentaInicial { get; set; }
-        public TimeSpan horaVentaFinal { get; set; }
+        public string horaVentaInicial { get; set; }
+        public string horaVentaFinal { get; set; }
         public string puntoEncuentro { get; set; }
         public double precio { get; set; }
         public string estado { get; set; }

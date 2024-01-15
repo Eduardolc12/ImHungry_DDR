@@ -1,4 +1,5 @@
-﻿using ProyectoCafeteria.Datos.Modelo;
+﻿using Google.Protobuf.WellKnownTypes;
+using ProyectoCafeteria.Datos.Modelo;
 using ProyectoCafeteria.Logica.Servicios;
 using System;
 using System.Collections.Generic;
@@ -6,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Web.UI.WebControls;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,6 +18,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace ProyectoCafeteria.GUI
 {
     /// <summary>
@@ -23,8 +26,8 @@ namespace ProyectoCafeteria.GUI
     /// </summary>
     public partial class GUI_CU03_IniciarSesion : Page
     {
-        Estudiante empleadoLogueado;
-        Estudiante estudianteLogueado;
+        Estudiante usuarioLogueado;
+      
         public GUI_CU03_IniciarSesion()
         {
             InitializeComponent();
@@ -36,39 +39,39 @@ namespace ProyectoCafeteria.GUI
             {
                 if (ClaveTrabajadorTextBox.Text.StartsWith("zS"))
                 {
-                    empleadoLogueado = await ServicioEstudiante.IniciarSesion(ClaveTrabajadorTextBox.Text, ContrasenaPasswordBox.Password);
-                   
-                 
-                    if (empleadoLogueado != null)
+                    usuarioLogueado = await ServicioEstudiante.IniciarSesion(ClaveTrabajadorTextBox.Text, ContrasenaPasswordBox.Password);
+
+
+                    if (usuarioLogueado.matricula != null && usuarioLogueado.tipoVendedor == "si" && usuarioLogueado.tipoComprador == "no")
 
                     {
-                        MenuEmpleado guiMenuEmpleado = new MenuEmpleado(empleadoLogueado); 
+                        MenuEmpleado guiMenuEmpleado = new MenuEmpleado(usuarioLogueado);
                         Application.Current.MainWindow.Content = guiMenuEmpleado;
 
-                     
-                    }
-                    else
-                    {
-                        MessageBox.Show("Usuario no encontrado o credenciales incorrecatas, intente de nuevo con otras credenciales");
-                    }
-                }
-                else if (ClaveTrabajadorTextBox.Text.StartsWith("zS"))
-                {
-                    estudianteLogueado = await ServicioEstudiante.IniciarSesion(ClaveTrabajadorTextBox.Text, ContrasenaPasswordBox.Password);
-                    Estudiante estudiante = empleadoLogueado;
-                    if (estudianteLogueado != null)
-                    {
-                        MenuCliente guiMenuCliente= new MenuCliente(estudianteLogueado);
-                        Application.Current.MainWindow.Content = guiMenuCliente;
-                         }
-                    else
-                    {
-                        MessageBox.Show("Usuario no encontrado o credenciales incorrecatas, intente de nuevo con otras credenciales");
 
                     }
+                    else if (usuarioLogueado != null && usuarioLogueado.tipoVendedor == "no" && usuarioLogueado.tipoComprador == "si")
+                    {
+
+                        MenuCliente guiMenuCliente = new MenuCliente(usuarioLogueado);
+                        Application.Current.MainWindow.Content = guiMenuCliente;
+                    }
+                    else if (usuarioLogueado != null && usuarioLogueado.tipoVendedor == "si" && usuarioLogueado.tipoComprador == "si")
+                    {
+                        ventanaEmergente guiInicio = new ventanaEmergente(usuarioLogueado);
+                        guiInicio.Owner = Application.Current.MainWindow;
+                        guiInicio.ShowDialog();
+                    }
+                    else
+                    { 
+
+                        MessageBox.Show("Usuario no encontrado o credenciales incorrecatas, intente de nuevo con otras credenciales");
+                    }
+
                 }
                 else
                 {
+                    MessageBox.Show("Usuario no encontrado o credenciales incorrecatas, intente de nuevo con otras credenciales");
 
                 }
             }

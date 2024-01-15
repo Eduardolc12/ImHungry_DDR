@@ -1,4 +1,5 @@
 ﻿ using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using ProyectoCafeteria.Datos.Modelo;
 using ProyectoCafeteria.Utilidades;
 using System;
@@ -42,6 +43,7 @@ namespace ProyectoCafeteria.Logica.Servicios
                 string SolicitudUri = URL_PRODUCTO_BASE + producto.id_producto;
                 HttpClient clienteHttp = new HttpClient();
                 string jsonString = JsonConvert.SerializeObject(producto);
+                Console.WriteLine($"Respuesta no exitos" + jsonString);
                 StringContent contenJson = new StringContent(jsonString, Encoding.UTF8, "application/json");
                 HttpResponseMessage mensajeRespuestaHttp = await clienteHttp.PutAsync(SolicitudUri, contenJson);
                 mensaje = RespuestaServidor.TraducirCodigo((int)mensajeRespuestaHttp.StatusCode);
@@ -61,7 +63,7 @@ namespace ProyectoCafeteria.Logica.Servicios
             string mensaje;
             try
             {
-                string SolicitudUri = URL_PRODUCTO_BASE + producto.id_producto;
+                string SolicitudUri = URL_PRODUCTO_BASE +producto.id_producto;
                 HttpClient clienteHttp = new HttpClient();
                 HttpResponseMessage mensajeRespuestaHttp = await clienteHttp.DeleteAsync(SolicitudUri);
                 mensaje = RespuestaServidor.TraducirCodigo((int)mensajeRespuestaHttp.StatusCode);
@@ -101,5 +103,41 @@ namespace ProyectoCafeteria.Logica.Servicios
             }
             return listaProductosAPI;
         }
+
+        public static async Task<Producto> ConsultarProductoPorNombre(string nombre)
+        {
+          
+            try
+            {
+                string SolicitudUri = URL_PRODUCTO_BASE+nombre;
+                HttpClient clienteHttp = new HttpClient();
+                HttpResponseMessage mensajeRespuestaHttp = await clienteHttp.GetAsync(SolicitudUri);
+                if (mensajeRespuestaHttp.IsSuccessStatusCode)
+                {
+                    var jsonString = await mensajeRespuestaHttp.Content.ReadAsStringAsync();
+                    JObject jsonObject = JObject.Parse(jsonString);
+                    JObject estudianteObject = jsonObject["producto"].Value<JObject>();
+
+                
+                    var nuevoJsonString = estudianteObject.ToString();
+                    Producto producto = new Producto();
+                    producto = JsonConvert.DeserializeObject<Producto>(nuevoJsonString);
+
+                    return producto;
+                }
+                else
+                {
+                    Console.WriteLine($"Respuesta no exitosa: {mensajeRespuestaHttp.StatusCode}");
+                    return null;
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"Error general: {e.Message}");
+                return null;
+            }
+         
+        }
+
     }
 }

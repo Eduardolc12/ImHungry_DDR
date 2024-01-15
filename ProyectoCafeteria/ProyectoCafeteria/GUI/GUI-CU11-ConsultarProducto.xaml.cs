@@ -23,12 +23,12 @@ namespace ProyectoCafeteria.GUI
     /// </summary>
     public partial class GUI_CU11_ConsultarProducto : Page
     {
-        Estudiante empleadoLogueado;
+        Estudiante usuarioLogueado;
         List<Producto> listaProductosEncontrados;
         Producto productoSeleccionado;
-        public GUI_CU11_ConsultarProducto(Estudiante empleadoLogueado)
+        public GUI_CU11_ConsultarProducto(Estudiante usuarioLogueado)
         {
-            this.empleadoLogueado = empleadoLogueado;
+            this.usuarioLogueado = usuarioLogueado;
             InitializeComponent();
         }
 
@@ -76,8 +76,12 @@ namespace ProyectoCafeteria.GUI
             ConsultarProductos();
         }
 
-        
-                 
+        private void ProductosDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            this.productoSeleccionado = this.ProductosDataGrid.SelectedItem as Producto;
+            
+        }
+
         private async void ConsultarProductos()
         {
             
@@ -89,6 +93,32 @@ namespace ProyectoCafeteria.GUI
                 
                     ProductosDataGrid.ItemsSource = listaProductosEncontrados;
                
+            }
+        }
+
+        private async void BuscarButton_Click(object sender, RoutedEventArgs e)
+        {
+
+            Producto producto = new Producto();
+
+            producto.nombre = BusquedaTextBox.Text.Trim();
+
+            if (producto.nombre!=null) {
+
+                Producto producto1 = await ServicioProducto.ConsultarProductoPorNombre(producto.nombre);
+                if(producto1!=null){
+                    List<Producto> productoBusqueda = new List<Producto>();
+
+                    productoBusqueda.Add(producto1);
+                    ProductosDataGrid.ItemsSource = productoBusqueda;
+                }else
+                {
+                    MessageBox.Show("No se encontro un producto con el nombre");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Debe ingresar un nombre para la busqueda");
             }
         }
     }

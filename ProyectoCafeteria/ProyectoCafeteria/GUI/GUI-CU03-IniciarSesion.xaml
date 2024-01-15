@@ -41,11 +41,7 @@
         </StackPanel>
         <StackPanel Orientation="Vertical" Height="168" VerticalAlignment="Top" Margin="0,10,0,0" >
             <Label Content="I´M HUNGRY " FontSize="26" FontFamily="Segoe UI Black" Width="716" HorizontalContentAlignment="Center"/>
-            <Image Height="74" Width="77" Source="/GUI/64572.png">
-                <Image.OpacityMask>
-                    <ImageBrush ImageSource="/GUI/64572.png"/>
-                </Image.OpacityMask>
-            </Image>
+            <Image Height="74" Width="77" Source="/GUI/64572.png"/>
         </StackPanel>
 
 

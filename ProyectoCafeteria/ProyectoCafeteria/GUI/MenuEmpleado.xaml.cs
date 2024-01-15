@@ -21,21 +21,24 @@ namespace ProyectoCafeteria.GUI
     /// </summary>
     public partial class MenuEmpleado : Page
     {
-        Estudiante empleadoLogueado;
+        Estudiante usuarioLogueado;
         public BitmapImage ImagenMenu { get; set; }
-
-
-        public MenuEmpleado(Estudiante empleadoLogueado)
-        {
-            InitializeComponent();
-            this.empleadoLogueado = empleadoLogueado;
-        }
 
        
 
-        private void ConsultarProductoButton_Click(object sender, RoutedEventArgs e)
+        public MenuEmpleado(Estudiante usuarioLogueado)
         {
-            GUI_CU11_ConsultarProducto guiCU11ConsultarProducto = new GUI_CU11_ConsultarProducto(empleadoLogueado);
+           
+            InitializeComponent();
+            this.usuarioLogueado = usuarioLogueado;
+            perfilLb.Text = usuarioLogueado.nombre+" "+usuarioLogueado.apellidoPaterno;
+        }
+
+        
+
+       private void ConsultarProductoButton_Click(object sender, RoutedEventArgs e)
+        {
+            GUI_CU11_ConsultarProducto guiCU11ConsultarProducto = new GUI_CU11_ConsultarProducto(usuarioLogueado);
             contentFrame.Navigate(guiCU11ConsultarProducto);
           
         }
@@ -44,7 +47,7 @@ namespace ProyectoCafeteria.GUI
 
         {
 
-            GUI_CU01_RegistrarProducto registrarProducto = new GUI_CU01_RegistrarProducto();
+            GUI_CU01_RegistrarProducto registrarProducto = new GUI_CU01_RegistrarProducto(usuarioLogueado);
             contentFrame.Navigate(registrarProducto);
         }
 
@@ -76,11 +79,14 @@ namespace ProyectoCafeteria.GUI
         {
 
 
-            GUI_CU_ConsultarPerfil consultarPerfil = new GUI_CU_ConsultarPerfil(empleadoLogueado);
+            GUI_CU_ConsultarPerfil consultarPerfil = new GUI_CU_ConsultarPerfil(usuarioLogueado);
             consultarPerfil.Owner = Window.GetWindow(this);
             consultarPerfil.MenuEmpleado = this;  // Agrega esta línea para pasar la referencia
             consultarPerfil.ShowDialog();
         }
+
+
     }
     }
 
+ 
