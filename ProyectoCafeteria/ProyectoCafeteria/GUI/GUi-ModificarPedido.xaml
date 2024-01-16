@@ -1,0 +1,40 @@
+﻿<Window x:Class="ProyectoCafeteria.GUI.GUi_ModificarPedido"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProyectoCafeteria.GUI"
+        mc:Ignorable="d"
+        Title="GUi_ModificarPedido" Height="480" Width="800">
+    <Grid Background="#FF8B44BF">
+        <StackPanel Orientation="Vertical" Margin="0,0,0,10">
+            <Label Content="I´M HUNGRY" Width="786" Height="52" FontSize="25" FontFamily="Arial Black" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#FF5957A4" Foreground="White"/>
+            <StackPanel Orientation="Horizontal" Height="40"  Margin="50,10,50,0" Width="539" >
+                <Label Content="preferencias: " Foreground="White" Height="30" Width="132" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
+                <TextBox x:Name="preferenciasTb" FontSize="16" Height="30" Width="406"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="40"  Margin="50,10,50,0" Width="507" >
+                <Label Content="fecha  :" Foreground="White" Height="30" Width="118" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
+                <TextBox x:Name="fechaTb" FontSize="16" Height="30" Width="261"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="40" Width="507" >
+                <Label Content="precio total:  " Foreground="White" Height="30" Width="118" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
+                <TextBox x:Name="precioTotalTb" FontSize="16" Height="30" Width="261"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="40"  Margin="161,10,50,0" Width="619" >
+                <Label Content="estado : " Foreground="White" Height="30" Width="101" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
+                <TextBox x:Name="estadoTb" FontSize="16" Height="30" Width="265"/>
+                <ComboBox x:Name="comboEstado" Width="208" Height="28" Margin="7,0,0,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="40"  Margin="50,10,50,0" Width="506" >
+                <Label Content="matricula : " Foreground="White" Height="30" Width="115" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
+                <TextBox x:Name="matriculaTb" FontSize="16" Height="30" Width="266"/>
+            </StackPanel>
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal" Height="40"  Margin="0,78,0,0" >
+                <Button x:Name="GuardarButton" Content="Guardar" Margin="0,0,0,0" FontSize="18" Height="40" Width="185" Click="GuardarButton_Click"/>
+                <Button x:Name="CancelarButton" Content="Cancelar" Margin="20,0,0,0" FontSize="18" Height="40" Width="164" Click="CancelarButton_Click"/>
+            </StackPanel>
+        </StackPanel>
+        <Image Margin="8,123,664,202"/>
+    </Grid>
+</Window>

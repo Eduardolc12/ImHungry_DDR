@@ -6,29 +6,28 @@
       xmlns:language="clr-namespace:ProyectoCafeteria.Properties.Langs"
       xmlns:local="clr-namespace:ProyectoCafeteria.GUI"
       mc:Ignorable="d"
-      Title="GUI_CU11_ConsultarProducto" Height="650" Width="1114">
+      Title="GUI_CU11_ConsultarProducto" Height="537" Width="976">
 
     <Grid Margin="0,0,10,10">
-        <StackPanel Orientation="Vertical" Margin="10,10,10,10">
+        <StackPanel Orientation="Vertical" Margin="10,10,0,10">
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal" Height="50"  Margin="30,30,30,0" />
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Left" Orientation="Horizontal" Height="50"  Margin="30,0,0,0" >
                 <Label Content="Ingrese el pedido " Foreground="#0f7dd6" Height="40" Width="174" FontSize="17" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
-                <TextBox Name="BusquedaTextBox" FontSize="20" Margin="0,0,0,0" VerticalAlignment="Center" Width="198" Height="40"/>
-                <Button x:Name="ConsultarButton" Content="Consultar" Margin="10,0,0,0" FontSize="20" Height="40" Width="300" Click="ConsultarButton_Click"/>
+                <TextBox Name="BusquedaTextBox" FontSize="20" Margin="0,0,0,0" VerticalAlignment="Center" Width="198" Height="25"/>
+                <Button x:Name="ConsultarButton" Content="Consultar" Margin="10,0,0,0" FontSize="20" Height="30" Width="247" Click="ConsultarButton_Click"/>
             </StackPanel>
             <Label Content="LISTA DE PEDIDOS" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,20"></Label>
-            <DataGrid x:Name = "PedidoDataGrid" AlternationCount = "2" AutoGenerateColumns = "False" Height="150" Width="880" AllowDrop="False" CanUserAddRows="False" IsReadOnly="True" SelectionMode="Single" ItemsSource="{Binding collectionProductosGUI}" SelectedItem="{Binding productoSeleccionado}" SelectionChanged="PedidoDataGrid_SelectionChanged">
+            <DataGrid x:Name = "PedidoDataGrid" AlternationCount = "2" AutoGenerateColumns = "False" Height="150" Width="880" AllowDrop="False" CanUserAddRows="False" IsReadOnly="True" SelectionMode="Single" ItemsSource="{Binding collectionProductosGUI}" SelectedItem="{Binding productoSeleccionado}" SelectionChanged="PedidoDataGrid_SelectionChanged" HorizontalAlignment="Left" Margin="14,0,0,0">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header = "Preferencias" Binding = "{Binding preferencias}" Width="*"/>
                     <DataGridTextColumn Header = "Fecha" Binding = "{Binding fechaPedido}" Width="*"/>
                     <DataGridTextColumn Header = "Precio Total" Binding = "{Binding precioTotal}"  Width = "*"/>
                     <DataGridTextColumn Header = "Estado " Binding = "{Binding estado}"  Width = "*"/>
                     <DataGridTextColumn Header = "Matricula" Binding = "{Binding matricula}" Width = "*"/>
-                  
+
                 </DataGrid.Columns>
             </DataGrid>
-            <Image x:Name="ProductoImage" Height="144" Width="700"></Image>
-            <StackPanel Orientation="Horizontal" Height="50" Width="1040" >
+            <StackPanel Orientation="Horizontal" Height="50" Width="598" Margin="0,104,0,0" >
                 <Button x:Name="ModificarButton" Content="Modificar " Margin="0,0,60,0" FontSize="20" Height="40" Width="240" Click="ModificarButton_Click" />
                 <Button x:Name="CerrarButton" Content="Cerrar" Margin="0,0,0,0" FontSize="20" Height="40" Width="240" />
             </StackPanel>

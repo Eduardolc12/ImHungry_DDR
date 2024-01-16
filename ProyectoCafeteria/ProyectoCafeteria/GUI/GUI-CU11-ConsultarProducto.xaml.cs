@@ -85,7 +85,7 @@ namespace ProyectoCafeteria.GUI
         private async void ConsultarProductos()
         {
             
-            listaProductosEncontrados = await ServicioProducto.ConsultarProductos();
+        listaProductosEncontrados = await ServicioVendedor.ConsultarProductoByM(usuarioLogueado.matricula  );
 
             if (listaProductosEncontrados == null) MessageBox.Show("Error al conectarse con el servidor");
             else
@@ -105,7 +105,7 @@ namespace ProyectoCafeteria.GUI
 
             if (producto.nombre!=null) {
 
-                Producto producto1 = await ServicioProducto.ConsultarProductoPorNombre(producto.nombre);
+                Producto producto1 = await ServicioProducto.ConsultarProductoVendedorPorNombre(producto.nombre,usuarioLogueado.matricula);
                 if(producto1!=null){
                     List<Producto> productoBusqueda = new List<Producto>();
 

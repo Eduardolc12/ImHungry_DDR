@@ -102,5 +102,33 @@ namespace ProyectoCafeteria.Logica.Servicios
             }
             return listaPedidoAPI;
         }
+
+        public static async Task<List<Pedido>> ConsultarPedidosVendedor(string matricula)
+        {
+            List<Pedido> listaPedidoAPI = new List<Pedido>();
+            try
+            {
+                Uri SolicitudUri = new Uri(URL_PEDIDO_BASE +matricula);
+                HttpClient clienteHttp = new HttpClient();
+                HttpResponseMessage mensajeRespuestaHttp = await clienteHttp.GetAsync(SolicitudUri);
+                if (mensajeRespuestaHttp.IsSuccessStatusCode)
+                {
+                    var jsonString = await mensajeRespuestaHttp.Content.ReadAsStringAsync();
+                    listaPedidoAPI = JsonConvert.DeserializeObject<List<Pedido>>(jsonString);
+                }
+                else
+                {
+                    listaPedidoAPI = new List<Pedido>();
+                    Pedido pedido = new Pedido();
+                    listaPedidoAPI.Add(pedido);
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                listaPedidoAPI = null;
+            }
+            return listaPedidoAPI;
+        }
     }
 }

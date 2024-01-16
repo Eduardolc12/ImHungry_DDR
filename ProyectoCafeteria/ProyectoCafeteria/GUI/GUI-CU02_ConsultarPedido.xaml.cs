@@ -21,12 +21,12 @@ namespace ProyectoCafeteria.GUI
    
     public partial class GUI_CU02_ConsultarPedido : Page
     {
-        Estudiante empleadoLogueado;
+        Estudiante usuarioLogueado;
         List<Pedido> listaPedidosEncontrados;
         Pedido pedido;
         public GUI_CU02_ConsultarPedido()
         {
-            this.empleadoLogueado = empleadoLogueado;
+            this.usuarioLogueado = usuarioLogueado;
             InitializeComponent();
         }
 
@@ -34,11 +34,11 @@ namespace ProyectoCafeteria.GUI
         {
             if(pedido != null)
             {
-                /*
-                GUI_CU02_ModificarProducto guiCU02ModificarProducto = new GUI_CU02_ModificarProducto(pedido);
-                guiCU02ModificarProducto.Owner = Application.Current.MainWindow;
-                guiCU02ModificarProducto.ShowDialog();
-                */
+
+                GUi_ModificarPedido modificarPedido = new GUi_ModificarPedido(pedido);
+                modificarPedido.Owner = Application.Current.MainWindow;
+                modificarPedido.ShowDialog();
+               
             }
             else
             {
@@ -60,41 +60,12 @@ namespace ProyectoCafeteria.GUI
             PedidoDataGrid.ItemsSource = null;
             ConsultarPedidos();
         }
-
-        /*
-        private void ProductosDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            this.productoSeleccionado = this.ProductosDataGrid.SelectedItem as Producto;
-            if(this.productoSeleccionado != null)
-            {
-                try
-                {
-                    BitmapImage bitmap = new BitmapImage();
-                    bitmap.BeginInit();
-               
-                    bitmap.EndInit();
-                    this.ProductoImage.Source = null;
-                    this.ProductoImage.Source = bitmap;
-                }catch(Exception exception)
-                {
-                    Console.WriteLine(exception.Message);
-                    this.ProductoImage.Source = null;
-                }
-            }
-            else
-            {
-                this.ProductoImage.Source = null;
-            }
-        }
-        */
+    
         private async void ConsultarPedidos()
         {
            
-            string consultaNombre;
-            string consultaCategoria;
-            string consultaExistencia;
-
-            listaPedidosEncontrados = await ServicioPedido.ConsultarPedidos();
+             
+            listaPedidosEncontrados = await ServicioPedido.ConsultarPedidosVendedor(usuarioLogueado.matricula);
 
             if (listaPedidosEncontrados == null) MessageBox.Show("Error al conectarse con el servidor");
             else
@@ -109,7 +80,7 @@ namespace ProyectoCafeteria.GUI
 
         private void PedidoDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            this.pedido = this.PedidoDataGrid.SelectedItem as Pedido;
         }
     }
 }

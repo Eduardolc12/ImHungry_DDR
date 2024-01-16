@@ -163,6 +163,9 @@
     <Compile Include="GUI\GUI-CU03-ConsultarEstadisticas.xaml.cs">
       <DependentUpon>GUI-CU03-ConsultarEstadisticas.xaml</DependentUpon>
     </Compile>
+    <Compile Include="GUI\GUi-ModificarPedido.xaml.cs">
+      <DependentUpon>GUi-ModificarPedido.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GUI\ventanaEmergente.xaml.cs">
       <DependentUpon>ventanaEmergente.xaml</DependentUpon>
     </Compile>
@@ -216,6 +219,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="GUI\GUi-ModificarPedido.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="GUI\MenuCliente.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -236,7 +243,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Datos\ConexionBD.cs" />
     <Compile Include="GUI\GUI-CU03-IniciarSesion.xaml.cs">
       <DependentUpon>GUI-CU03-IniciarSesion.xaml</DependentUpon>
     </Compile>

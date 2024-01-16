@@ -39,7 +39,7 @@
                 </LinearGradientBrush>
             </Image.OpacityMask>
         </Image>
-        <Label Content="I´M HUNGRY" HorizontalAlignment="Left" Margin="1,-76,0,0" VerticalAlignment="Top" Width="886" Height="52" FontSize="25" FontFamily="Arial Black" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#FF5957A4" Foreground="White"/>
+        <Label Content="I´M HUNGRY" HorizontalAlignment="Left" Margin="1,-76,0,0" VerticalAlignment="Top" Width="855" Height="52" FontSize="25" FontFamily="Arial Black" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#FF5957A4" Foreground="White"/>
         <StackPanel Orientation="Horizontal" Margin="398,338,104,20" >
             <Button x:Name="GuardarButton1" Content="Guardar" FontSize="16" Height="26" Width="170" Click="GuardarButton_Click"/>
             <Button x:Name="CancelarButton1" Content="Cancelar" Margin="25,0,0,0" FontSize="16" Height="28" Width="168" Click="CancelarButton_Click"/>

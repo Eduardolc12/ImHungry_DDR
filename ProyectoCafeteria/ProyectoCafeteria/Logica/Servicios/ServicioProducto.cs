@@ -104,13 +104,16 @@ namespace ProyectoCafeteria.Logica.Servicios
             return listaProductosAPI;
         }
 
-        public static async Task<Producto> ConsultarProductoPorNombre(string nombre)
+        public static async Task<Producto> ConsultarProductoVendedorPorNombre(string nombre,string matricula)
         {
           
             try
             {
-                string SolicitudUri = URL_PRODUCTO_BASE+nombre;
+
+
                 HttpClient clienteHttp = new HttpClient();
+                string SolicitudUri = URL_PRODUCTO_BASE+nombre+","+matricula;
+               
                 HttpResponseMessage mensajeRespuestaHttp = await clienteHttp.GetAsync(SolicitudUri);
                 if (mensajeRespuestaHttp.IsSuccessStatusCode)
                 {
@@ -137,6 +140,44 @@ namespace ProyectoCafeteria.Logica.Servicios
                 return null;
             }
          
+        }
+
+        public static async Task<Producto> ConsultarProductoPorNombre(string nombre)
+        {
+
+            try
+            {
+
+
+                HttpClient clienteHttp = new HttpClient();
+                string SolicitudUri = URL_PRODUCTO_BASE + nombre;
+
+                HttpResponseMessage mensajeRespuestaHttp = await clienteHttp.GetAsync(SolicitudUri);
+                if (mensajeRespuestaHttp.IsSuccessStatusCode)
+                {
+                    var jsonString = await mensajeRespuestaHttp.Content.ReadAsStringAsync();
+                    JObject jsonObject = JObject.Parse(jsonString);
+                    JObject estudianteObject = jsonObject["producto"].Value<JObject>();
+
+
+                    var nuevoJsonString = estudianteObject.ToString();
+                    Producto producto = new Producto();
+                    producto = JsonConvert.DeserializeObject<Producto>(nuevoJsonString);
+
+                    return producto;
+                }
+                else
+                {
+                    Console.WriteLine($"Respuesta no exitosa: {mensajeRespuestaHttp.StatusCode}");
+                    return null;
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"Error general: {e.Message}");
+                return null;
+            }
+
         }
 
     }
