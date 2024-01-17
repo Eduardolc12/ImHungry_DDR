@@ -41,7 +41,7 @@ namespace ProyectoCafeteria.GUI
                 {
                     usuarioLogueado = await ServicioEstudiante.IniciarSesion(ClaveTrabajadorTextBox.Text, ContrasenaPasswordBox.Password);
 
-
+                  
                     if (usuarioLogueado.matricula != null && usuarioLogueado.tipoVendedor == "si" && usuarioLogueado.tipoComprador == "no")
 
                     {

@@ -11,30 +11,35 @@
             <Label Content="I´M HUNGRY" Width="786" Height="52" FontSize="25" FontFamily="Arial Black" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#FF5957A4" Foreground="White"/>
             <StackPanel Orientation="Horizontal" Height="40"  Margin="50,10,50,0" Width="539" >
                 <Label Content="preferencias: " Foreground="White" Height="30" Width="132" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
-                <TextBox x:Name="preferenciasTb" FontSize="16" Height="30" Width="406"/>
+                <TextBox x:Name="preferenciasTb" FontSize="16" Height="30" Width="406" IsReadOnly="True" IsUndoEnabled="False"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Height="40"  Margin="50,10,50,0" Width="507" >
                 <Label Content="fecha  :" Foreground="White" Height="30" Width="118" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
-                <TextBox x:Name="fechaTb" FontSize="16" Height="30" Width="261"/>
+                <TextBox x:Name="fechaTb" FontSize="16" Height="30" Width="261" IsUndoEnabled="False" IsReadOnly="True"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Height="40" Width="507" >
                 <Label Content="precio total:  " Foreground="White" Height="30" Width="118" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
-                <TextBox x:Name="precioTotalTb" FontSize="16" Height="30" Width="261"/>
+                <TextBox x:Name="precioTotalTb" FontSize="16" Height="30" Width="261" IsUndoEnabled="False" IsReadOnly="True"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Height="40"  Margin="161,10,50,0" Width="619" >
                 <Label Content="estado : " Foreground="White" Height="30" Width="101" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
-                <TextBox x:Name="estadoTb" FontSize="16" Height="30" Width="265"/>
-                <ComboBox x:Name="comboEstado" Width="208" Height="28" Margin="7,0,0,0"/>
+                <TextBox x:Name="estadoTb" FontSize="16" Height="30" Width="218" IsUndoEnabled="False" IsReadOnly="True"/>
+                <ComboBox x:Name="comboEstado" Width="208" Height="28" Margin="7,0,0,0" FontSize="16" FontFamily="Arial" Background="#FF8BEDEF" SelectionChanged="seleccionarEstado">
+                    <ComboBoxItem Content="Pendiente" IsSelected="True" FontSize="16" FontFamily="Arial"/>
+                    <ComboBoxItem Content="Consultado" FontSize="16" FontFamily="Arial"/>
+                    <ComboBoxItem Content="Finalizado" FontSize="16" FontFamily="Arial"/>
+
+                </ComboBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Height="40"  Margin="50,10,50,0" Width="506" >
                 <Label Content="matricula : " Foreground="White" Height="30" Width="115" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
-                <TextBox x:Name="matriculaTb" FontSize="16" Height="30" Width="266"/>
+                <TextBox x:Name="matriculaTb" FontSize="16" Height="30" Width="266" IsUndoEnabled="False" IsReadOnly="True"/>
             </StackPanel>
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal" Height="40"  Margin="0,78,0,0" >
                 <Button x:Name="GuardarButton" Content="Guardar" Margin="0,0,0,0" FontSize="18" Height="40" Width="185" Click="GuardarButton_Click"/>
                 <Button x:Name="CancelarButton" Content="Cancelar" Margin="20,0,0,0" FontSize="18" Height="40" Width="164" Click="CancelarButton_Click"/>
             </StackPanel>
         </StackPanel>
-        <Image Margin="8,123,664,202"/>
+        <Image x:Name="fotoImage" Margin="8,123,664,202"/>
     </Grid>
 </Window>

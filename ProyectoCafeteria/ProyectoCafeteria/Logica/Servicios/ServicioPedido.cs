@@ -108,13 +108,18 @@ namespace ProyectoCafeteria.Logica.Servicios
             List<Pedido> listaPedidoAPI = new List<Pedido>();
             try
             {
-                Uri SolicitudUri = new Uri(URL_PEDIDO_BASE +matricula);
+
+                string SolicitudUri = URL_PEDIDO_BASE+matricula;
                 HttpClient clienteHttp = new HttpClient();
                 HttpResponseMessage mensajeRespuestaHttp = await clienteHttp.GetAsync(SolicitudUri);
+               
                 if (mensajeRespuestaHttp.IsSuccessStatusCode)
                 {
                     var jsonString = await mensajeRespuestaHttp.Content.ReadAsStringAsync();
+                  
                     listaPedidoAPI = JsonConvert.DeserializeObject<List<Pedido>>(jsonString);
+                
+
                 }
                 else
                 {

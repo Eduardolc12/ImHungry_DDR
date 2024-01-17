@@ -49,7 +49,7 @@ namespace ProyectoCafeteria.GUI
 
         private void consultarPedidoButton_Click(object sender, RoutedEventArgs e)
         {
-            GUI_CU02_ConsultarPedido guiCU11ConsultarPedido = new GUI_CU02_ConsultarPedido();
+            GUI_CU02_ConsultarPedido guiCU11ConsultarPedido = new GUI_CU02_ConsultarPedido(usuarioLogueado);
             contentFrame.Navigate(guiCU11ConsultarPedido);
         }
 

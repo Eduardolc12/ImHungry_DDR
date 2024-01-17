@@ -6,6 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI.WebControls;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -39,24 +40,72 @@ namespace ProyectoCafeteria.GUI
 
 
             preferenciasTb.Text = pedido.preferencias;
-            fechaTb.Text = pedido.fechaPedido.ToString();
+            fechaTb.Text = pedido.fechaPedido.ToString("yyyy-MM-dd");
             precioTotalTb.Text = pedido.precioTotal.ToString();
             estadoTb.Text = pedido.estado;
             matriculaTb.Text = pedido.matricula;
-         
-            Estudiante estudiante = await ServicioEstudiante.
 
-            if (!string.IsNullOrEmpty(productoAModificar.foto))
+            Estudiante estudiante = await ServicioEstudiante.ConsultarEstudiante(pedido.matricula);
+
+            if (!string.IsNullOrEmpty(estudiante.fotoPerfil))
             {
-                byte[] imageBytes = Convert.FromBase64String(productoAModificar.foto);
+                byte[] imageBytes = Convert.FromBase64String(estudiante.fotoPerfil);
                 BitmapImage bitmapImage = new BitmapImage();
                 bitmapImage.BeginInit();
                 bitmapImage.StreamSource = new MemoryStream(imageBytes);
                 bitmapImage.EndInit();
-                ImageProducto.Source = bitmapImage;
+                fotoImage.Source = bitmapImage;
             }
 
 
+
+        }
+
+        private async void GuardarButton_Click(object sender, RoutedEventArgs e)
+        {
+            ComboBoxItem estadoSeleccionada = comboEstado.SelectedItem as ComboBoxItem;
+            string textoSeleccionado = estadoSeleccionada.Content.ToString();
+            if (textoSeleccionado!= "Pendiente")
+            {
+                
+
+                pedido.estado = estadoTb.Text.Trim();
+                pedido.fechaPedido = DateTime.Parse(fechaTb.Text.Trim());
+             
+
+                MessageBox.Show(await ServicioPedido.ActualizarPedido(pedido));
+                this.Close();
+            }
+        }
+
+        private void CancelarButton_Click(object sender, RoutedEventArgs e)
+        {
+
+            const string mensaje = "No se guardaran los cambios";
+         
+            MessageBoxButton buttons = MessageBoxButton.YesNo;
+            MessageBoxResult result = MessageBox.Show("¿Esta seguro que desea cancelar?",mensaje, buttons);
+
+            // If the no button was pressed ...
+            if (result == MessageBoxResult.Yes)
+            {
+              this.Close();
+            }
+           
+        }
+
+        private void seleccionarEstado(object sender, SelectionChangedEventArgs e)
+        {
+            ComboBoxItem estadoSeleccionada = comboEstado.SelectedItem as ComboBoxItem;
+
+            if (estadoSeleccionada != null)
+            {
+                
+                string textoSeleccionado = estadoSeleccionada.Content.ToString();
+
+               
+                estadoTb.Text = textoSeleccionado;
+            }
 
         }
     }

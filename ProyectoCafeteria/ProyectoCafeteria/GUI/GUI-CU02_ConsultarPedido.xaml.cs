@@ -24,7 +24,7 @@ namespace ProyectoCafeteria.GUI
         Estudiante usuarioLogueado;
         List<Pedido> listaPedidosEncontrados;
         Pedido pedido;
-        public GUI_CU02_ConsultarPedido()
+        public GUI_CU02_ConsultarPedido(Estudiante usuarioLogueado)
         {
             this.usuarioLogueado = usuarioLogueado;
             InitializeComponent();
@@ -63,9 +63,8 @@ namespace ProyectoCafeteria.GUI
     
         private async void ConsultarPedidos()
         {
-           
-             
             listaPedidosEncontrados = await ServicioPedido.ConsultarPedidosVendedor(usuarioLogueado.matricula);
+
 
             if (listaPedidosEncontrados == null) MessageBox.Show("Error al conectarse con el servidor");
             else

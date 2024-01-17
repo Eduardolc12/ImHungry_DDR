@@ -45,7 +45,7 @@ namespace ProyectoCafeteria.Logica.Servicios
 
                     Estudiante estudiante = new Estudiante();
                     estudiante = JsonConvert.DeserializeObject<Estudiante>(nuevoJsonString);
-                    Console.WriteLine($"Respuesta no exitos" + jsonstring);
+                   
 
                     return estudiante; // Devolver el estudiante correctamente deserializado
                 }
@@ -123,5 +123,48 @@ namespace ProyectoCafeteria.Logica.Servicios
             }
             return mensaje;
         }
+
+        public static async Task<Estudiante> ConsultarEstudiante(string matricula)
+        {
+            Estudiante estudiante = new Estudiante();
+            try
+            {
+                string SolicitudUri = URL_ESTUDIANTE_BASE +matricula;
+                HttpClient clienteHttp = new HttpClient();
+                HttpResponseMessage mensajeRespuestaHttp = await clienteHttp.GetAsync(SolicitudUri);
+
+                if (mensajeRespuestaHttp.IsSuccessStatusCode)
+                {
+                    var jsonstring = await mensajeRespuestaHttp.Content.ReadAsStringAsync();
+                    JObject jsonObject = JObject.Parse(jsonstring);
+                    JObject estudianteObject = jsonObject["estudiante"].Value<JObject>();
+
+                    // Convertir el objeto "estudiante" a una cadena JSON
+                    var nuevoJsonString = estudianteObject.ToString();
+
+                    estudiante = JsonConvert.DeserializeObject<Estudiante>(nuevoJsonString);
+
+
+                    return estudiante; // Devolver el estudiante correctamente deserializado
+                }
+                else
+                {
+                    // Manejar el caso de respuesta no exitosa
+                    Console.WriteLine($"Respuesta no exitosa: {mensajeRespuestaHttp.StatusCode}");
+                    return null;
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+             
+            }
+            return null;
+
+          
+        }
+      
+           
+
     }
 }
