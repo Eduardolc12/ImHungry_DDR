@@ -169,6 +169,12 @@
     <Compile Include="GUI\GUI-CU03-ConsultarEstadisticas.xaml.cs">
       <DependentUpon>GUI-CU03-ConsultarEstadisticas.xaml</DependentUpon>
     </Compile>
+    <Compile Include="GUI\GUI-CU05-ConsultarProducto.xaml.cs">
+      <DependentUpon>GUI-CU05-ConsultarProducto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI-CU06-RealizarPedido.xaml.cs">
+      <DependentUpon>GUI-CU06-RealizarPedido.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GUI\GUi-ModificarPedido.xaml.cs">
       <DependentUpon>GUi-ModificarPedido.xaml</DependentUpon>
     </Compile>
@@ -210,6 +216,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="GUI\GUI-CU04-RegistrarCliente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\GUI-CU05-ConsultarProducto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\GUI-CU06-RealizarPedido.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -337,6 +351,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="GUI\sinImagenDefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="GUI\20674622-comida-rápida-de-fondo-sin-fisuras.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="GUI\5fd3979a984b926bcd17b1e67d0f5b9c.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets')" />

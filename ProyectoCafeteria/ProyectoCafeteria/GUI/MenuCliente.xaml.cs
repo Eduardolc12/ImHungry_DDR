@@ -26,7 +26,9 @@ namespace ProyectoCafeteria.GUI
         {
             InitializeComponent();
             this.usuarioLogueado = usuarioLogueado;
+            perfilLb.Text = usuarioLogueado.nombre + " " + usuarioLogueado.apellidoPaterno;
         }
+
 
         private void ConsultarProductoButton_Click(object sender, RoutedEventArgs e)
         {
@@ -39,7 +41,8 @@ namespace ProyectoCafeteria.GUI
 
         {
 
-          
+            GUI_CU01_RegistrarProducto registrarProducto = new GUI_CU01_RegistrarProducto(usuarioLogueado);
+            contentFrame.Navigate(registrarProducto);
         }
 
         private void contentFrame_Navigated(object sender, NavigationEventArgs e)
@@ -71,13 +74,10 @@ namespace ProyectoCafeteria.GUI
 
 
             GUI_CU_ConsultarPerfil consultarPerfil = new GUI_CU_ConsultarPerfil(usuarioLogueado);
-
+            consultarPerfil.Owner = Window.GetWindow(this);
+            consultarPerfil.MenuCliente = this;  // Agrega esta línea para pasar la referencia
+            consultarPerfil.ShowDialog();
         }
 
-        private void perfilLb_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            Estudiante usuarioLogueado = new Estudiante();
-            perfilLb.Text = usuarioLogueado.nombre;
-        }
     }
 }

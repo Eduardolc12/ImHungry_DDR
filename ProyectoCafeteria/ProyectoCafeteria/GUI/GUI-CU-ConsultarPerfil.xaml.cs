@@ -34,6 +34,7 @@ namespace ProyectoCafeteria.GUI
 
         public BitmapImage ImagenPerfilActual { get; private set; }
         public MenuEmpleado MenuEmpleado { get; set; }
+        public MenuCliente MenuCliente { get; set; }    
         public GUI_CU_ConsultarPerfil(Estudiante usuarioLogueado)
         {
             InitializeComponent();

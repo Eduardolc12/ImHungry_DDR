@@ -597,3 +597,7 @@ C:\Users\Steban\IdeaProjects\ImHungry_DDR\ProyectoCafeteria\ProyectoCafeteria\ob
 C:\Users\Steban\IdeaProjects\ImHungry_DDR\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Syncfusion.Licensing.dll
 C:\Users\Steban\IdeaProjects\ImHungry_DDR\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Syncfusion.SfChart.WPF.dll
 C:\Users\Steban\IdeaProjects\ImHungry_DDR\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Syncfusion.SfChart.WPF.xml
+C:\Users\Steban\IdeaProjects\ImHungry_DDR\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU05-ConsultarProducto.g.cs
+C:\Users\Steban\IdeaProjects\ImHungry_DDR\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU05-ConsultarProducto.baml
+C:\Users\Steban\IdeaProjects\ImHungry_DDR\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU06-RealizarPedido.g.cs
+C:\Users\Steban\IdeaProjects\ImHungry_DDR\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU06-RealizarPedido.baml
