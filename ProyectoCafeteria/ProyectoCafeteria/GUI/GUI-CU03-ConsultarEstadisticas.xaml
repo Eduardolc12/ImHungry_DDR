@@ -4,56 +4,13 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:ProyectoCafeteria.GUI"
+       xmlns:chart="clr-namespace:Syncfusion.UI.Xaml.Charts;assembly=Syncfusion.SfChart.WPF"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="GUI_CU03_ConsultarEstadisticas">
 
-    <StackPanel Orientation="Horizontal">
-        <ItemsControl ItemsSource="{Binding GraficoLista}">
-            <ItemsControl.ItemTemplate>
-                <DataTemplate>
-                    <Border
-                    Width="{Binding Duracion}"
-                    Height="50"
-                    HorizontalAlignment="Left"
-                    Background="Red"
-                    BorderBrush="Black"
-                    BorderThickness="1">
-                        <ItemsControl ItemsSource="{Binding SeccionLista}">
-                            <ItemsControl.ItemTemplate>
-                                <DataTemplate>
-                                    <Rectangle
-                                    Width="{Binding Duracion}"
-                                    Height="Auto"
-                                    Margin="1,0">
-                                        <Rectangle.Fill>
-                                            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
-                                                <GradientStop Color="#565656" />
-                                                <GradientStop Offset="0.862" Color="{Binding Color}" />
-                                            </LinearGradientBrush>
-                                        </Rectangle.Fill>
-                                    </Rectangle>
-                                </DataTemplate>
-                            </ItemsControl.ItemTemplate>
-                            <ItemsControl.ItemsPanel>
-                                <ItemsPanelTemplate>
-                                    <StackPanel Orientation="Horizontal" />
-                                </ItemsPanelTemplate>
-                            </ItemsControl.ItemsPanel>
-                        </ItemsControl>
-                    </Border>
-                </DataTemplate>
-            </ItemsControl.ItemTemplate>
-            <ItemsControl.ItemsPanel>
-                <ItemsPanelTemplate>
-                    <StackPanel Orientation="Vertical" />
-                </ItemsPanelTemplate>
-            </ItemsControl.ItemsPanel>
-            <ItemsControl.Template>
-                <ControlTemplate>
-                    <ItemsPresenter />
-                </ControlTemplate>
-            </ItemsControl.Template>
-        </ItemsControl>
-    </StackPanel>
+    <Grid>
+        <chart:SfChart HorizontalAlignment="Center" VerticalAlignment="Center" Width="662" Height="261"/>
+
+    </Grid>
 </Page>

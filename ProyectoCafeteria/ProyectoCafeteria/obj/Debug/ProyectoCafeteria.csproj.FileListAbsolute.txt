@@ -594,3 +594,6 @@ C:\Users\Steban\IdeaProjects\ImHungry_DDR\ProyectoCafeteria\ProyectoCafeteria\ob
 C:\Users\Steban\IdeaProjects\ImHungry_DDR\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\ventanaEmergente.baml
 C:\Users\Steban\IdeaProjects\ImHungry_DDR\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUi-ModificarPedido.g.cs
 C:\Users\Steban\IdeaProjects\ImHungry_DDR\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUi-ModificarPedido.baml
+C:\Users\Steban\IdeaProjects\ImHungry_DDR\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Syncfusion.Licensing.dll
+C:\Users\Steban\IdeaProjects\ImHungry_DDR\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Syncfusion.SfChart.WPF.dll
+C:\Users\Steban\IdeaProjects\ImHungry_DDR\ProyectoCafeteria\ProyectoCafeteria\bin\Debug\Syncfusion.SfChart.WPF.xml

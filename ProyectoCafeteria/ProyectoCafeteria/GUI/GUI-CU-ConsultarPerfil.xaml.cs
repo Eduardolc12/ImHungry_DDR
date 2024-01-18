@@ -25,6 +25,7 @@ namespace ProyectoCafeteria.GUI
     public partial class GUI_CU_ConsultarPerfil : Window
     {
         string rutaImagen;
+        string rutaImagen1;
         string nombreImagen;
         string nombreImagen1;
         string fotoPerfil;
@@ -38,34 +39,18 @@ namespace ProyectoCafeteria.GUI
             InitializeComponent();
             this.usuarioLogueado = usuarioLogueado;
 
-            // Llenar los TextBox con la información del usuarioLogueado
+        
+        
             matriculaTb.Text = usuarioLogueado.matricula;
             nombreTb.Text = usuarioLogueado.nombre;
             apellidoPaTb.Text = usuarioLogueado.apellidoPaterno;
             apellidoMaTb.Text = usuarioLogueado.apellidoMaterno;
-            correoTb.Text = usuarioLogueado.correoInstitucional;
+            correoTb.Text =usuarioLogueado.correoInstitucional;
             passBox.Password = usuarioLogueado.password;
 
 
-            if (!string.IsNullOrEmpty(usuarioLogueado.fotoPerfil))
-            {
-                byte[] imageBytes = Convert.FromBase64String(usuarioLogueado.fotoPerfil);
-                BitmapImage bitmapImage = new BitmapImage();
-                bitmapImage.BeginInit();
-                bitmapImage.StreamSource = new MemoryStream(imageBytes);
-                bitmapImage.EndInit();
-                ImagePerfil.Source = bitmapImage;
-            }
 
-            if (!string.IsNullOrEmpty(usuarioLogueado.fotoCredencial))
-            {
-                byte[] imageBytes = Convert.FromBase64String(usuarioLogueado.fotoCredencial);
-                BitmapImage bitmapImage = new BitmapImage();
-                bitmapImage.BeginInit();
-                bitmapImage.StreamSource = new MemoryStream(imageBytes);
-                bitmapImage.EndInit();
-                ImageCrendencial.Source = bitmapImage;
-            }
+            Cargarimagen(usuarioLogueado.matricula);
         }
 
         private void FotoButton_Click(object sender, RoutedEventArgs e)
@@ -81,7 +66,7 @@ namespace ProyectoCafeteria.GUI
                 ImagePerfil.Source = new BitmapImage(nuevaUriImagen);
                 this.fotoPerfil = ConvertImageToBase64(this.rutaImagen);
 
-                
+
             }
 
 
@@ -94,13 +79,13 @@ namespace ProyectoCafeteria.GUI
             ventanaSelectorArchivo.Title = "Cargar Archivo De Imagen";
             if (ventanaSelectorArchivo.ShowDialog() == true)
             {
-                this.rutaImagen = ventanaSelectorArchivo.FileName;
+                this.rutaImagen1 = ventanaSelectorArchivo.FileName;
                 this.nombreImagen1 = ventanaSelectorArchivo.SafeFileName;
-               
 
-                Uri nuevaUriImagen = new Uri(this.rutaImagen, UriKind.Absolute);
+
+                Uri nuevaUriImagen = new Uri(this.rutaImagen1, UriKind.Absolute);
                 ImageCrendencial.Source = new BitmapImage(nuevaUriImagen);
-                this.fotoPerfil = ConvertImageToBase64(this.rutaImagen);
+                this.fotoCredencial = ConvertImageToBase64(this.rutaImagen1);
             }
         }
 
@@ -111,6 +96,10 @@ namespace ProyectoCafeteria.GUI
             return Convert.ToBase64String(imageArray);
         }
 
+   
+
+
+
         private async void ModificarButton_Click(object sender, RoutedEventArgs e)
         {
             Estudiante estudiante = new Estudiante();
@@ -120,6 +109,8 @@ namespace ProyectoCafeteria.GUI
             estudiante.apellidoMaterno = apellidoMaTb.Text.Trim();
             estudiante.correoInstitucional = correoTb.Text.Trim();
             estudiante.password = passBox.Password;
+            estudiante.tipoVendedor = usuarioLogueado.tipoVendedor;
+            estudiante.tipoComprador = usuarioLogueado.tipoComprador;
             estudiante.fotoPerfil = fotoPerfil;
             estudiante.fotoCredencial = fotoCredencial;
 
@@ -127,7 +118,7 @@ namespace ProyectoCafeteria.GUI
             {
 
                 MessageBox.Show(await ServicioEstudiante.ActualizarEstudiante(estudiante));
-
+                this.Close();
                 
 
             }
@@ -181,5 +172,31 @@ namespace ProyectoCafeteria.GUI
 
             this.Close();
         }
+
+        public async void Cargarimagen(string matricula)
+          
+        {
+            Estudiante usuarioLogueado1 = await ServicioEstudiante.ConsultarEstudiante(matricula);
+            if (!string.IsNullOrEmpty(usuarioLogueado1.fotoPerfil))
+            {
+                byte[] imageBytes = Convert.FromBase64String(usuarioLogueado1.fotoPerfil);
+                BitmapImage bitmapImage = new BitmapImage();
+                bitmapImage.BeginInit();
+                bitmapImage.StreamSource = new MemoryStream(imageBytes);
+                bitmapImage.EndInit();
+                ImagePerfil.Source = bitmapImage;
+            }
+
+            if (!string.IsNullOrEmpty(usuarioLogueado1.fotoCredencial))
+            {
+                byte[] imageBytes = Convert.FromBase64String(usuarioLogueado1.fotoCredencial);
+                BitmapImage bitmapImage = new BitmapImage();
+                bitmapImage.BeginInit();
+                bitmapImage.StreamSource = new MemoryStream(imageBytes);
+                bitmapImage.EndInit();
+                ImageCrendencial.Source = bitmapImage;
+            }
+        }
+
     }
 }
