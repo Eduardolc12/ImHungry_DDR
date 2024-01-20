@@ -14,7 +14,7 @@ namespace ProyectoCafeteria.Logica.Servicios
     {
         public const string URL_PEDIDO_BASE = "http://localhost:8080/api/pedido/";
 
-        public static async Task<string> RegistrarProduto(Pedido pedido)
+        public static async Task<string> RegistrarPedido(Pedido pedido)
         {
             string mensaje;
             try

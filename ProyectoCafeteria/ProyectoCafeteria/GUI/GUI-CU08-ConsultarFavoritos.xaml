@@ -1,0 +1,54 @@
+﻿<Page x:Class="ProyectoCafeteria.GUI.GUI_CU08_ConsultarFavoritos"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ProyectoCafeteria.GUI"
+      mc:Ignorable="d" 
+      d:DesignHeight="575" d:DesignWidth="867"
+      Title="GUI_CU08_ConsultarFavoritos">
+
+    <Grid Opacity="0.825">
+        <Grid.Background>
+            <ImageBrush ImageSource="/GUI/ORFF2A0.jpg"/>
+        </Grid.Background>
+        <StackPanel Orientation="Vertical" Margin="0,10,10,3">
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal" Height="50"  Margin="30,30,30,0" />
+            <Label Content="LISTA DE PRODUCTOS FAVORITOS" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="62,2,0,20" Foreground="#FFFFFBFB"></Label>
+            <StackPanel Orientation="Horizontal" Height="234" Width="835" HorizontalAlignment="Left" Margin="11,0,0,0" RenderTransformOrigin="0.5,0.5" >
+                <StackPanel.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="0"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="0"/>
+                    </TransformGroup>
+                </StackPanel.RenderTransform>
+                <DataGrid x:Name = "ProductosDataGrid" AlternationCount = "2" AutoGenerateColumns = "False" Height="219" Width="634" AllowDrop="False" CanUserAddRows="False" IsReadOnly="True" SelectionMode="Single" ItemsSource="{Binding collectionProductosGUI}" SelectedItem="{Binding productoSeleccionado}" SelectionChanged="ProductosDataGrid_SelectionChanged" Margin="7,0,0,0" RenderTransformOrigin="0.5,0.5">
+                    <DataGrid.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform AngleY="0.106"/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="0.608"/>
+                        </TransformGroup>
+                    </DataGrid.RenderTransform>
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header = "Nombre" Binding = "{Binding nombre}" Width="100"/>
+                        <DataGridTextColumn Header = "Descripcion" Binding = "{Binding descripcion}" Width="150"/>
+                        <DataGridTextColumn Header = "Cantidad Disnponible" Binding = "{Binding cantidadDisponible}"  Width = "125"/>
+                        <DataGridTextColumn Header = "Venta Inicial " Binding = "{Binding horaVentaInicial}"  Width = "90"/>
+                        <DataGridTextColumn Header = "Venta Final" Binding = "{Binding horaVentaFinal}" Width = "90"/>
+                        <DataGridTextColumn Header = "Precio" Binding = "{Binding precio}"  Width = "80"/>
+
+                    </DataGrid.Columns>
+                </DataGrid>
+                <Image x:Name="imageProducto" Height="186" Width="183" Margin="4,0,0,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="120" Width="648" >
+                <Button x:Name="ModificarButton" Content="Eliminar de Favoritos" Margin="0,0,60,0" FontSize="20" Height="32" Width="264" Click="EliminarButton_Click" Background="#FF5F5953" FontFamily="Arial Black" Foreground="#FFF1EFEF" />
+                <Button x:Name="visualizarButton" Content="visualizar" Margin="0,0,60,0" FontSize="20" Height="34" Width="143" Click="VisualizarButton_Click" Background="#FF5F5953" FontFamily="Arial Black" Foreground="White" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

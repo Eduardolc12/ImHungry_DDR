@@ -601,3 +601,7 @@ C:\Users\Steban\IdeaProjects\ImHungry_DDR\ProyectoCafeteria\ProyectoCafeteria\ob
 C:\Users\Steban\IdeaProjects\ImHungry_DDR\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU05-ConsultarProducto.baml
 C:\Users\Steban\IdeaProjects\ImHungry_DDR\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU06-RealizarPedido.g.cs
 C:\Users\Steban\IdeaProjects\ImHungry_DDR\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU06-RealizarPedido.baml
+C:\Users\Steban\IdeaProjects\ImHungry_DDR\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU08-ConsultarFavoritos.g.cs
+C:\Users\Steban\IdeaProjects\ImHungry_DDR\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU08-ConsultarFavoritos.baml
+C:\Users\Steban\IdeaProjects\ImHungry_DDR\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU07-EvaluarServicio.g.cs
+C:\Users\Steban\IdeaProjects\ImHungry_DDR\ProyectoCafeteria\ProyectoCafeteria\obj\Debug\GUI\GUI-CU07-EvaluarServicio.baml

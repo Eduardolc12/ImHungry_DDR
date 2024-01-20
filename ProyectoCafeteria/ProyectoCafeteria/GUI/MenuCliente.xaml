@@ -27,8 +27,8 @@
 
         <StackPanel Grid.Row="1" Orientation="Vertical" Margin="4,29,0,251" >
             <Button x:Name="ConsultarProductoButton" Content="Consultar Producto" FontSize="14" Width="180" Height="50" Background="#FF262626" Foreground="#FFF9F9F9" Click="ConsultarProductoButton_Click" FontFamily="Arial Black" BorderBrush="{x:Null}"/>
-            <Button x:Name="registrarProducto" Content="Registrar Producto" FontSize="14" Width="180" Height="44" Background="#FF262626" Foreground="#FFF9F9F9" Click="RegistrarProductoButton_Click" FontFamily="Arial Black" BorderBrush="{x:Null}"/>
-            <Button x:Name="consultarPedido" Content="Consultar Pedido" FontSize="14" Width="180" Height="44" Background="#FF262626" Foreground="#FFF9F9F9" Click="consultarPedidoButton_Click" FontFamily="Arial Black" BorderBrush="{x:Null}"/>
+            <Button x:Name="consultarFavoritos" Content="Consultar Favoritos" FontSize="14" Width="180" Height="44" Background="#FF262626" Foreground="#FFF9F9F9" Click="FavProductoButton_Click" FontFamily="Arial Black" BorderBrush="{x:Null}"/>
+            <Button x:Name="evaluarServicio" Content="Evaluar Servicio" FontSize="14" Width="180" Height="44" Background="#FF262626" Foreground="#FFF9F9F9" Click="evaluarServicioButton_Click" FontFamily="Arial Black" BorderBrush="{x:Null}"/>
             <Button x:Name="consultarEstadisticas" Content="Consultar Estadisticas" FontSize="14" Width="180" Height="44" Background="#FF262626" Foreground="#FFF9F9F9" Click="ConsultarEstadisticasButton_Click" FontFamily="Arial Black" BorderBrush="{x:Null}"/>
         </StackPanel>
         <Image HorizontalAlignment="Left" Height="50" Margin="84,0,0,0" VerticalAlignment="Center" Width="59" Source="/GUI/cc70e696-6c08-4556-aa25-6e99fa77699c.jpg" OpacityMask="Black"/>

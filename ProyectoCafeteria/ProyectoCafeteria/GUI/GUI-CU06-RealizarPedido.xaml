@@ -5,45 +5,62 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoCafeteria.GUI"
         mc:Ignorable="d"
-        Title="GUI_CU06_RealizarPedido" Height="600" Width="800">
-    <Grid Background="#FF262626">
-        <StackPanel Orientation="Vertical" Margin="0,0,400,351">
+        Title="GUI_CU06_RealizarPedido" Height="600" Width="840">
+    <Grid Margin="0,0,0,-6">
+        <Grid.Background>
+            <ImageBrush ImageSource="/GUI/fondo.jpg"/>
+        </Grid.Background>
+        <StackPanel Orientation="Vertical" Margin="10,30,390,321">
             <StackPanel Orientation="Horizontal" Height="40"  Margin="50,10,50,0" Width="251" >
-                <TextBox x:Name="nombreTb" FontSize="16" Height="30" Width="244"></TextBox>
+                <TextBox x:Name="nombreTb" FontSize="16" Height="30" Width="244" IsReadOnly="True" IsUndoEnabled="False"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Height="40"  Margin="50,10,50,0" Width="361" >
                 <Label Content="Descripción" Foreground="#0f7dd6" Height="30" Width="104" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
-                <TextBox x:Name="descripcionTb" FontSize="16" Height="30" Width="255"></TextBox>
+                <TextBox x:Name="descripcionTb" FontSize="16" Height="30" Width="255" IsReadOnly="True" IsUndoEnabled="False"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Height="40"  Margin="50,10,50,0" Width="357" >
                 <Label Content="Cantidad disponible" Foreground="#0f7dd6" Height="30" Width="163" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
-                <TextBox x:Name="cantidadTb" FontSize="16" Height="30" Width="186"></TextBox>
+                <TextBox x:Name="cantidadTb" FontSize="16" Height="30" Width="186" IsReadOnly="True" IsUndoEnabled="False"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Height="40"  Margin="50,10,50,0" Width="308" >
                 <Label Content="venta Inicial" Foreground="#0f7dd6" Height="30" Width="111" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
-                <TextBox x:Name="ventaITb" FontSize="16" Height="30" Width="185"></TextBox>
+                <TextBox x:Name="ventaITb" FontSize="16" Height="30" Width="185" IsReadOnly="True" IsUndoEnabled="False"></TextBox>
             </StackPanel>
         </StackPanel>
-        <StackPanel Orientation="Horizontal" Margin="194,498,194,46" >
-            <Button x:Name="GuardarButton" Content="Guardar" Margin="0,0,0,0" FontSize="18" Height="40" Width="185" Click="GuardarButton_Click"/>
-            <Button x:Name="CancelarButton" Content="Cancelar" Margin="20,0,0,0" FontSize="18" Height="40" Width="164" Click="CancelarButton_Click"/>
-        </StackPanel>
-        <StackPanel Orientation="Vertical" Margin="415,4,16,347">
+        <StackPanel Orientation="Vertical" Margin="405,30,26,321">
             <StackPanel Orientation="Horizontal" Height="40" Width="306" >
                 <Label Content="venta final" Foreground="#0f7dd6" Height="30" Width="111" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
-                <TextBox x:Name="ventafTb1" FontSize="16" Height="30" Width="187"/>
+                <TextBox x:Name="ventafTb1" FontSize="16" Height="30" Width="187" IsReadOnly="True" IsUndoEnabled="False"/>
             </StackPanel>
-            <StackPanel Orientation="Horizontal" Height="40"  Margin="50,10,50,0" Width="358" >
-                <Label Content="Puntos de encuentro" Foreground="#0f7dd6" Height="30" Width="166" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
-                <TextBox x:Name="puntoETb1" FontSize="16" Height="30" Width="161"/>
+            <StackPanel Orientation="Horizontal" Height="40"  Margin="50,10,50,0" Width="357" >
+                <Label Content="Puntos de encuentro" Foreground="#0f7dd6" Height="30" Width="177" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
+                <TextBox x:Name="puntoETb1" FontSize="16" Height="30" Width="136" IsReadOnly="True" IsUndoEnabled="False" Margin="5,0,0,0"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Height="40"  Margin="50,10,50,0" Width="296" >
                 <Label Content="Precio del producto" Foreground="#0f7dd6" Height="30" Width="158" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
-                <TextBox x:Name="precioTb1" FontSize="16" Height="30" Width="131"/>
+                <TextBox x:Name="precioTb1" FontSize="16" Height="30" Width="131" IsReadOnly="True" IsUndoEnabled="False"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Height="97" Width="158" >
                 <Image x:Name="ImageProducto1" Height="90" Width="171" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.HorizontalScrollBarVisibility="Visible" Source="/GUI/sinImagenDefault.jpg" />
 
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Margin="118,284,64,67">
+            <StackPanel Orientation="Horizontal" Height="40"  Margin="50,10,50,0" Width="368" >
+                <Label Content="Preferencias" Foreground="#0f7dd6" Height="30" Width="104" FontSize="16" FontWeight="Bold"/>
+                <TextBox x:Name="preferenciasTb" FontSize="16" Height="30" Width="255"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="40"  Margin="50,10,50,0" Width="575" >
+                <Label Content="Cantidad " Foreground="#0f7dd6" Height="30" Width="137" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
+                <TextBox x:Name="cantidadTb1" FontSize="16" Height="30" Width="183" TextChanged="ingresarCantidad"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="40"  Margin="50,10,50,0" Width="357" >
+                <Label Content="Precio Total " Foreground="#0f7dd6" Height="30" Width="163" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
+                <TextBox x:Name="precioTotalTb" FontSize="16" Height="30" Width="186" IsReadOnly="True" IsUndoEnabled="False"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="41" Width="412" Margin="0,34,0,0" >
+                <Button x:Name="GuardarButton" Content="Guardar" Margin="0,0,0,0" FontSize="18" Height="33" Width="179" Click="GuardarButton_Click"/>
+                <Button x:Name="CancelarButton" Content="Cancelar" Margin="20,0,0,0" FontSize="18" Height="32" Width="164" Click="CancelarButton_Click"/>
             </StackPanel>
         </StackPanel>
     </Grid>

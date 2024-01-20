@@ -155,10 +155,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Datos\Modelo\Estudiante.cs" />
-    <Compile Include="Datos\Modelo\Cliente.cs" />
-    <Compile Include="Datos\Modelo\Empleado.cs" />
     <Compile Include="Datos\Modelo\Pedido.cs" />
     <Compile Include="Datos\Modelo\Producto.cs" />
+    <Compile Include="Datos\Modelo\ProductosFavoritos.cs" />
+    <Compile Include="Datos\Modelo\Valoracion.cs" />
     <Compile Include="Datos\Modelo\Venta.cs" />
     <Compile Include="GUI\GUI-CU-ConsultarPerfil.xaml.cs">
       <DependentUpon>GUI-CU-ConsultarPerfil.xaml</DependentUpon>
@@ -175,6 +175,12 @@
     <Compile Include="GUI\GUI-CU06-RealizarPedido.xaml.cs">
       <DependentUpon>GUI-CU06-RealizarPedido.xaml</DependentUpon>
     </Compile>
+    <Compile Include="GUI\GUI-CU07-EvaluarServicio.xaml.cs">
+      <DependentUpon>GUI-CU07-EvaluarServicio.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI-CU08-ConsultarFavoritos.xaml.cs">
+      <DependentUpon>GUI-CU08-ConsultarFavoritos.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GUI\GUi-ModificarPedido.xaml.cs">
       <DependentUpon>GUi-ModificarPedido.xaml</DependentUpon>
     </Compile>
@@ -189,9 +195,11 @@
     <Compile Include="GUI\GUI-CU02-ModificarProducto.xaml.cs">
       <DependentUpon>GUI-CU02-ModificarProducto.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Logica\Servicios\ServicioFavoritos.cs" />
     <Compile Include="Logica\Servicios\ServicioGrpc.cs" />
     <Compile Include="Logica\Servicios\ServicioPedido.cs" />
     <Compile Include="Logica\Servicios\ServicioProducto.cs" />
+    <Compile Include="Logica\Servicios\ServicioValoración .cs" />
     <Compile Include="Logica\Servicios\ServicioVendedor.cs" />
     <Compile Include="Logica\Servicios\ServicioVenta.cs" />
     <Compile Include="Utilidades\RespuestaServidor.cs" />
@@ -224,6 +232,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="GUI\GUI-CU06-RealizarPedido.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\GUI-CU07-EvaluarServicio.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\GUI-CU08-ConsultarFavoritos.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -357,6 +373,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="GUI\5fd3979a984b926bcd17b1e67d0f5b9c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="GUI\419295234_1610403813121018_672014533948972752_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="GUI\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="GUI\fondo.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets')" />

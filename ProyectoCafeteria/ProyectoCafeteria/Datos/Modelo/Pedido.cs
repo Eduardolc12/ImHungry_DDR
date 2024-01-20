@@ -13,7 +13,6 @@ namespace ProyectoCafeteria.Datos.Modelo
         public DateTime fechaPedido { get; set; }
         public double precioTotal { get; set; }
         public string estado { get; set; }
-        public int id_venta { get; set; }
         public string matricula { get; set; }
         public int id_producto { get; set; }
     }

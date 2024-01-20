@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:ProyectoCafeteria.GUI"
         mc:Ignorable="d"
         Title="GUI_CU_ConsultarPerfil" Height="431" Width="683">
-    <Grid Margin="0,0,0,5" Background="#FF3B4A9C">
+    <Grid Margin="0,0,0,5">
+        <Grid.Background>
+            <ImageBrush ImageSource="/GUI/fondo.jpg"/>
+        </Grid.Background>
         <StackPanel Orientation="Vertical" Margin="354,37,10,86">
             <StackPanel Orientation="Horizontal" Height="40"  Margin="50,45,50,0" HorizontalAlignment="Center" Width="289" >
                 <TextBox x:Name="matriculaTb" FontSize="16" Height="20" Width="240" FontFamily="Bahnschrift" Foreground="#FF504D4D" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Center"/>

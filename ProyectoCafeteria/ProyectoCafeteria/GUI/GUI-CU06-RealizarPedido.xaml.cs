@@ -25,14 +25,19 @@ namespace ProyectoCafeteria.GUI
     public partial class GUI_CU06_RealizarPedido : Window
 
     {
-        Producto productoAModificar;
+        Producto productoModificar;
+        Pedido pedido;
+        string matricula;
 
         string rutaImagen;
         string nombreImagen;
         string fotoProducto;
-        public GUI_CU06_RealizarPedido(Producto productoAModificar)
+        public GUI_CU06_RealizarPedido(Producto productoAModificar, string mstriculaCliente)
         {
+            this.productoModificar = productoAModificar;
+            this.matricula = mstriculaCliente;
             InitializeComponent();
+            CargarInformacionProducto();
         }
 
         private void CargarInformacionProducto()
@@ -40,19 +45,19 @@ namespace ProyectoCafeteria.GUI
 
 
 
-            nombreTb.Text = productoAModificar.nombre;
-            descripcionTb.Text = productoAModificar.descripcion;
-            cantidadTb.Text = productoAModificar.cantidadDisponible.ToString();
-            ventaITb.Text = productoAModificar.horaVentaInicial.ToString();
-            ventafTb1.Text = productoAModificar.horaVentaFinal.ToString();
-            precioTb1.Text = productoAModificar.precio.ToString();
-            puntoETb1.Text = productoAModificar.puntoEncuentro;
-            
+            nombreTb.Text = productoModificar.nombre;
+            descripcionTb.Text = productoModificar.descripcion;
+            cantidadTb.Text = productoModificar.cantidadDisponible.ToString();
+            ventaITb.Text = productoModificar.horaVentaInicial.ToString();
+            ventafTb1.Text = productoModificar.horaVentaFinal.ToString();
+            precioTb1.Text = productoModificar.precio.ToString();
+            puntoETb1.Text = productoModificar.puntoEncuentro;
 
 
-            if (!string.IsNullOrEmpty(productoAModificar.foto))
+
+            if (!string.IsNullOrEmpty(productoModificar.foto))
             {
-                byte[] imageBytes = Convert.FromBase64String(productoAModificar.foto);
+                byte[] imageBytes = Convert.FromBase64String(productoModificar.foto);
                 BitmapImage bitmapImage = new BitmapImage();
                 bitmapImage.BeginInit();
                 bitmapImage.StreamSource = new MemoryStream(imageBytes);
@@ -68,20 +73,49 @@ namespace ProyectoCafeteria.GUI
         {
             if (ValidarFormulario())
             {
+                int cantidad =int.Parse(cantidadTb1.Text.Trim());
 
-                productoAModificar.nombre = nombreTb.Text.Trim();
-                productoAModificar.descripcion = descripcionTb.Text.Trim();
-                productoAModificar.cantidadDisponible = int.Parse(cantidadTb.Text.Trim());
-                productoAModificar.horaVentaInicial = ventaITb.Text.Trim();
-                productoAModificar.horaVentaFinal = ventafTb1.Text.Trim();
-                productoAModificar.precio = float.Parse(precioTb1.Text.Trim());
-                productoAModificar.puntoEncuentro = puntoETb1.Text.Trim();
-               
-                productoAModificar.foto = fotoProducto;
+                if (cantidad <= (productoModificar.cantidadDisponible))
+                {
 
-                MessageBox.Show(await ServicioProducto.ActualizarProducto(productoAModificar));
-                CargarInformacionProducto();
-                this.Close();
+                    Pedido pedido = new Pedido();
+                   
+                    double total = cantidad* productoModificar.precio;
+                    precioTotalTb.Text = total.ToString();
+                    pedido.preferencias = preferenciasTb.Text.Trim();
+                    pedido.fechaPedido = DateTime.Now;
+                    pedido.precioTotal = total;
+                    pedido.estado = "Disponible";
+                    pedido.matricula = matricula;
+                    pedido.id_producto = productoModificar.id_producto;
+
+
+
+
+                    MessageBox.Show(await ServicioPedido.RegistrarPedido(pedido));
+
+                    Producto producto = new Producto();
+                    producto.id_producto = productoModificar.id_producto;
+                    producto.nombre = productoModificar.nombre;
+                    producto.descripcion = productoModificar.descripcion;
+                    producto.cantidadDisponible = productoModificar.cantidadDisponible-cantidad;
+                    producto.horaVentaInicial = productoModificar.horaVentaInicial;
+                    producto.horaVentaFinal = productoModificar.horaVentaFinal;
+                    producto.precio = productoModificar.precio;
+                    producto.puntoEncuentro = productoModificar.puntoEncuentro;
+                    producto.estado = productoModificar.estado;
+                    producto.foto = productoModificar.foto;
+
+                    var mensaje = await ServicioProducto.ActualizarProducto(producto);
+                    CargarInformacionProducto();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("no puede ingresar mayor cantidad de la disponible");
+                    cantidadTb1.Clear();
+                    precioTotalTb.Clear();
+                }
             }
         }
 
@@ -91,9 +125,10 @@ namespace ProyectoCafeteria.GUI
             Regex expresionRegularLetras = new Regex(@"[a-zA-z]");
             Regex expresionRegularNumeros = new Regex(@"[0-9]");
             Regex caracteresEspeciales = new Regex("[!\"#\\$%&'()*+,-./:;=?@\\[\\]^_`{|}~]");
-            if (string.IsNullOrEmpty(nombreTb.Text)) MessageBox.Show("El nombre no puede quedar vacio");
-            else if (string.IsNullOrEmpty(descripcionTb.Text)) MessageBox.Show("no puede quedar vacio o contener espacios");
-            else if (expresionRegularNumeros.IsMatch(nombreTb.Text) || caracteresEspeciales.IsMatch(nombreTb.Text)) MessageBox.Show("El nombre solo puede contener letras");
+            if (string.IsNullOrEmpty(preferenciasTb.Text)) MessageBox.Show("El nombre no puede quedar vacio");
+            else if (string.IsNullOrEmpty(cantidadTb.Text)) MessageBox.Show("no puede quedar vacio o contener espacios");
+
+            else if (expresionRegularLetras.IsMatch(cantidadTb.Text) || caracteresEspeciales.IsMatch(cantidadTb.Text)) MessageBox.Show(" solo puede contener numeros");
             else if (expresionRegularLetras.IsMatch(precioTb1.Text) || caracteresEspeciales.IsMatch(precioTb1.Text)) MessageBox.Show("El precio solo puede tener numeros");
             else esFormularioValido = true;
 
@@ -128,5 +163,20 @@ namespace ProyectoCafeteria.GUI
             byte[] imageArray = File.ReadAllBytes(imagePath);
             return Convert.ToBase64String(imageArray);
         }
+
+
+        private void ingresarCantidad(object sender, TextChangedEventArgs e)
+        {
+            if (double.TryParse(cantidadTb1.Text.Trim(), out double cantidad))
+            {
+                double total = cantidad * productoModificar.precio;
+                precioTotalTb.Text = total.ToString();
+            }
+            else
+            {
+             
+            }
+        }
     }
 }
+

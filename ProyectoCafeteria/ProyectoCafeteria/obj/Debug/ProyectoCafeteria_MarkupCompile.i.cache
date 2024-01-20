@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Steban\IdeaProjects\ImHungry_DDR\ProyectoCafeteria\ProyectoCafeteria\App.xaml
-16-951976317
+18730261334
 41716124798
-36425887846
+402077377359
 43537568059
-GUI\GUI-CU-ConsultarPerfil.xaml;GUI\GUI-CU01-RegistrarProducto.xaml;GUI\GUI-CU02-ModificarProducto.xaml;GUI\GUI-CU03-ConsultarEstadisticas.xaml;GUI\GUI-CU03-IniciarSesion.xaml;GUI\GUI-CU04-RegistrarCliente.xaml;GUI\GUI-CU05-ConsultarProducto.xaml;GUI\GUI-CU06-RealizarPedido.xaml;GUI\GUI-CU09-RegistrarVendedor.xaml;GUI\GUI-CU02_ConsultarPedido.xaml;GUI\GUI-CU11-ConsultarProducto.xaml;GUI\GUi-ModificarPedido.xaml;GUI\MenuCliente.xaml;GUI\MenuEmpleado.xaml;GUI\ventanaEmergente.xaml;MainWindow.xaml;
+GUI\GUI-CU-ConsultarPerfil.xaml;GUI\GUI-CU01-RegistrarProducto.xaml;GUI\GUI-CU02-ModificarProducto.xaml;GUI\GUI-CU03-ConsultarEstadisticas.xaml;GUI\GUI-CU03-IniciarSesion.xaml;GUI\GUI-CU04-RegistrarCliente.xaml;GUI\GUI-CU05-ConsultarProducto.xaml;GUI\GUI-CU06-RealizarPedido.xaml;GUI\GUI-CU07-EvaluarServicio.xaml;GUI\GUI-CU08-ConsultarFavoritos.xaml;GUI\GUI-CU09-RegistrarVendedor.xaml;GUI\GUI-CU02_ConsultarPedido.xaml;GUI\GUI-CU11-ConsultarProducto.xaml;GUI\GUi-ModificarPedido.xaml;GUI\MenuCliente.xaml;GUI\MenuEmpleado.xaml;GUI\ventanaEmergente.xaml;MainWindow.xaml;
 
-True
+False
 

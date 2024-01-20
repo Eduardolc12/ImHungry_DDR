@@ -2,6 +2,7 @@
 using ProyectoCafeteria.Logica.Servicios;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,7 +26,7 @@ namespace ProyectoCafeteria.GUI
         Estudiante usuarioLogueado;
         List<Producto> listaProductosEncontrados;
         Producto productoSeleccionado;
-        public GUI_CU05_ConsultarProducto()
+        public GUI_CU05_ConsultarProducto(Estudiante usuarioLogueado)
         {
             this.usuarioLogueado = usuarioLogueado;
             InitializeComponent();
@@ -36,9 +37,9 @@ namespace ProyectoCafeteria.GUI
         {
             if (productoSeleccionado != null)
             {
-                GUI_CU02_ModificarProducto guiCU02ModificarProducto = new GUI_CU02_ModificarProducto(productoSeleccionado);
-                guiCU02ModificarProducto.Owner = Application.Current.MainWindow;
-                guiCU02ModificarProducto.ShowDialog();
+                GUI_CU06_RealizarPedido guiRealizarPedido = new GUI_CU06_RealizarPedido(productoSeleccionado,usuarioLogueado.matricula);
+                guiRealizarPedido.Owner = Application.Current.MainWindow;
+                guiRealizarPedido.ShowDialog();
             }
             else
             {
@@ -51,11 +52,17 @@ namespace ProyectoCafeteria.GUI
         {
             if (productoSeleccionado != null)
             {
-                if (MessageBox.Show("Esta seguro de eliminar el producto, esta accion no se puede deshacer", "Eliminar Producto",
-                    MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
+                if (!string.IsNullOrEmpty(productoSeleccionado.foto))
                 {
-                    MessageBox.Show(await ServicioProducto.EliminarProducto(productoSeleccionado));
+                    byte[] imageBytes = Convert.FromBase64String(productoSeleccionado.foto);
+                    BitmapImage bitmapImage = new BitmapImage();
+                    bitmapImage.BeginInit();
+                    bitmapImage.StreamSource = new MemoryStream(imageBytes);
+                    bitmapImage.EndInit();
+                    imageProducto.Source = bitmapImage;
                 }
+
+
             }
             else
             {
@@ -122,6 +129,24 @@ namespace ProyectoCafeteria.GUI
             else
             {
                 MessageBox.Show("Debe ingresar un nombre para la busqueda");
+            }
+        }
+
+        private async void AñadirButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (productoSeleccionado != null)
+            {
+                ProductosFavoritos producto = new ProductosFavoritos();
+                producto.matricula = usuarioLogueado.matricula;
+                producto.id_producto = productoSeleccionado.id_producto;
+
+                var mensaje = await ServicioFavoritos.RegistrarFavorito(producto);
+                MessageBox.Show("Se Ha añadido a favoritos");
+
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un producto primero");
             }
         }
     }

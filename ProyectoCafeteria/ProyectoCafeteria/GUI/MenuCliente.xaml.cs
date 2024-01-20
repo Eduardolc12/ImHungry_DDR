@@ -32,18 +32,11 @@ namespace ProyectoCafeteria.GUI
 
         private void ConsultarProductoButton_Click(object sender, RoutedEventArgs e)
         {
-            GUI_CU11_ConsultarProducto guiCU11ConsultarProducto = new GUI_CU11_ConsultarProducto(usuarioLogueado);
+            GUI_CU05_ConsultarProducto guiCU11ConsultarProducto = new GUI_CU05_ConsultarProducto(usuarioLogueado);
             contentFrame.Navigate(guiCU11ConsultarProducto);
 
         }
 
-        private void RegistrarProductoButton_Click(object sender, RoutedEventArgs e)
-
-        {
-
-            GUI_CU01_RegistrarProducto registrarProducto = new GUI_CU01_RegistrarProducto(usuarioLogueado);
-            contentFrame.Navigate(registrarProducto);
-        }
 
         private void contentFrame_Navigated(object sender, NavigationEventArgs e)
         {
@@ -79,5 +72,17 @@ namespace ProyectoCafeteria.GUI
             consultarPerfil.ShowDialog();
         }
 
+        private void FavProductoButton_Click(object sender, RoutedEventArgs e)
+        {
+            GUI_CU08_ConsultarFavoritos favProducto = new GUI_CU08_ConsultarFavoritos(usuarioLogueado);
+            contentFrame.Navigate(favProducto);
+        }
+
+        private void evaluarServicioButton_Click(object sender, RoutedEventArgs e)
+        {
+
+            GUI_CU07_EvaluarServicio evaluacion = new GUI_CU07_EvaluarServicio(usuarioLogueado);
+            contentFrame.Navigate(evaluacion);
+        }
     }
 }

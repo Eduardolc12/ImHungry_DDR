@@ -12,5 +12,7 @@ namespace ProyectoCafeteria.Datos.Modelo
         public int Cantidad { get; set; }
         public DateTime FechaVenta { get; set; }
         public double PrecioTotal { get; set; }
+
+        public int idPedido { get; set; }
     }
 }
