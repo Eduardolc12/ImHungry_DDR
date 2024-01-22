@@ -10,6 +10,9 @@
       Title="GUI_CU03_ConsultarEstadisticas">
 
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/GUI/ki.jpg"/>
+        </Grid.Background>
         <chart:SfChart HorizontalAlignment="Center" VerticalAlignment="Center" Width="662" Height="261"/>
 
     </Grid>

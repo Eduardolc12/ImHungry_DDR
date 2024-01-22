@@ -84,7 +84,7 @@ namespace ProyectoCafeteria.GUI
         {
             if (productoSeleccionado != null)
             {
-                if (MessageBox.Show("Esta seguro de eliminar el producto, esta accion no se puede deshacer", "Eliminar Producto",
+                if (MessageBox.Show("Esta seguro de eliminar este favorito, no podra desahacer el cambio", "Eliminar favorito",
                     MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
                 {
                     var favorito = await ServicioFavoritos.ConsultarFav(productoSeleccionado.id_producto);

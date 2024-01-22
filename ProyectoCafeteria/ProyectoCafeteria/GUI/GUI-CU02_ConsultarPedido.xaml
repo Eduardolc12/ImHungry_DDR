@@ -9,10 +9,13 @@
       Title="GUI_CU11_ConsultarProducto" Height="537" Width="890">
 
     <Grid Margin="0,0,10,10">
+        <Grid.Background>
+            <ImageBrush ImageSource="/GUI/ki.jpg"/>
+        </Grid.Background>
         <StackPanel Orientation="Vertical" Margin="10,10,0,10">
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal" Height="50"  Margin="30,30,30,0" />
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Left" Orientation="Horizontal" Height="50"  Margin="30,0,0,0" >
-                <Button x:Name="ConsultarButton" Content="Consultar" Margin="10,0,0,0" FontSize="20" Height="30" Width="247" Click="ConsultarButton_Click"/>
+                <Button x:Name="ConsultarButton" Content="Consultar" Margin="10,0,0,0" FontSize="20" Height="30" Width="247" Click="ConsultarButton_Click" Background="#FF4C3722" Foreground="#FFFBF2F2"/>
             </StackPanel>
             <Label Content="LISTA DE PEDIDOS" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,20"></Label>
             <DataGrid x:Name = "PedidoDataGrid" AlternationCount = "2" AutoGenerateColumns = "False" Height="150" Width="826" AllowDrop="False" CanUserAddRows="False" IsReadOnly="True" SelectionMode="Single" ItemsSource="{Binding collectionProductosGUI}" SelectedItem="{Binding productoSeleccionado}" SelectionChanged="PedidoDataGrid_SelectionChanged" HorizontalAlignment="Left" Margin="14,0,0,0">
@@ -26,8 +29,8 @@
                 </DataGrid.Columns>
             </DataGrid>
             <StackPanel Orientation="Horizontal" Height="50" Width="598" Margin="0,104,0,0" >
-                <Button x:Name="ModificarButton" Content="Modificar " Margin="0,0,60,0" FontSize="20" Height="40" Width="240" Click="ModificarButton_Click" />
-                <Button x:Name="CerrarButton" Content="Cerrar" Margin="0,0,0,0" FontSize="20" Height="40" Width="240" />
+                <Button x:Name="ModificarButton" Content="Modificar " Margin="0,0,60,0" FontSize="20" Height="40" Width="240" Click="ModificarButton_Click" Background="#FF4C3722" Foreground="#FFF9F3F3" />
+                <Button x:Name="CerrarButton" Content="Cerrar" Margin="0,0,0,0" FontSize="20" Height="40" Width="240" Background="#FF4C3722" Foreground="#FFFBF2F2" />
             </StackPanel>
         </StackPanel>
     </Grid>

@@ -329,6 +329,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <Resource Include="GUI\fondo-cafe-tazas-variadas-molinillo-vintage-frijoles-especias-chocolate-pizarra-negra-vista-superior-espacio-copia-diseno-horizontal-publicida.avif" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -363,18 +364,6 @@
     <Resource Include="GUI\64572.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="GUI\ORFF2A0.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="GUI\sinImagenDefault.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="GUI\20674622-comida-rápida-de-fondo-sin-fisuras.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="GUI\5fd3979a984b926bcd17b1e67d0f5b9c.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="GUI\419295234_1610403813121018_672014533948972752_n.png" />
   </ItemGroup>
   <ItemGroup>
@@ -382,6 +371,18 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="GUI\fondo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="GUI\de.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="GUI\ki.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="GUI\20674622-comida-rápida-de-fondo-sin-fisuras.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="GUI\ORFF2A0.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets')" />

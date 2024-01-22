@@ -92,6 +92,9 @@ namespace ProyectoCafeteria.GUI
                     valoracion.calificacion = int.Parse(calificacionTb.Text.Trim());
                     valoracion.id_producto = productoSeleccionado.id_producto;
                     MessageBox.Show(await ServicioValoración.RegistrarValoración(valoracion));
+
+                    descripciónTb.Clear();
+                    calificacionTb.Clear();
                 }
             }
             else
@@ -101,6 +104,18 @@ namespace ProyectoCafeteria.GUI
             ConsultarProductos();
         }
 
-       
+        private void calificacionCb_clic(object sender, SelectionChangedEventArgs e)
+        {
+            ComboBoxItem estadoSeleccionada = calificacionCb.SelectedItem as ComboBoxItem;
+
+            if (estadoSeleccionada != null)
+            {
+
+                string textoSeleccionado = estadoSeleccionada.Content.ToString();
+
+
+                calificacionTb.Text = textoSeleccionado;
+            }
+        }
     }
 }

@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
      d:DesignHeight="575" d:DesignWidth="867"
       Title="GUI_CU07_EvaluarServicio">
-    <Grid Opacity="0.825" Margin="0,0,0,57">
+    <Grid Opacity="0.825">
         <Grid.Background>
             <ImageBrush ImageSource="/GUI/ORFF2A0.jpg"/>
         </Grid.Background>
@@ -50,11 +50,25 @@
                     <TextBox x:Name="descripciónTb" FontSize="16" Height="30" Width="255"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Height="40"  Margin="50,10,50,0" Width="575" >
-                    <Label Content="Calificación" Foreground="#0f7dd6" Height="30" Width="137" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
-                    <TextBox x:Name="calificacionTb" FontSize="16" Height="30" Width="183"/>
+                    <Label Content="Seleccione Calificación" Foreground="#0f7dd6" Height="30" Width="178" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,0,0"/>
+                    <TextBox x:Name="calificacionTb" FontSize="16" Height="30" Width="94" IsReadOnly="True"/>
+                    <ComboBox x:Name="calificacionCb" Width="100" Height="28" FontSize="18" SelectionChanged="calificacionCb_clic" Cursor="" Margin="11,0,0,0">
+
+                        <ComboBoxItem Content="1" FontSize="16" FontFamily="Arial"/>
+                        <ComboBoxItem Content="2" FontSize="16" FontFamily="Arial"/>
+                        <ComboBoxItem Content="3" FontSize="16" FontFamily="Arial"/>
+                        <ComboBoxItem Content="4" FontSize="16" FontFamily="Arial"/>
+                        <ComboBoxItem Content="5" FontSize="16" FontFamily="Arial"/>
+                        <ComboBoxItem Content="6" FontSize="16" FontFamily="Arial"/>
+                        <ComboBoxItem Content="7" FontSize="16" FontFamily="Arial"/>
+                        <ComboBoxItem Content="8" FontSize="16" FontFamily="Arial"/>
+                        <ComboBoxItem Content="9" FontSize="16" FontFamily="Arial"/>
+                        <ComboBoxItem Content="10" FontSize="16" FontFamily="Arial"/>
+
+                    </ComboBox>
                 </StackPanel>
             </StackPanel>
-            <StackPanel Orientation="Horizontal" Height="120" Width="648" >
+            <StackPanel Orientation="Horizontal" Height="120" Width="648" Margin="0,47,0,0" >
                 <Button x:Name="ModificarButton" Content="Evaluar Servicio" Margin="0,0,60,0" FontSize="20" Height="32" Width="264" Click="EvaluarButton_Click" Background="#FF5F5953" FontFamily="Arial Black" Foreground="#FFF1EFEF" />
                 <Button x:Name="visualizarButton" Content="visualizar" Margin="0,0,60,0" FontSize="20" Height="34" Width="143" Click="VisualizarButton_Click" Background="#FF5F5953" FontFamily="Arial Black" Foreground="White" />
             </StackPanel>

@@ -141,7 +141,7 @@ namespace ProyectoCafeteria.GUI
                 producto.id_producto = productoSeleccionado.id_producto;
 
                 var mensaje = await ServicioFavoritos.RegistrarFavorito(producto);
-                MessageBox.Show("Se Ha añadido a favoritos");
+                MessageBox.Show("Se ha añadido a favoritos");
 
             }
             else

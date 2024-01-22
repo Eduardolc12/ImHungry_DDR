@@ -10,7 +10,7 @@
 
     <Grid Margin="0,0,10,0">
         <Grid.Background>
-            <ImageBrush ImageSource="/GUI/5fd3979a984b926bcd17b1e67d0f5b9c.jpg"/>
+            <ImageBrush ImageSource="/GUI/fondo.jpg"/>
         </Grid.Background>
 
         <Grid.ColumnDefinitions>
@@ -38,7 +38,7 @@
         <StackPanel Orientation="Vertical" Margin="673,23,66,12" Grid.Column="1" >
             <Button x:Name="consultarPerfil" Content="Perfil " FontSize="14" Background="#FF262626" Foreground="#FFF9F9F9" Click="ConsultarPerfilButton_Click" FontFamily="Arial Black" BorderBrush="{x:Null}" Height="33" Width="104"/>
         </StackPanel>
-        <TextBox x:Name="perfilLb" Grid.Column="1" HorizontalAlignment="Left" Margin="540,27,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="128" Background="{x:Null}" FontFamily="Arial Black" FontSize="14" Foreground="White" BorderBrush="{x:Null}" Height="25"/>
+        <TextBox x:Name="perfilLb" Grid.Column="1" HorizontalAlignment="Left" Margin="510,27,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="163" Background="{x:Null}" FontFamily="Arial Black" FontSize="14" Foreground="White" BorderBrush="{x:Null}" Height="25"/>
 
     </Grid>
 
