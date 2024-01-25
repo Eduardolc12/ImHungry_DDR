@@ -180,5 +180,42 @@ namespace ProyectoCafeteria.Logica.Servicios
 
         }
 
+        public static async Task<Producto> ConsultarProductoPorId(int id_producto)
+        {
+
+            try
+            {
+
+
+                HttpClient clienteHttp = new HttpClient();
+                string SolicitudUri = URL_PRODUCTO_BASE +"id/"+ id_producto;
+
+                HttpResponseMessage mensajeRespuestaHttp = await clienteHttp.GetAsync(SolicitudUri);
+                if (mensajeRespuestaHttp.IsSuccessStatusCode)
+                {
+                    var jsonString = await mensajeRespuestaHttp.Content.ReadAsStringAsync();
+                    JObject jsonObject = JObject.Parse(jsonString);
+                    JObject estudianteObject = jsonObject["producto"].Value<JObject>();
+
+
+                    var nuevoJsonString = estudianteObject.ToString();
+                    Producto producto = new Producto();
+                    producto = JsonConvert.DeserializeObject<Producto>(nuevoJsonString);
+
+                    return producto;
+                }
+                else
+                {
+                    Console.WriteLine($"Respuesta no exitosa: {mensajeRespuestaHttp.StatusCode}");
+                    return null;
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"Error general: {e.Message}");
+                return null;
+            }
+
+        }
     }
 }

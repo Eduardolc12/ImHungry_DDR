@@ -72,8 +72,22 @@ namespace ProyectoCafeteria.GUI
                 pedido.estado = estadoTb.Text.Trim();
                 pedido.fechaPedido = DateTime.Parse(fechaTb.Text.Trim());
              
-
+              
                 MessageBox.Show(await ServicioPedido.ActualizarPedido(pedido));
+                if(textoSeleccionado== "Finalizado")
+                {
+
+                    
+                    Producto producto = await ServicioProducto.ConsultarProductoPorId(pedido.id_producto);
+                    Venta venta = new Venta();
+                    
+                    int cantidad = int.Parse(precioTotalTb.Text) / Convert.ToInt32(producto.precio);
+                    venta.cantidad = cantidad; ;
+                    venta.fecha_venta = DateTime.Parse(fechaTb.Text.Trim());
+                    venta.precio_total = pedido.precioTotal;
+                    venta.idPedido= pedido.idPedido;
+                    var mensaje = await ServicioVenta.RegistrarVenta(venta);
+                }
                 this.Close();
             }
         }

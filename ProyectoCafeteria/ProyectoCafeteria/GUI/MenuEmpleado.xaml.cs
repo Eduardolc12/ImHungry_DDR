@@ -64,7 +64,7 @@ namespace ProyectoCafeteria.GUI
 
         private void ConsultarEstadisticasButton_Click(object sender, RoutedEventArgs e)
         {
-            GUI_CU03_ConsultarEstadisticas guiCU03ConsultarEstadisticas= new GUI_CU03_ConsultarEstadisticas();
+            GUI_CU03_ConsultarEstadisticas guiCU03ConsultarEstadisticas= new GUI_CU03_ConsultarEstadisticas(usuarioLogueado);
             contentFrame.Navigate(guiCU03ConsultarEstadisticas);
         }
 

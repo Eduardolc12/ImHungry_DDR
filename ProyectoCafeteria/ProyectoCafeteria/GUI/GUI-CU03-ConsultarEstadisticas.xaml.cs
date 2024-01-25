@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ProyectoCafeteria.Datos.Modelo;
+using ProyectoCafeteria.Logica.Servicios;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +22,31 @@ namespace ProyectoCafeteria.GUI
     /// </summary>
     public partial class GUI_CU03_ConsultarEstadisticas : Page
     {
-        public GUI_CU03_ConsultarEstadisticas()
+        Estudiante usuario;
+        List<VentaName> listaVentasEncontradas;
+        public GUI_CU03_ConsultarEstadisticas(Estudiante usuario)
         {
+            this.usuario = usuario;
             InitializeComponent();
+        }
+
+        private async void ConsultarButton_Click(object sender, RoutedEventArgs e)
+        {
+            listaVentasEncontradas = await ServicioVenta.ConsultarVentaBy(usuario.matricula);
+
+            if (listaVentasEncontradas == null) MessageBox.Show("Error al conectarse con el servidor");
+            else
+            {
+
+                estadisticaSf.ItemsSource= listaVentasEncontradas;
+
+
+            }
+        }
+
+        private void VentasDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

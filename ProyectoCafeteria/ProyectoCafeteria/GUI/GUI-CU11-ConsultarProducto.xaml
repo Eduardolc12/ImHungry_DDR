@@ -21,7 +21,11 @@
                 <Button x:Name="ConsultarButton" Content="Consultar" FontSize="20" Height="33" Width="170" Click="ConsultarButton_Click" HorizontalContentAlignment="Center" Background="#FF4C3722" Foreground="#FFFBF5F5"/>
             </StackPanel>
             <Label Content="LISTA DE PRODUCTOS" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,20"></Label>
-            <DataGrid x:Name = "ProductosDataGrid" AlternationCount = "2" AutoGenerateColumns = "False" Height="240" Width="807" AllowDrop="False" CanUserAddRows="False" IsReadOnly="True" SelectionMode="Single" ItemsSource="{Binding collectionProductosGUI}" SelectedItem="{Binding productoSeleccionado}" SelectionChanged="ProductosDataGrid_SelectionChanged" HorizontalAlignment="Left" Margin="7,0,0,0">
+            <StackPanel Orientation="Horizontal" Height="77" Width="614" >
+                <Button x:Name="ModificarButton" Content="Modificar " Margin="0,0,60,0" FontSize="20" Height="32" Width="211" Click="ModificarButton_Click" Background="#FF4C3722" Foreground="#FFFFFBFB" />
+                <Button x:Name="EliminarButton" Content="Eliminar" Margin="0,0,60,0" FontSize="20" Height="34" Width="222" Click="EliminarButton_Click" Background="#FF4C3722" Foreground="#FFF9F0F0" />
+            </StackPanel>
+            <DataGrid x:Name = "ProductosDataGrid" AlternationCount = "2" AutoGenerateColumns = "False" Height="240" Width="807" AllowDrop="False" CanUserAddRows="False" IsReadOnly="True" SelectionMode="Single" ItemsSource="{Binding collectionProductosGUI}" SelectedItem="{Binding productoSeleccionado}" SelectionChanged="ProductosDataGrid_SelectionChanged">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header = "Nombre" Binding = "{Binding nombre}" Width="100"/>
                     <DataGridTextColumn Header = "Descripcion" Binding = "{Binding descripcion}" Width="100"/>
@@ -32,10 +36,6 @@
                     <DataGridTextColumn Header = "Estado" Binding = "{Binding estado}"  Width = "130"/>
                 </DataGrid.Columns>
             </DataGrid>
-            <StackPanel Orientation="Horizontal" Height="77" Width="614" >
-                <Button x:Name="ModificarButton" Content="Modificar " Margin="0,0,60,0" FontSize="20" Height="32" Width="211" Click="ModificarButton_Click" Background="#FF4C3722" Foreground="#FFFFFBFB" />
-                <Button x:Name="EliminarButton" Content="Eliminar" Margin="0,0,60,0" FontSize="20" Height="34" Width="222" Click="EliminarButton_Click" Background="#FF4C3722" Foreground="#FFF9F0F0" />
-            </StackPanel>
         </StackPanel>
     </Grid>
 </Page>

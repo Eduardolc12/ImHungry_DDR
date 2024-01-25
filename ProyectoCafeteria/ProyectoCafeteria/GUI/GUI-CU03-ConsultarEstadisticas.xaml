@@ -5,15 +5,21 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:ProyectoCafeteria.GUI"
        xmlns:chart="clr-namespace:Syncfusion.UI.Xaml.Charts;assembly=Syncfusion.SfChart.WPF"
-      mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="GUI_CU03_ConsultarEstadisticas">
+      mc:Ignorable="d"
+      Title="GUI_CU03_ConsultarEstadisticas" Height="565" Width="847">
 
-    <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="/GUI/ki.jpg"/>
-        </Grid.Background>
-        <chart:SfChart HorizontalAlignment="Center" VerticalAlignment="Center" Width="662" Height="261"/>
+    <Grid Background="#FFFBF9F9">
+        <chart:SfChart Margin="29,80,71,29">
+            <chart:SfChart.PrimaryAxis>
+                <chart:CategoryAxis/>
+            </chart:SfChart.PrimaryAxis>
+            <chart:SfChart.SecondaryAxis>
+                <chart:NumericalAxis/>
+            </chart:SfChart.SecondaryAxis>
+
+            <chart:ColumnSeries x:Name="estadisticaSf" ItemsSource="{Binding listaVentasEncontradas}"  XBindingPath="nombre_producto" YBindingPath="cantidad" Margin="32,0,0,0" />
+        </chart:SfChart>
+        <Button x:Name="ConsultarButton" Content="Consultar" FontSize="20" Click="ConsultarButton_Click" HorizontalContentAlignment="Center" Background="#FF4C3722" Foreground="#FFFBF5F5" Margin="609,25,112,498"/>
 
     </Grid>
 </Page>

@@ -8,11 +8,10 @@ namespace ProyectoCafeteria.Datos.Modelo
 {
     public class Venta
     {
-        public int IdVenta { get; set; }
-        public int Cantidad { get; set; }
-        public DateTime FechaVenta { get; set; }
-        public double PrecioTotal { get; set; }
-
+        public int id_venta { get; set; }
+        public int cantidad { get; set; }
+        public DateTime fecha_venta { get; set; }
+        public double precio_total { get; set; }
         public int idPedido { get; set; }
     }
 }

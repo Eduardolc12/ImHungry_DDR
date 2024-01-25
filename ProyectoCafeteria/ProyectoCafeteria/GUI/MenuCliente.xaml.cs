@@ -49,11 +49,7 @@ namespace ProyectoCafeteria.GUI
             contentFrame.Navigate(guiCU11ConsultarPedido);
         }
 
-        private void ConsultarEstadisticasButton_Click(object sender, RoutedEventArgs e)
-        {
-            GUI_CU03_ConsultarEstadisticas guiCU03ConsultarEstadisticas = new GUI_CU03_ConsultarEstadisticas();
-            contentFrame.Navigate(guiCU03ConsultarEstadisticas);
-        }
+       
 
         private void cerrarSesionButton_Click(object sender, RoutedEventArgs e)
         {

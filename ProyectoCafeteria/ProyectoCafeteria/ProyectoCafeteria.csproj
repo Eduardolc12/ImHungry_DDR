@@ -157,6 +157,7 @@
     <Compile Include="Datos\Modelo\Estudiante.cs" />
     <Compile Include="Datos\Modelo\Pedido.cs" />
     <Compile Include="Datos\Modelo\Producto.cs" />
+    <Compile Include="Datos\Modelo\VentaName.cs" />
     <Compile Include="Datos\Modelo\ProductosFavoritos.cs" />
     <Compile Include="Datos\Modelo\Valoracion.cs" />
     <Compile Include="Datos\Modelo\Venta.cs" />
